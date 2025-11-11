@@ -3,13 +3,128 @@ import './App.css'
 import heroSlideOne from './assets/29928c4a071cb4f74476e91a3e43fc85.jpg'
 import heroSlideTwo from './assets/6dc6758e044489ee9d73b2f8deda4c35.jpg'
 import heroSlideThree from './assets/c94173562472c9c29813b9cba7c8d8e2.jpg'
+import galleryImageIndoor from './assets/481007477_1037131591768619_8146029210013551240_n.jpg'
+import galleryImageArena from './assets/481710442_1038078748340570_3768271913350946832_n.jpg'
+import galleryImageAwards from './assets/482069166_1042713017877143_1166654843613532211_n.jpg'
+import galleryImageOutdoor from './assets/503440501_1109185541229890_1560595072047730165_n.jpg'
+import logoEmblem from './assets/image.png'
+import galleryImagePortrait from './assets/mainana.jpg'
+import galleryImageCup from './assets/kupa.jpg'
+import galleryImageLfc from './assets/lfc.jpg'
+import galleryImageCfc from './assets/cfc.jpg'
+import galleryImageTrt from './assets/trt.jpg'
 
 const heroSlides = [heroSlideOne, heroSlideTwo, heroSlideThree]
+const galleryImages = [
+  {
+    src: galleryImageIndoor,
+    caption: {
+      lv: 'Individuāls darbs ar treneri manēžā',
+      en: 'One-on-one coaching inside the arena',
+      ru: 'Индивидуальное занятие с тренером в манеже',
+    },
+  },
+  {
+    src: galleryImageArena,
+    caption: {
+      lv: 'Sacensību atmosfēra Jauno jātnieku skolā',
+      en: 'Competition atmosphere at the school',
+      ru: 'Соревновательная атмосфера в школе',
+    },
+  },
+  {
+    src: galleryImageAwards,
+    caption: {
+      lv: 'Apbalvošana un prieks par sasniegumiem',
+      en: 'Award ceremony celebrating achievements',
+      ru: 'Награждение и радость от побед',
+    },
+  },
+  {
+    src: heroSlideOne,
+    caption: {
+      lv: 'Jātnieks gatavojas startam manēžā',
+      en: 'Rider preparing for an arena start',
+      ru: 'Всадник готовится к старту в манеже',
+    },
+  },
+  {
+    src: heroSlideTwo,
+    caption: {
+      lv: 'Treniņš plašajos mūsu laukumos',
+      en: 'Training on our spacious outdoor fields',
+      ru: 'Тренировка на просторных полях школы',
+    },
+  },
+  {
+    src: heroSlideThree,
+    caption: {
+      lv: 'Sadarbība starp zirgu un jātnieku',
+      en: 'Connection between horse and rider',
+      ru: 'Связь между лошадью и всадником',
+    },
+  },
+  {
+    src: galleryImageOutdoor,
+    caption: {
+      lv: 'Jātnieku stundas svaigā gaisā',
+      en: 'Riding lesson in the fresh air',
+      ru: 'Занятие верховой ездой на свежем воздухе',
+    },
+  },
+  {
+    src: galleryImagePortrait,
+    caption: {
+      lv: 'Zirga portrets pirms treniņa',
+      en: 'Horse portrait before training',
+      ru: 'Портрет лошади перед тренировкой',
+    },
+  },
+  {
+    src: galleryImageCup,
+    caption: {
+      lv: 'Jauno jātnieku kausa trofeja',
+      en: 'Young Riders Cup trophy',
+      ru: 'Трофей Кубка юных всадников',
+    },
+  },
+  {
+    src: galleryImageLfc,
+    caption: {
+      lv: 'Komandas kopbilde pēc uzvaras',
+      en: 'Team photo after victory',
+      ru: 'Командное фото после победы',
+    },
+  },
+  {
+    src: galleryImageCfc,
+    caption: {
+      lv: 'Partneru un atbalstītāju godināšana',
+      en: 'Honouring partners and supporters',
+      ru: 'Отмечаем партнёров и друзей школы',
+    },
+  },
+  {
+    src: galleryImageTrt,
+    caption: {
+      lv: 'Treniņš pie jūras saullēktā',
+      en: 'Sunrise training by the sea',
+      ru: 'Тренировка у моря на рассвете',
+    },
+  },
+]
+
+const GOOGLE_MAPS_EMBED_URL =
+  'https://www.google.com/maps?q=Glu%C5%BEi,+V%C4%81rves+pag.,+Ventspils+nov.,+Latvia&output=embed'
+const GOOGLE_MAPS_DIRECTIONS_URL =
+  'https://www.google.com/maps/place/Glu%C5%BEi,+V%C4%81rves+pag.,+Ventspils+nov.,+Latvia'
+const APPLE_MAPS_DIRECTIONS_URL =
+  'https://maps.apple.com/?address=Glu%C5%BEi,%20V%C4%81rves%20pag.,%20Latvia&auid=6050258041662745356&ll=57.357617,21.537482&lsp=6489&q=Glu%C5%BEi&_ext=EiYpcNTANjOtTEAxHHBcsnaHNUA57qnmklmuTEBBfvDbJLqLNUBQBA%3D%3D&t=m'
 const translations = {
   lv: {
     logo: {
-      title: 'Jauno Jātnieku',
-      subtitle: 'Latvian Horses Skola',
+      title: 'Asnātes JSK',
+      subtitle: 'asnatesjsk.lv',
     },
     languages: {
       lv: 'Latviešu',
@@ -27,7 +142,7 @@ const translations = {
     ],
     navCta: 'Pieteikties',
     hero: {
-      eyebrow: 'Jauno Jātnieku skola',
+      eyebrow: 'Asnātes JSK',
       title: 'Vieta, kur cilvēki satiekas ar zirgiem',
       lead:
         'Mēs veidojam vidi profesionāļiem un iesācējiem: modernas stallis, treniņi ar pieredzējušiem treneriem un Eiropas līmeņa sacensības.',
@@ -125,21 +240,21 @@ const translations = {
       cards: [
         {
           title: 'Zirgu uzturēšana',
-          price: 'no 345€ / mēnesī',
+          price: 'Pēc pieprasījuma',
           perks: ['Barošana 3 reizes dienā', 'Ikdienas boksa uzkopšana', 'Pastaiga aplokā', 'Manēžu un lauku izmantošana'],
-          cta: 'Pieteikties',
+          cta: 'Sazinieties ar mums',
         },
         {
           title: 'Treniņi',
-          price: 'no 30€ / nodarbība',
+          price: 'Pēc pieprasījuma',
           perks: ['Iepazīšanās ar zirgu', 'Individuālās un grupu nodarbības', 'Sacensību sagatavošana', 'Elastīgs grafiks'],
-          cta: 'Pieteikties',
+          cta: 'Sazinieties ar mums',
         },
         {
           title: 'Dāvanu kartes',
-          price: 'no 25€',
+          price: 'Pēc pieprasījuma',
           perks: ['Der jebkuram pakalpojumam', 'Spēkā 12 mēnešus', 'Iespēja iegādāties tiešsaistē', 'Lieliska dāvana'],
-          cta: 'Pasūtīt',
+          cta: 'Sazinieties ar mums',
         },
       ],
     },
@@ -181,7 +296,7 @@ const translations = {
         nameLabel: 'Vārds',
         namePlaceholder: 'Marija Ivanova',
         phoneLabel: 'Tālrunis',
-        phonePlaceholder: '+371 28 677 177',
+        phonePlaceholder: '+371 2 8352881',
         serviceLabel: 'Vēlamais pakalpojums',
         servicePlaceholder: 'Izvēlieties pakalpojumu',
         services: [
@@ -202,12 +317,27 @@ const translations = {
         text: 'Ieniriet zirgu pasaulē un radiet neaizmirstamu pieredzi savai komandai.',
       },
     },
+    gallery: {
+      eyebrow: 'Galerija',
+      title: 'Brīži no manēžas un stallī',
+      description: 'Iepazīstiet mūsu atmosfēru: treniņi, sacensības un ikdienas dzīve kopā ar zirgiem.',
+    },
+    map: {
+      eyebrow: 'Kur mūs atrast',
+      title: 'Atrodi Asnātes JSK kartē',
+      description:
+        'Mūsu jātnieku bāze atrodas klusajā Ventspils novada Vārves pagastā. Droši plānojiet vizīti – pie mums ērti nokļūt ar auto vai kopā ar komandu.',
+      addressLabel: 'Adrese',
+      address: 'Gluži, Vārves pag., Ventspils nov., Varve, Latvija',
+      googleCta: 'Atvērt Google Maps',
+      appleCta: 'Atvērt Apple Maps',
+    },
     footer: {
       intro:
-        'Laipni lūdzam Jauno Jātnieku skolā – vietā, kur ikviens var atklāt mīlestību pret zirgiem un attīstīt sportiskās prasmes.',
+        'Laipni lūdzam Asnātes JSK — vietā, kur ikviens var atklāt mīlestību pret zirgiem un attīstīt sportiskās prasmes.',
       contacts: {
         title: 'Kontakti',
-        items: ['info@latvianhorses.lv', '+371 28 677 177', '“Zustrenes”, Inčukalns, LV-2141, Latvija'],
+        items: ['asnatesjsk@inbox.lv', '+371 2 8352881', 'Gluži, Vārves pag., Ventspils nov., Varve, Latvija'],
       },
       services: {
         title: 'Pakalpojumi',
@@ -223,7 +353,7 @@ const translations = {
         items: ['Reģ. Nr.: 40008114442', 'AS Swedbank', 'SWIFT: HABALV22', 'IBAN: LV19HABA0551017883565'],
       },
       bottom: {
-        rights: '© 2025 Jauno Jātnieku Skola. Visas tiesības aizsargātas.',
+        rights: '© 2025 Asnātes JSK. Visas tiesības aizsargātas.',
         privacy: 'Privātuma politika',
         terms: 'Lietošanas noteikumi',
       },
@@ -231,8 +361,8 @@ const translations = {
   },
   en: {
     logo: {
-      title: 'Jauno Jātnieku',
-      subtitle: 'Latvian Horses School',
+      title: 'Asnates JSK',
+      subtitle: 'asnatesjsk.lv',
     },
     languages: {
       lv: 'Latvian',
@@ -250,7 +380,7 @@ const translations = {
     ],
     navCta: 'Sign up',
     hero: {
-      eyebrow: 'School of Young Riders',
+      eyebrow: 'Asnates JSK',
       title: 'Where people meet horses',
       lead:
         'We create a space for professionals and beginners alike: modern stables, coaching by experienced trainers, and competitions of European standard.',
@@ -348,21 +478,21 @@ const translations = {
       cards: [
         {
           title: 'Horse boarding',
-          price: 'from €345 / month',
+          price: 'Available on request',
           perks: ['Feeding 3 times per day', 'Daily stall cleaning', 'Turnout in paddock', 'Use of arenas and fields'],
-          cta: 'Apply now',
+          cta: 'Contact us',
         },
         {
           title: 'Training',
-          price: 'from €30 / session',
+          price: 'Available on request',
           perks: ['Intro to horses and ponies', 'Private and group lessons', 'Competition preparation', 'Flexible schedules'],
-          cta: 'Book now',
+          cta: 'Contact us',
         },
         {
           title: 'Gift cards',
-          price: 'from €25',
+          price: 'Available on request',
           perks: ['Valid for any service', '12-month validity', 'Available online', 'Thoughtful gift idea'],
-          cta: 'Order now',
+          cta: 'Contact us',
         },
       ],
     },
@@ -404,7 +534,7 @@ const translations = {
         nameLabel: 'Name',
         namePlaceholder: 'Maria Ivanova',
         phoneLabel: 'Phone',
-        phonePlaceholder: '+371 28 677 177',
+        phonePlaceholder: '+371 2 8352881',
         serviceLabel: 'Service of interest',
         servicePlaceholder: 'Choose a service',
         services: [
@@ -425,12 +555,27 @@ const translations = {
         text: 'Immerse your team in the world of horses and create an unforgettable shared experience.',
       },
     },
+    gallery: {
+      eyebrow: 'Gallery',
+      title: 'Moments from the arena and the stable',
+      description: 'Immerse yourself in our atmosphere: training sessions, competitions, and daily life with horses.',
+    },
+    map: {
+      eyebrow: 'Visit us',
+      title: 'Find Asnates JSK on the map',
+      description:
+        'Our equestrian campus is nestled in the peaceful Ventspils region of Latvia. Plan your visit easily by car or coordinate group transport with our team.',
+      addressLabel: 'Address',
+      address: 'Gluži, Vārve parish, Ventspils municipality, Latvia',
+      googleCta: 'Open Google Maps',
+      appleCta: 'Open Apple Maps',
+    },
     footer: {
       intro:
-        'Welcome to the School of Young Riders – a place where everyone can discover a love for horses and develop athletic skills.',
+        'Welcome to Asnates JSK — a place where everyone can discover a love for horses and develop athletic skills.',
       contacts: {
         title: 'Contacts',
-        items: ['info@latvianhorses.lv', '+371 28 677 177', '“Zustrenes”, Inčukalns, LV-2141, Latvia'],
+        items: ['asnatesjsk@inbox.lv', '+371 2 8352881', 'Gluži, Vārve parish, Ventspils municipality, Latvia'],
       },
       services: {
         title: 'Services',
@@ -446,7 +591,7 @@ const translations = {
         items: ['Reg. No.: 40008114442', 'AS Swedbank', 'SWIFT: HABALV22', 'IBAN: LV19HABA0551017883565'],
       },
       bottom: {
-        rights: '© 2025 Jauno Jātnieku Skola. All rights reserved.',
+        rights: '© 2025 Asnates JSK. All rights reserved.',
         privacy: 'Privacy policy',
         terms: 'Terms of use',
       },
@@ -454,8 +599,8 @@ const translations = {
   },
   ru: {
     logo: {
-      title: 'Школа юных всадников',
-      subtitle: 'Latvian Horses Skola',
+      title: 'Asnates JSK',
+      subtitle: 'asnatesjsk.lv',
     },
     languages: {
       lv: 'Латвийский',
@@ -473,7 +618,7 @@ const translations = {
     ],
     navCta: 'Записаться',
     hero: {
-      eyebrow: 'Школа молодых всадников',
+      eyebrow: 'Asnates JSK',
       title: 'Место, где люди встречаются с лошадьми',
       lead:
         'Мы создаём пространство для профессионалов и новичков: современные конюшни, тренировки с опытными тренерами и соревнования европейского уровня.',
@@ -571,21 +716,21 @@ const translations = {
       cards: [
         {
           title: 'Содержание лошадей',
-          price: 'от 345€ / месяц',
+          price: 'По запросу',
           perks: ['Кормление 3 раза в день', 'Ежедневная уборка бокса', 'Прогулка по загону', 'Использование манежа и полей'],
-          cta: 'Оставить заявку',
+          cta: 'Связаться с нами',
         },
         {
           title: 'Тренировки',
-          price: 'от 30€ / занятие',
+          price: 'По запросу',
           perks: ['Знакомство с пони и лошадьми', 'Индивидуальные и групповые занятия', 'Подготовка к соревнованиям', 'Гибкий график'],
-          cta: 'Записаться',
+          cta: 'Связаться с нами',
         },
         {
           title: 'Подарочные карты',
-          price: 'от 25€',
+          price: 'По запросу',
           perks: ['Подходит для любой услуги', 'Действует 12 месяцев', 'Можно купить онлайн', 'Отличный подарок'],
-          cta: 'Заказать',
+          cta: 'Связаться с нами',
         },
       ],
     },
@@ -627,7 +772,7 @@ const translations = {
         nameLabel: 'Имя',
         namePlaceholder: 'Мария Иванова',
         phoneLabel: 'Телефон',
-        phonePlaceholder: '+371 28 677 177',
+        phonePlaceholder: '+371 2 8352881',
         serviceLabel: 'Цель визита',
         servicePlaceholder: 'Выберите услугу',
         services: [
@@ -648,12 +793,27 @@ const translations = {
         text: 'Погрузитесь в атмосферу общения с лошадьми и создайте незабываемый опыт для своей команды.',
       },
     },
+    gallery: {
+      eyebrow: 'Галерея',
+      title: 'Моменты из манежа и конюшни',
+      description: 'Окунитесь в нашу атмосферу: тренировки, соревнования и ежедневная жизнь рядом с лошадьми.',
+    },
+    map: {
+      eyebrow: 'Как нас найти',
+      title: 'Asnates JSK на карте',
+      description:
+        'Наша школа расположена в тихом уголке Вентспилсского края, в волости Варве. Мы будем рады гостям — планируйте визит на автомобиле или договоритесь о трансфере с нашей командой.',
+      addressLabel: 'Адрес',
+      address: 'Глужи, волость Варве, Вентспилсский край, Латвия',
+      googleCta: 'Открыть в Google Maps',
+      appleCta: 'Открыть в Apple Maps',
+    },
     footer: {
       intro:
-        'Добро пожаловать в Школу молодых всадников — место, где каждый может раскрыть любовь к лошадям и развить спортивные навыки.',
+        'Добро пожаловать в Asnates JSK — место, где каждый может раскрыть любовь к лошадям и развить спортивные навыки.',
       contacts: {
         title: 'Контакты',
-        items: ['info@latvianhorses.lv', '+371 28 677 177', '“Zustrenes”, Инчукалнс, LV-2141, Латвия'],
+        items: ['asnatesjsk@inbox.lv', '+371 2 8352881', 'Глужи, волость Варве, Вентспилсский край, Латвия'],
       },
       services: {
         title: 'Услуги',
@@ -669,7 +829,7 @@ const translations = {
         items: ['Рег. №: 40008114442', 'AS Swedbank', 'SWIFT: HABALV22', 'IBAN: LV19HABA0551017883565'],
       },
       bottom: {
-        rights: '© 2025 Jauno Jātnieku Skola. Все права защищены.',
+        rights: '© 2025 Asnates JSK. Все права защищены.',
         privacy: 'Политика конфиденциальности',
         terms: 'Условия использования',
       },
@@ -683,6 +843,7 @@ function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [selectedLanguage, setSelectedLanguage] = useState('ru')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
+  const [activeGalleryIndex, setActiveGalleryIndex] = useState(null)
   const languageDropdownRef = useRef(null)
   const headerRef = useRef(null)
   const t = translations[selectedLanguage] ?? translations.ru
@@ -704,6 +865,31 @@ function App() {
   useEffect(() => {
     document.documentElement.lang = selectedLanguage
   }, [selectedLanguage])
+
+  useEffect(() => {
+    if (activeGalleryIndex !== null) {
+      const handleKeydown = (event) => {
+        if (event.key === 'Escape') {
+          setActiveGalleryIndex(null)
+        }
+        if (event.key === 'ArrowRight') {
+          setActiveGalleryIndex((prev) => (prev === null ? 0 : (prev + 1) % galleryImages.length))
+        }
+        if (event.key === 'ArrowLeft') {
+          setActiveGalleryIndex((prev) =>
+            prev === null ? 0 : (prev - 1 + galleryImages.length) % galleryImages.length,
+          )
+        }
+      }
+      document.body.classList.add('no-scroll')
+      window.addEventListener('keydown', handleKeydown)
+      return () => {
+        window.removeEventListener('keydown', handleKeydown)
+        document.body.classList.remove('no-scroll')
+      }
+    }
+    return undefined
+  }, [activeGalleryIndex])
 
   useEffect(() => {
     const animatedElements = Array.from(document.querySelectorAll('[data-animate]'))
@@ -792,37 +978,21 @@ function App() {
               <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
                 <path d="M2.5 4.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1V4.5zm2 1V14h9.9l-5.45-5.45a.75.75 0 0 1 1.06-1.06l5.46 5.45V5.5H4.5z" />
               </svg>
-              <a href="mailto:info@latvianhorses.lv">info@latvianhorses.lv</a>
+              <a href="mailto:asnatesjsk@inbox.lv">asnatesjsk@inbox.lv</a>
             </span>
             <span className="announcement__item">
               <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
                 <path d="M5.7 2.7c.2-.4.7-.6 1.1-.4l2.7 1.3c.4.2.6.6.4 1l-1.2 2.7c-.2.4-.6.6-1 .4l-1-.4a11 11 0 0 0 5.2 5.2l-.3-.9c-.2-.4 0-.8.3-1l2.7-1.2c.4-.2.8 0 1 .4l1.3 2.7c.2.4 0 .9-.4 1.1l-2.1 1c-.4.2-.9.2-1.3 0a13.5 13.5 0 0 1-7.4-7.4c-.2-.4-.2-.9 0-1.3l1-2.1z" />
               </svg>
-              <a href="tel:+37128677177">+371 28 677 177</a>
+              <a href="tel:+37128352881">+371 2 8352881</a>
             </span>
           </div>
         </div>
         <div className="nav-bar container">
-          <a className="logo" href="#hero" aria-label="Школа молодых всадников" onClick={closeMenu}>
-            <svg className="logo__mark" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
-              <defs>
-                <radialGradient id="brandGradient" cx="25%" cy="20%" r="80%">
-                  <stop offset="0%" stop-color="#f6ddc4" />
-                  <stop offset="45%" stop-color="#e59b63" />
-                  <stop offset="100%" stop-color="#9f3d21" />
-                </radialGradient>
-              </defs>
-              <circle cx="60" cy="60" r="54" fill="url(#brandGradient)" />
-              <circle cx="60" cy="60" r="56" fill="none" stroke="rgba(255, 255, 255, 0.35)" strokeWidth="2" />
-              <path
-                className="logo__mark-horse"
-                d="M78.5 46.2c-4.1-2.8-10.1-4.7-16.4-4.7-9.7 0-17.6 4.4-21.9 11.7L36 61.8c-1.9 3.3-1 7.4 2 9.7c4.3 3.4 12 4.1 16.6-2.7l3.9-5.8c1.7-2.5 4.5-4 7.6-4c2.3 0 4.6 0.5 6.5 1.6l6 3.1c2.9 1.5 6.4 0.3 7.9-2.6C88 56.5 84.6 50.4 78.5 46.2Z"
-              />
-              <path
-                className="logo__mark-ribbon"
-                d="M30 80c10.5 6.5 22.8 10 35.5 10c12.7 0 25-3.5 35.5-10l-3.5-6c-9 5.2-19.9 8.1-32 8.1c-12.1 0-23.1-2.9-32-8.1Z"
-              />
-            </svg>
+              <a className="logo" href="#hero" aria-label="Škola mladých jezdců" onClick={closeMenu}>
+                <span className="logo__badge">
+                  <img className="logo__emblem" src={logoEmblem} alt="Asnates JSK Emblem" />
+                </span>
             <div className="logo__text">
               <span className="logo__title">{t.logo.title}</span>
               <span className="logo__subtitle">{t.logo.subtitle}</span>
@@ -1078,6 +1248,43 @@ function App() {
           </div>
         </section>
 
+        <section id="gallery" className="section gallery">
+          <div className="container">
+            <div className="section__heading">
+              <p className="eyebrow">{t.gallery.eyebrow}</p>
+              <h2>{t.gallery.title}</h2>
+              <p>{t.gallery.description}</p>
+            </div>
+            <div className="gallery-grid">
+              {galleryImages.map((image, index) => (
+                <figure
+                  className="gallery-card"
+                  key={image.src}
+                  data-animate="fade-up"
+                  style={{ transitionDelay: `${index * 70 + 100}ms` }}
+                >
+                  <button
+                    type="button"
+                    className="gallery-card__media"
+                    onClick={() => setActiveGalleryIndex(index)}
+                    aria-label={image.caption[selectedLanguage] ?? image.caption.ru}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.caption[selectedLanguage] ?? image.caption.ru}
+                      loading="lazy"
+                    />
+                    <span className="gallery-card__overlay" />
+                  </button>
+                  <figcaption className="gallery-card__caption">
+                    {image.caption[selectedLanguage] ?? image.caption.ru}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="booking" className="section section--split section--accent">
           <div className="container section--split__wrapper section--split__wrapper--reverse">
             <div className="section--split__content" data-animate="fade-up">
@@ -1129,32 +1336,52 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section id="contacts" className="section map-section">
+          <div className="container map-section__wrapper">
+            <div className="map-section__content" data-animate="fade-right">
+              <p className="eyebrow">{t.map.eyebrow}</p>
+              <h2>{t.map.title}</h2>
+              <p>{t.map.description}</p>
+              <div className="map-section__address">
+                <span className="map-section__label">{t.map.addressLabel}</span>
+                <address>{t.map.address}</address>
+              </div>
+              <div className="map-section__actions">
+                <a
+                  className="btn btn--primary"
+                  href={GOOGLE_MAPS_DIRECTIONS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.map.googleCta}
+                </a>
+                <a className="btn btn--ghost" href={APPLE_MAPS_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer">
+                  {t.map.appleCta}
+                </a>
+              </div>
+            </div>
+            <div className="map-section__frame" data-animate="fade-left" style={{ transitionDelay: '140ms' }}>
+              <iframe
+                title="Asnates JSK map"
+                src={GOOGLE_MAPS_EMBED_URL}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer id="contacts" className="site-footer">
+      <footer className="site-footer">
         <div className="container">
           <div className="footer__top">
             <div className="footer__brand">
-              <a className="logo" href="#hero" aria-label="Школа молодых всадников" onClick={closeMenu}>
-                <svg className="logo__mark" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
-                  <defs>
-                    <radialGradient id="brandGradientFooter" cx="25%" cy="20%" r="80%">
-                      <stop offset="0%" stop-color="#f6ddc4" />
-                      <stop offset="45%" stop-color="#e59b63" />
-                      <stop offset="100%" stop-color="#9f3d21" />
-                    </radialGradient>
-                  </defs>
-                  <circle cx="60" cy="60" r="54" fill="url(#brandGradientFooter)" />
-                  <circle cx="60" cy="60" r="56" fill="none" stroke="rgba(255, 255, 255, 0.35)" strokeWidth="2" />
-                  <path
-                    className="logo__mark-horse"
-                    d="M78.5 46.2c-4.1-2.8-10.1-4.7-16.4-4.7-9.7 0-17.6 4.4-21.9 11.7L36 61.8c-1.9 3.3-1 7.4 2 9.7c4.3 3.4 12 4.1 16.6-2.7l3.9-5.8c1.7-2.5 4.5-4 7.6-4c2.3 0 4.6 0.5 6.5 1.6l6 3.1c2.9 1.5 6.4 0.3 7.9-2.6C88 56.5 84.6 50.4 78.5 46.2Z"
-                  />
-                  <path
-                    className="logo__mark-ribbon"
-                    d="M30 80c10.5 6.5 22.8 10 35.5 10c12.7 0 25-3.5 35.5-10l-3.5-6c-9 5.2-19.9 8.1-32 8.1c-12.1 0-23.1-2.9-32-8.1Z"
-                  />
-                </svg>
+              <a className="logo" href="#hero" aria-label="Škola mladých jezdců" onClick={closeMenu}>
+                <span className="logo__badge">
+                  <img className="logo__emblem" src={logoEmblem} alt="Asnates JSK Emblem" />
+                </span>
                 <div className="logo__text">
                   <span className="logo__title">{t.logo.title}</span>
                   <span className="logo__subtitle">{t.logo.subtitle}</span>
@@ -1208,6 +1435,44 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {activeGalleryIndex !== null && (
+        <div className="lightbox" role="dialog" aria-modal="true">
+          <button
+            type="button"
+            className="lightbox__close"
+            onClick={() => setActiveGalleryIndex(null)}
+            aria-label="Close gallery view"
+          >
+            ×
+          </button>
+          <button
+            type="button"
+            className="lightbox__nav lightbox__nav--prev"
+            aria-label="Previous image"
+            onClick={() =>
+              setActiveGalleryIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
+            }
+          >
+            ‹
+          </button>
+          <figure className="lightbox__content">
+            <img
+              src={galleryImages[activeGalleryIndex].src}
+              alt={galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}
+            />
+            <figcaption>{galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}</figcaption>
+          </figure>
+          <button
+            type="button"
+            className="lightbox__nav lightbox__nav--next"
+            aria-label="Next image"
+            onClick={() => setActiveGalleryIndex((prev) => (prev + 1) % galleryImages.length)}
+          >
+            ›
+          </button>
+        </div>
+      )}
     </div>
   )
 }
