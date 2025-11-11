@@ -7,7 +7,7 @@ import galleryImageIndoor from './assets/481007477_1037131591768619_814602921001
 import galleryImageArena from './assets/481710442_1038078748340570_3768271913350946832_n.jpg'
 import galleryImageAwards from './assets/482069166_1042713017877143_1166654843613532211_n.jpg'
 import galleryImageOutdoor from './assets/503440501_1109185541229890_1560595072047730165_n.jpg'
-import logoEmblem from './assets/image.png'
+import logoEmblem from './assets/bgfree.jpg'
 import galleryImagePortrait from './assets/mainana.jpg'
 import galleryImageCup from './assets/kupa.jpg'
 import galleryImageLfc from './assets/lfc.jpg'
@@ -123,7 +123,7 @@ const APPLE_MAPS_DIRECTIONS_URL =
 const translations = {
   lv: {
     logo: {
-      title: 'Asnātes JSK',
+      title: 'Asnates JSK',
       subtitle: 'asnatesjsk.lv',
     },
     languages: {
@@ -328,7 +328,7 @@ const translations = {
       description:
         'Mūsu jātnieku bāze atrodas klusajā Ventspils novada Vārves pagastā. Droši plānojiet vizīti – pie mums ērti nokļūt ar auto vai kopā ar komandu.',
       addressLabel: 'Adrese',
-      address: 'Gluži, Vārves pag., Ventspils nov., Varve, Latvija',
+      address: 'Gluži, Vārves pagasts, Ventspils novads, LV-3623',
       googleCta: 'Atvērt Google Maps',
       appleCta: 'Atvērt Apple Maps',
     },
@@ -337,7 +337,11 @@ const translations = {
         'Laipni lūdzam Asnātes JSK — vietā, kur ikviens var atklāt mīlestību pret zirgiem un attīstīt sportiskās prasmes.',
       contacts: {
         title: 'Kontakti',
-        items: ['asnatesjsk@inbox.lv', '+371 2 8352881', 'Gluži, Vārves pag., Ventspils nov., Varve, Latvija'],
+        items: [
+          'asnatesjsk@inbox.lv',
+          '+371 2 8352881',
+          'Gluži, Vārves pagasts, Ventspils novads, LV-3623',
+        ],
       },
       services: {
         title: 'Pakalpojumi',
@@ -350,7 +354,13 @@ const translations = {
       },
       billing: {
         title: 'Rēķinu dati',
-        items: ['Reģ. Nr.: 40008114442', 'AS Swedbank', 'SWIFT: HABALV22', 'IBAN: LV19HABA0551017883565'],
+        items: [
+          'Biedrība "Asnates Jātnieku Sporta Klubs"',
+          'Reģ. Nr.: 40008302784',
+          '"Saime", Pope, Popes pag., Ventspils nov., LV-3614',
+          'Banka: SWEDBANK',
+          'Konta Nr: LV75HABA0551050198107',
+        ],
       },
       bottom: {
         rights: '© 2025 Asnātes JSK. Visas tiesības aizsargātas.',
@@ -566,7 +576,7 @@ const translations = {
       description:
         'Our equestrian campus is nestled in the peaceful Ventspils region of Latvia. Plan your visit easily by car or coordinate group transport with our team.',
       addressLabel: 'Address',
-      address: 'Gluži, Vārve parish, Ventspils municipality, Latvia',
+      address: 'Gluži, Vārve parish, Ventspils municipality, LV-3623',
       googleCta: 'Open Google Maps',
       appleCta: 'Open Apple Maps',
     },
@@ -575,7 +585,11 @@ const translations = {
         'Welcome to Asnates JSK — a place where everyone can discover a love for horses and develop athletic skills.',
       contacts: {
         title: 'Contacts',
-        items: ['asnatesjsk@inbox.lv', '+371 2 8352881', 'Gluži, Vārve parish, Ventspils municipality, Latvia'],
+        items: [
+          'asnatesjsk@inbox.lv',
+          '+371 2 8352881',
+          'Gluži, Vārve parish, Ventspils municipality, LV-3623',
+        ],
       },
       services: {
         title: 'Services',
@@ -588,7 +602,13 @@ const translations = {
       },
       billing: {
         title: 'Billing',
-        items: ['Reg. No.: 40008114442', 'AS Swedbank', 'SWIFT: HABALV22', 'IBAN: LV19HABA0551017883565'],
+        items: [
+          'Biedrība "Asnates Jātnieku Sporta Klubs"',
+          'Reg. No.: 40008302784',
+          '"Saime", Pope, Popes parish, Ventspils region, LV-3614',
+          'Bank: SWEDBANK',
+          'Account: LV75HABA0551050198107',
+        ],
       },
       bottom: {
         rights: '© 2025 Asnates JSK. All rights reserved.',
@@ -804,7 +824,7 @@ const translations = {
       description:
         'Наша школа расположена в тихом уголке Вентспилсского края, в волости Варве. Мы будем рады гостям — планируйте визит на автомобиле или договоритесь о трансфере с нашей командой.',
       addressLabel: 'Адрес',
-      address: 'Глужи, волость Варве, Вентспилсский край, Латвия',
+      address: 'Глужи, волость Варве, Вентспилсский край, LV-3623',
       googleCta: 'Открыть в Google Maps',
       appleCta: 'Открыть в Apple Maps',
     },
@@ -813,7 +833,11 @@ const translations = {
         'Добро пожаловать в Asnates JSK — место, где каждый может раскрыть любовь к лошадям и развить спортивные навыки.',
       contacts: {
         title: 'Контакты',
-        items: ['asnatesjsk@inbox.lv', '+371 2 8352881', 'Глужи, волость Варве, Вентспилсский край, Латвия'],
+        items: [
+          'asnatesjsk@inbox.lv',
+          '+371 2 8352881',
+          'Глужи, волость Варве, Вентспилсский край, LV-3623',
+        ],
       },
       services: {
         title: 'Услуги',
@@ -826,7 +850,13 @@ const translations = {
       },
       billing: {
         title: 'Реквизиты',
-        items: ['Рег. №: 40008114442', 'AS Swedbank', 'SWIFT: HABALV22', 'IBAN: LV19HABA0551017883565'],
+        items: [
+          'Biedrība "Asnates Jātnieku Sporta Klubs"',
+          'Рег. №: 40008302784',
+          '"Saime", Pope, волость Попе, Вентспилсский край, LV-3614',
+          'Банк: SWEDBANK',
+          'Счёт: LV75HABA0551050198107',
+        ],
       },
       bottom: {
         rights: '© 2025 Asnates JSK. Все права защищены.',
