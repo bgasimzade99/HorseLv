@@ -115,9 +115,9 @@ const galleryImages = [
 ]
 
 const GOOGLE_MAPS_EMBED_URL =
-  'https://www.google.com/maps?q=Glu%C5%BEi,+V%C4%81rves+pag.,+Ventspils+nov.,+Latvia&output=embed'
+  'https://www.google.com/maps?q=57.357472,21.537444&output=embed'
 const GOOGLE_MAPS_DIRECTIONS_URL =
-  'https://www.google.com/maps/place/Glu%C5%BEi,+V%C4%81rves+pag.,+Ventspils+nov.,+Latvia'
+  'https://www.google.com/maps/place/57.357472,21.537444'
 const APPLE_MAPS_DIRECTIONS_URL =
   'https://maps.apple.com/?address=Glu%C5%BEi,%20V%C4%81rves%20pag.,%20Latvia&auid=6050258041662745356&ll=57.357617,21.537482&lsp=6489&q=Glu%C5%BEi&_ext=EiYpcNTANjOtTEAxHHBcsnaHNUA57qnmklmuTEBBfvDbJLqLNUBQBA%3D%3D&t=m'
 const translations = {

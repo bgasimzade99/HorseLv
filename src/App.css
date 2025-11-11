@@ -127,7 +127,7 @@
 }
 
 .announcement {
-  background: linear-gradient(120deg, rgba(209, 141, 66, 0.08), rgba(242, 196, 99, 0.2));
+  background: linear-gradient(120deg, rgba(64, 224, 208, 0.18), rgba(0, 150, 160, 0.32));
   font-size: 0.85rem;
 }
 
@@ -196,7 +196,7 @@
 .announcement {
   position: relative;
   z-index: 2;
-  background: linear-gradient(120deg, rgba(209, 141, 66, 0.08), rgba(242, 196, 99, 0.2));
+  background: linear-gradient(120deg, rgba(64, 224, 208, 0.18), rgba(0, 150, 160, 0.32));
   font-size: 0.85rem;
 }
 
