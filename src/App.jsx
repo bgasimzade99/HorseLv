@@ -1281,27 +1281,22 @@ function App() {
                     <a className="btn btn--outline nav-menu-cta__button" href="#booking" onClick={closeMenu}>
                       {t.navCta}
                     </a>
+                    <div className="nav-language-flags">
+                      {languageOrder.map((code) => (
+                        <button
+                          key={code}
+                          type="button"
+                          className={`nav-language-flag nav-language-flag--${code} ${selectedLanguage === code ? 'is-active' : ''}`}
+                          onClick={() => setSelectedLanguage(code)}
+                          aria-label={`Switch to ${t.languages[code]}`}
+                          title={t.languages[code]}
+                        >
+                        </button>
+                      ))}
+                    </div>
                   </li>
                 )}
               </ul>
-              {isMobile && (
-                <div className="nav-language-flags">
-                  {languageOrder.map((code) => (
-                    <button
-                      key={code}
-                      type="button"
-                      className={`nav-language-flag ${selectedLanguage === code ? 'is-active' : ''}`}
-                      onClick={() => setSelectedLanguage(code)}
-                      aria-label={`Switch to ${t.languages[code]}`}
-                      title={t.languages[code]}
-                    >
-                      {code === 'lv' && '🇱🇻'}
-                      {code === 'en' && '🇬🇧'}
-                      {code === 'ru' && '🇷🇺'}
-                    </button>
-                  ))}
-                </div>
-              )}
               {!isMobile && (
                 <div className="nav-controls">
                   <div
