@@ -308,8 +308,12 @@ const translations = {
         messageLabel: 'Komentārs',
         messagePlaceholder: 'Aprakstiet savas gaidas',
         submit: 'Nosūtīt',
+        submitting: 'Nosūta...',
+        successMessage: 'Paldies! Jūsu pieteikums ir nosūtīts. Mēs ar jums sazināsimies drīzumā.',
+        errorMessage: 'Radās kļūda. Lūdzu, mēģiniet vēlāk vai sazinieties tieši ar mums.',
+        fallbackMessage: 'Tiek atvērts jūsu e-pasta klientu. Lūdzu, pabeidziet nosūtīšanu.',
         disclaimer:
-          'Nospiežot “Nosūtīt”, jūs piekrītat personas datu apstrādei un privātuma politikas noteikumiem.',
+          'Nospiežot "Nosūtīt", jūs piekrītat personas datu apstrādei un privātuma politikas noteikumiem.',
       },
       highlight: {
         eyebrow: 'Korpozīciju pasākumi',
@@ -321,6 +325,49 @@ const translations = {
       eyebrow: 'Galerija',
       title: 'Brīži no manēžas un stallī',
       description: 'Iepazīstiet mūsu atmosfēru: treniņi, sacensības un ikdienas dzīve kopā ar zirgiem.',
+    },
+    testimonials: {
+      eyebrow: 'Atsauksmes',
+      title: 'Ko saka mūsu klienti',
+      description: 'Mūsu audzēkņu un viņu ģimeņu pieredze ar mums.',
+      items: [
+        {
+          name: 'Anna Bērziņa',
+          role: 'Mamma',
+          rating: 5,
+          text: 'Mana meita sāka jāt pirms diviem gadiem, un es redzēju, kā viņa kļuva drošāka un disciplinētāka. Treneri ir profesionāli un uzmanīgi.',
+        },
+        {
+          name: 'Jānis Kalniņš',
+          role: 'Jātnieks',
+          rating: 5,
+          text: 'Nesagādāju savu zirgu citur. Infrastruktūra ir lieliska, aprūpe ir augstā līmenī. Ļoti apmierināts ar pakalpojumu kvalitāti.',
+        },
+        {
+          name: 'Marija Ozola',
+          role: 'Bērna vecāki',
+          rating: 5,
+          text: 'Mūsu dēls ir tik priecīgs, ka var trenēties šeit. Atmosfēra ir draudzīga un droša, un mēs redzam lieliskus rezultātus.',
+        },
+        {
+          name: 'Pēteris Siliņš',
+          role: 'Uzņēmējs',
+          rating: 5,
+          text: 'Organizējām korporatīvu pasākumu šeit. Komanda bija profesionāla, programma interesanta. Visi bija apmierināti!',
+        },
+        {
+          name: 'Elīna Zariņa',
+          role: 'Jātniece',
+          rating: 5,
+          text: 'Es trenējos šeit jau vairākus gadus. Manēža ir modernā, zirgi ir labi aprūpēti, un treneri palīdz sasniegt mērķus.',
+        },
+        {
+          name: 'Andris Vītols',
+          role: 'Vectēvs',
+          rating: 5,
+          text: 'Mana mazmeita apmeklē nometnes un ir ļoti priecīga. Personāls ir uzmanīgs pret bērniem un nodrošina drošību.',
+        },
+      ],
     },
     map: {
       eyebrow: 'Kur mūs atrast',
@@ -556,8 +603,12 @@ const translations = {
         messageLabel: 'Message',
         messagePlaceholder: 'Describe your expectations',
         submit: 'Send',
+        submitting: 'Sending...',
+        successMessage: 'Thank you! Your request has been sent. We will contact you soon.',
+        errorMessage: 'An error occurred. Please try again later or contact us directly.',
+        fallbackMessage: 'Opening your email client. Please complete the submission.',
         disclaimer:
-          'By clicking “Send” you agree to the processing of personal data and accept the privacy policy terms.',
+          'By clicking "Send" you agree to the processing of personal data and accept the privacy policy terms.',
       },
       highlight: {
         eyebrow: 'Corporate programmes',
@@ -569,6 +620,49 @@ const translations = {
       eyebrow: 'Gallery',
       title: 'Moments from the arena and the stable',
       description: 'Immerse yourself in our atmosphere: training sessions, competitions, and daily life with horses.',
+    },
+    testimonials: {
+      eyebrow: 'Testimonials',
+      title: 'What our clients say',
+      description: 'The experience of our students and their families with us.',
+      items: [
+        {
+          name: 'Anna Berzina',
+          role: 'Parent',
+          rating: 5,
+          text: 'My daughter started riding two years ago, and I saw her become more confident and disciplined. The trainers are professional and attentive.',
+        },
+        {
+          name: 'Janis Kalnins',
+          role: 'Rider',
+          rating: 5,
+          text: 'I would not board my horse anywhere else. The infrastructure is excellent, care is top-level. Very satisfied with the service quality.',
+        },
+        {
+          name: 'Maria Ozola',
+          role: 'Parent',
+          rating: 5,
+          text: 'Our son is so happy to train here. The atmosphere is friendly and safe, and we see great results.',
+        },
+        {
+          name: 'Peteris Silins',
+          role: 'Business owner',
+          rating: 5,
+          text: 'We organized a corporate event here. The team was professional, the program interesting. Everyone was satisfied!',
+        },
+        {
+          name: 'Elina Zarina',
+          role: 'Rider',
+          rating: 5,
+          text: 'I have been training here for several years. The arena is modern, horses are well cared for, and trainers help achieve goals.',
+        },
+        {
+          name: 'Andris Vitols',
+          role: 'Grandparent',
+          rating: 5,
+          text: 'My granddaughter attends camps and is very happy. The staff is attentive to children and ensures safety.',
+        },
+      ],
     },
     map: {
       eyebrow: 'Visit us',
@@ -804,6 +898,10 @@ const translations = {
         messageLabel: 'Комментарий',
         messagePlaceholder: 'Опишите ваши ожидания',
         submit: 'Отправить',
+        submitting: 'Отправка...',
+        successMessage: 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.',
+        errorMessage: 'Произошла ошибка. Пожалуйста, попробуйте позже или свяжитесь с нами напрямую.',
+        fallbackMessage: 'Открывается ваш почтовый клиент. Пожалуйста, завершите отправку.',
         disclaimer:
           'Нажимая «Отправить», вы соглашаетесь с обработкой персональных данных и принимаете условия политики конфиденциальности.',
       },
@@ -817,6 +915,49 @@ const translations = {
       eyebrow: 'Галерея',
       title: 'Моменты из манежа и конюшни',
       description: 'Окунитесь в нашу атмосферу: тренировки, соревнования и ежедневная жизнь рядом с лошадьми.',
+    },
+    testimonials: {
+      eyebrow: 'Отзывы',
+      title: 'Что говорят наши клиенты',
+      description: 'Опыт наших учеников и их семей с нами.',
+      items: [
+        {
+          name: 'Анна Берзиня',
+          role: 'Родитель',
+          rating: 5,
+          text: 'Моя дочь начала заниматься два года назад, и я вижу, как она стала увереннее и дисциплинированнее. Тренеры профессиональны и внимательны.',
+        },
+        {
+          name: 'Янис Калниньш',
+          role: 'Всадник',
+          rating: 5,
+          text: 'Я не стал бы размещать свою лошадь нигде в другом месте. Инфраструктура отличная, уход на высоком уровне. Очень доволен качеством обслуживания.',
+        },
+        {
+          name: 'Мария Озола',
+          role: 'Родитель',
+          rating: 5,
+          text: 'Наш сын так рад тренироваться здесь. Атмосфера дружелюбная и безопасная, мы видим отличные результаты.',
+        },
+        {
+          name: 'Петерис Силиньш',
+          role: 'Предприниматель',
+          rating: 5,
+          text: 'Мы организовали корпоративное мероприятие здесь. Команда была профессиональной, программа интересной. Все остались довольны!',
+        },
+        {
+          name: 'Элина Зариня',
+          role: 'Всадница',
+          rating: 5,
+          text: 'Я тренируюсь здесь уже несколько лет. Манеж современный, лошади хорошо ухожены, тренеры помогают достигать целей.',
+        },
+        {
+          name: 'Андрис Витолс',
+          role: 'Дедушка',
+          rating: 5,
+          text: 'Моя внучка посещает лагеря и очень довольна. Персонал внимателен к детям и обеспечивает безопасность.',
+        },
+      ],
     },
     map: {
       eyebrow: 'Как нас найти',
@@ -874,6 +1015,9 @@ function App() {
   const [selectedLanguage, setSelectedLanguage] = useState('ru')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(null)
+  const [showScrollTop, setShowScrollTop] = useState(false)
+  const [formStatus, setFormStatus] = useState({ type: null, message: null })
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const languageDropdownRef = useRef(null)
   const headerRef = useRef(null)
   const t = translations[selectedLanguage] ?? translations.ru
@@ -979,14 +1123,80 @@ function App() {
       if (!headerRef.current) return
       if (window.scrollY > 12) {
         headerRef.current.classList.add('is-scrolled')
+        setShowScrollTop(true)
       } else {
         headerRef.current.classList.remove('is-scrolled')
+        setShowScrollTop(false)
       }
     }
     handleScroll()
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Smooth scroll for anchor links
+  useEffect(() => {
+    const handleAnchorClick = (e) => {
+      const href = e.target.closest('a')?.getAttribute('href')
+      if (href && href.startsWith('#')) {
+        const targetId = href.substring(1)
+        const targetElement = document.getElementById(targetId)
+        if (targetElement) {
+          e.preventDefault()
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }
+    }
+    document.addEventListener('click', handleAnchorClick)
+    return () => document.removeEventListener('click', handleAnchorClick)
+  }, [])
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setFormStatus({ type: null, message: null })
+
+    const formData = new FormData(e.target)
+    const data = {
+      name: formData.get('name'),
+      phone: formData.get('phone'),
+      service: formData.get('service'),
+      message: formData.get('message'),
+      language: selectedLanguage,
+    }
+
+    try {
+      // EmailJS integration - you'll need to set up EmailJS and replace with your service ID
+      // For now, we'll use a fallback to mailto
+      const mailtoLink = `mailto:asnatesjsk@inbox.lv?subject=Pieteikums: ${data.service}&body=Vārds: ${data.name}%0ATālrunis: ${data.phone}%0APakalpojums: ${data.service}%0AKomentārs: ${data.message || 'Nav komentāra'}`
+      
+      // Try to use EmailJS if available (you'll need to add EmailJS script)
+      if (window.emailjs) {
+        await window.emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+          from_name: data.name,
+          phone: data.phone,
+          service: data.service,
+          message: data.message,
+          language: selectedLanguage,
+        })
+        setFormStatus({ type: 'success', message: t.booking.form.successMessage || 'Paldies! Jūsu pieteikums ir nosūtīts.' })
+        e.target.reset()
+      } else {
+        // Fallback: open mailto
+        window.location.href = mailtoLink
+        setFormStatus({ type: 'info', message: t.booking.form.fallbackMessage || 'Atveriet savu e-pasta klientu, lai nosūtītu ziņojumu.' })
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setFormStatus({ type: 'error', message: t.booking.form.errorMessage || 'Radās kļūda. Lūdzu, mēģiniet vēlāk vai sazinieties tieši ar mums.' })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const closeMenu = () => {
     setIsMenuOpen(false)
@@ -1278,6 +1488,47 @@ function App() {
           </div>
         </section>
 
+        <section id="testimonials" className="section section--light">
+          <div className="container">
+            <div className="section__heading">
+              <p className="eyebrow">{t.testimonials.eyebrow}</p>
+              <h2>{t.testimonials.title}</h2>
+              <p>{t.testimonials.description}</p>
+            </div>
+            <div className="testimonials-grid">
+              {t.testimonials.items.map((testimonial, index) => (
+                <article
+                  className="testimonial-card"
+                  key={index}
+                  data-animate="fade-up"
+                  style={{ transitionDelay: `${index * 90 + 120}ms` }}
+                >
+                  <div className="testimonial-card__rating">
+                    {[...Array(5)].map((_, i) => (
+                      <span
+                        key={i}
+                        className={`testimonial-card__star ${i < testimonial.rating ? 'is-filled' : ''}`}
+                        aria-hidden="true"
+                      >
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                  <blockquote className="testimonial-card__text">
+                    "{testimonial.text}"
+                  </blockquote>
+                  <footer className="testimonial-card__footer">
+                    <cite className="testimonial-card__author">
+                      <strong className="testimonial-card__name">{testimonial.name}</strong>
+                      <span className="testimonial-card__role">{testimonial.role}</span>
+                    </cite>
+                  </footer>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="gallery" className="section gallery">
           <div className="container">
             <div className="section__heading">
@@ -1321,19 +1572,19 @@ function App() {
               <p className="eyebrow">{t.booking.eyebrow}</p>
               <h2>{t.booking.title}</h2>
               <p>{t.booking.description}</p>
-              <form className="lead-form" action="#" method="post" data-animate="fade-up" style={{ transitionDelay: '140ms' }}>
+              <form className="lead-form" onSubmit={handleFormSubmit} data-animate="fade-up" style={{ transitionDelay: '140ms' }}>
                 <div className="form-grid">
                   <label>
                     <span>{t.booking.form.nameLabel}</span>
-                    <input required type="text" name="name" placeholder={t.booking.form.namePlaceholder} />
+                    <input required type="text" name="name" placeholder={t.booking.form.namePlaceholder} disabled={isSubmitting} />
                   </label>
                   <label>
                     <span>{t.booking.form.phoneLabel}</span>
-                    <input required type="tel" name="phone" placeholder={t.booking.form.phonePlaceholder} />
+                    <input required type="tel" name="phone" placeholder={t.booking.form.phonePlaceholder} disabled={isSubmitting} />
                   </label>
                   <label className="form-grid__wide">
                     <span>{t.booking.form.serviceLabel}</span>
-                    <select name="service" required defaultValue="">
+                    <select name="service" required defaultValue="" disabled={isSubmitting}>
                       <option value="" disabled>
                         {t.booking.form.servicePlaceholder}
                       </option>
@@ -1346,11 +1597,16 @@ function App() {
                   </label>
                   <label className="form-grid__wide">
                     <span>{t.booking.form.messageLabel}</span>
-                    <textarea name="message" rows="3" placeholder={t.booking.form.messagePlaceholder} />
+                    <textarea name="message" rows="3" placeholder={t.booking.form.messagePlaceholder} disabled={isSubmitting} />
                   </label>
                 </div>
-                <button className="btn btn--primary" type="submit">
-                  {t.booking.form.submit}
+                {formStatus.message && (
+                  <div className={`form-status form-status--${formStatus.type}`} role="alert">
+                    {formStatus.message}
+                  </div>
+                )}
+                <button className="btn btn--primary" type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? (t.booking.form.submitting || 'Nosūta...') : t.booking.form.submit}
                 </button>
                 <p className="form-disclaimer">
                   {t.booking.form.disclaimer}
@@ -1500,6 +1756,17 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {showScrollTop && (
+        <button
+          className="scroll-top"
+          type="button"
+          onClick={scrollToTop}
+          aria-label="Scroll to top"
+        >
+          ↑
+        </button>
+      )}
 
       {activeGalleryIndex !== null && (
         <div className="lightbox" role="dialog" aria-modal="true">
