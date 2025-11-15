@@ -1284,49 +1284,67 @@ function App() {
                   </li>
                 )}
               </ul>
-              <div className="nav-controls">
-                <div
-                  className={`language-switcher ${isLanguageOpen ? 'is-open' : ''}`}
-                  ref={languageDropdownRef}
-                >
-                  <button
-                    className="language-switcher__button"
-                    type="button"
-                    aria-haspopup="listbox"
-                    aria-expanded={isLanguageOpen}
-                    onClick={(event) => {
-                      event.stopPropagation()
-                      setIsLanguageOpen((prev) => !prev)
-                    }}
-                  >
-                    {t.languages[selectedLanguage]}
-                    <span aria-hidden="true" className="language-switcher__chevron" />
-                  </button>
-                  <ul className="language-switcher__list" role="listbox">
-                    {languageOrder.map((code) => (
-                      <li key={code}>
-                        <button
-                          type="button"
-                          role="option"
-                          aria-selected={selectedLanguage === code}
-                          onClick={(event) => {
-                            event.stopPropagation()
-                            setSelectedLanguage(code)
-                            setIsLanguageOpen(false)
-                          }}
-                        >
-                          {t.languages[code]}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
+              {isMobile && (
+                <div className="nav-language-flags">
+                  {languageOrder.map((code) => (
+                    <button
+                      key={code}
+                      type="button"
+                      className={`nav-language-flag ${selectedLanguage === code ? 'is-active' : ''}`}
+                      onClick={() => setSelectedLanguage(code)}
+                      aria-label={`Switch to ${t.languages[code]}`}
+                      title={t.languages[code]}
+                    >
+                      {code === 'lv' && '🇱🇻'}
+                      {code === 'en' && '🇬🇧'}
+                      {code === 'ru' && '🇷🇺'}
+                    </button>
+                  ))}
                 </div>
-                {!isMobile && (
+              )}
+              {!isMobile && (
+                <div className="nav-controls">
+                  <div
+                    className={`language-switcher ${isLanguageOpen ? 'is-open' : ''}`}
+                    ref={languageDropdownRef}
+                  >
+                    <button
+                      className="language-switcher__button"
+                      type="button"
+                      aria-haspopup="listbox"
+                      aria-expanded={isLanguageOpen}
+                      onClick={(event) => {
+                        event.stopPropagation()
+                        setIsLanguageOpen((prev) => !prev)
+                      }}
+                    >
+                      {t.languages[selectedLanguage]}
+                      <span aria-hidden="true" className="language-switcher__chevron" />
+                    </button>
+                    <ul className="language-switcher__list" role="listbox">
+                      {languageOrder.map((code) => (
+                        <li key={code}>
+                          <button
+                            type="button"
+                            role="option"
+                            aria-selected={selectedLanguage === code}
+                            onClick={(event) => {
+                              event.stopPropagation()
+                              setSelectedLanguage(code)
+                              setIsLanguageOpen(false)
+                            }}
+                          >
+                            {t.languages[code]}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <a className="btn btn--outline nav-cta" href="#booking">
                     {t.navCta}
                   </a>
-                )}
-              </div>
+                </div>
+              )}
             </nav>
           </div>
           <button
