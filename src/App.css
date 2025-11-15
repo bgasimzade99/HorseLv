@@ -2362,7 +2362,43 @@
     display: inline-flex;
     z-index: 10002;
     position: relative;
-    padding: 0.5rem;
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    border: 2px solid rgba(31, 41, 51, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  .nav-toggle:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-toggle__line {
+    background: #1f2933;
+    width: 1.85rem;
+    height: 2.5px;
+  }
+
+  .site-header.is-open .nav-toggle,
+  .page--menu-open .site-header .nav-toggle {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .site-header.is-open .nav-toggle__line,
+  .page--menu-open .site-header .nav-toggle__line {
+    background: #1f2933 !important;
+  }
+
+  .site-header.is-open .nav-toggle.is-open .nav-toggle__line {
+    background: #1f2933 !important;
+  }
+
+  .site-header.is-open .nav-toggle:hover {
+    background: #ffffff !important;
   }
 
   .page--menu-open {
@@ -2470,19 +2506,13 @@
     display: none;
   }
 
-  .nav-controls {
-    width: 100%;
-    margin: 0 0 1rem;
-    padding: 0;
+  .nav-menu-cta {
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .nav-actions {
-    width: 100%;
-    margin-top: auto;
-    padding-top: 0;
-  }
-
-  .nav-cta {
+  .nav-menu-cta__button {
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -2491,12 +2521,20 @@
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #f8fafc;
+    text-align: center;
   }
 
-  .nav-cta:hover {
+  .nav-menu-cta__button:hover {
     background: rgba(255, 255, 255, 0.12);
     border-color: rgba(255, 255, 255, 0.25);
     color: #f2c463;
+  }
+
+  .nav-controls {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .language-switcher {

@@ -1018,10 +1018,20 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const [formStatus, setFormStatus] = useState({ type: null, message: null })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
   const scrollPositionRef = useRef(0)
   const languageDropdownRef = useRef(null)
   const headerRef = useRef(null)
   const t = translations[selectedLanguage] ?? translations.ru
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 960)
+    }
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -1266,6 +1276,13 @@ function App() {
                     </a>
                   </li>
                 ))}
+                {isMobile && (
+                  <li className="nav-menu-cta">
+                    <a className="btn btn--outline nav-menu-cta__button" href="#booking" onClick={closeMenu}>
+                      {t.navCta}
+                    </a>
+                  </li>
+                )}
               </ul>
               <div className="nav-controls">
                 <div
@@ -1304,11 +1321,11 @@ function App() {
                     ))}
                   </ul>
                 </div>
-              </div>
-              <div className="nav-actions">
-                <a className="btn btn--outline nav-cta" href="#booking" onClick={closeMenu}>
-                  {t.navCta}
-                </a>
+                {!isMobile && (
+                  <a className="btn btn--outline nav-cta" href="#booking">
+                    {t.navCta}
+                  </a>
+                )}
               </div>
             </nav>
           </div>
