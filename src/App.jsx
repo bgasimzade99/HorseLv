@@ -1018,6 +1018,7 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const [formStatus, setFormStatus] = useState({ type: null, message: null })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const scrollPositionRef = useRef(0)
   const languageDropdownRef = useRef(null)
   const headerRef = useRef(null)
   const t = translations[selectedLanguage] ?? translations.ru
@@ -1052,6 +1053,9 @@ function App() {
 
   useEffect(() => {
     if (activeGalleryIndex !== null) {
+      // Save scroll position before opening lightbox
+      scrollPositionRef.current = window.pageYOffset || document.documentElement.scrollTop
+      
       const handleKeydown = (event) => {
         if (event.key === 'Escape') {
           setActiveGalleryIndex(null)
@@ -1066,10 +1070,14 @@ function App() {
         }
       }
       document.body.classList.add('no-scroll')
+      document.body.style.top = `-${scrollPositionRef.current}px`
       window.addEventListener('keydown', handleKeydown)
       return () => {
         window.removeEventListener('keydown', handleKeydown)
         document.body.classList.remove('no-scroll')
+        document.body.style.top = ''
+        // Restore scroll position after closing lightbox
+        window.scrollTo(0, scrollPositionRef.current)
       }
     }
     return undefined
@@ -1296,6 +1304,8 @@ function App() {
                     ))}
                   </ul>
                 </div>
+              </div>
+              <div className="nav-actions">
                 <a className="btn btn--outline nav-cta" href="#booking" onClick={closeMenu}>
                   {t.navCta}
                 </a>
@@ -1783,7 +1793,13 @@ function App() {
           <button
             type="button"
             className="lightbox__close"
-            onClick={() => setActiveGalleryIndex(null)}
+            onClick={() => {
+              setActiveGalleryIndex(null)
+              // Restore scroll position immediately
+              requestAnimationFrame(() => {
+                window.scrollTo(0, scrollPositionRef.current)
+              })
+            }}
             aria-label="Close gallery view"
           >
             ×
