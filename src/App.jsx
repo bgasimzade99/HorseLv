@@ -1023,7 +1023,15 @@ function App() {
   const t = translations[selectedLanguage] ?? translations.ru
 
   useEffect(() => {
-    document.body.classList.toggle('no-scroll', isMenuOpen)
+    if (isMenuOpen) {
+      document.body.classList.add('no-scroll')
+      document.documentElement.classList.add('page--menu-open')
+      document.getElementById('root')?.classList.add('page--menu-open')
+    } else {
+      document.body.classList.remove('no-scroll')
+      document.documentElement.classList.remove('page--menu-open')
+      document.getElementById('root')?.classList.remove('page--menu-open')
+    }
     const handleResize = () => {
       if (window.innerWidth >= 960 && isMenuOpen) {
         setIsMenuOpen(false)
@@ -1033,6 +1041,8 @@ function App() {
     return () => {
       window.removeEventListener('resize', handleResize)
       document.body.classList.remove('no-scroll')
+      document.documentElement.classList.remove('page--menu-open')
+      document.getElementById('root')?.classList.remove('page--menu-open')
     }
   }, [isMenuOpen])
 
