@@ -3,49 +3,90 @@ import './App.css'
 import heroSlideOne from './assets/29928c4a071cb4f74476e91a3e43fc85.jpg'
 import heroSlideTwo from './assets/6dc6758e044489ee9d73b2f8deda4c35.jpg'
 import heroSlideThree from './assets/c94173562472c9c29813b9cba7c8d8e2.jpg'
-import galleryImageIndoor from './assets/481007477_1037131591768619_8146029210013551240_n.jpg'
-import galleryImageArena from './assets/481710442_1038078748340570_3768271913350946832_n.jpg'
-import galleryImageAwards from './assets/482069166_1042713017877143_1166654843613532211_n.jpg'
 import galleryImageOutdoor from './assets/503440501_1109185541229890_1560595072047730165_n.jpg'
 import logoEmblem from './assets/bgfree.jpg'
 import galleryImagePortrait from './assets/mainana.jpg'
 import galleryImageCup from './assets/kupa.jpg'
+import galleryImageKuboku from './assets/kuboku.jpg'
 import galleryImageLfc from './assets/lfc.jpg'
+import galleryImagePicss from './assets/picss.jpg'
+import galleryImageKids from './assets/kids.jpg'
 import galleryImageCfc from './assets/cfc.jpg'
 import galleryImageTrt from './assets/trt.jpg'
+import galleryImageFestival from './assets/festival.jpg'
 
 const heroSlides = [heroSlideOne, heroSlideTwo, heroSlideThree]
 const galleryImages = [
   {
-    src: galleryImageIndoor,
+    src: galleryImageLfc,
     caption: {
-      lv: 'Individuāls darbs ar treneri manēžā',
-      en: 'One-on-one coaching inside the arena',
-      ru: 'Индивидуальное занятие с тренером в манеже',
+      lv: 'LJF rudens sacensības',
+      en: 'LJF Autumn Competition',
+      ru: 'Осенние соревнования LJF',
+    },
+    date: {
+      lv: '01.11.2025',
+      en: '1st November 2025',
+      ru: '1 ноября 2025',
+    },
+    fullDescription: {
+      lv: 'Nataļja Žubure ar Kandavu: 5. vieta 80cm poniju maršrutā, 1. vieta 80cm atklātajā maršrutā starp 44 dalībniekiem.',
+      en: 'Nataļja Žubure with Kandava: 5th place in 80cm pony route, 1st place in 80cm open route among 44 participants.',
+      ru: 'Наталия Жубуре с Кандавой: 5-е место в маршруте 80см для пони, 1-е место в открытом маршруте 80см среди 44 участников.',
     },
   },
   {
-    src: galleryImageArena,
+    src: galleryImageKids,
     caption: {
-      lv: 'Sacensību atmosfēra Jauno jātnieku skolā',
-      en: 'Competition atmosphere at the school',
-      ru: 'Соревновательная атмосфера в школе',
+      lv: 'JSK Montepals rudens sacensības',
+      en: 'JSK Montepals Autumn Competition',
+      ru: 'Осенние соревнования JSK Montepals',
+    },
+    date: {
+      lv: '11.10.2025',
+      en: '11th October 2025',
+      ru: '11 октября 2025',
+    },
+    fullDescription: {
+      lv: 'Rezultāti: 4. vieta Pārsla Balode ar Neo 50/60cm. Bez soda punktiem: Amēlija Roze Pētersone, Anna Bunclere, Natālija Žubure. 3. vieta Rebeka Grīniņa ar Sansu 60/80cm.',
+      en: 'Results: 4th place Pārsla Balode with Neo 50/60cm. Without penalty points: Amēlija Roze Pētersone, Anna Bunclere, Natālija Žubure. 3rd place Rebeka Grīniņa with Sans 60/80cm.',
+      ru: 'Результаты: 4-е место Парсла Балоде с Нео 50/60см. Без штрафных очков: Амелия Розе Петерсоне, Анна Бунцлере, Наталия Жубуре. 3-е место Ребека Грининя с Сансом 60/80см.',
     },
   },
   {
-    src: galleryImageAwards,
+    src: galleryImageCfc,
     caption: {
-      lv: 'Apbalvošana un prieks par sasniegumiem',
-      en: 'Award ceremony celebrating achievements',
-      ru: 'Награждение и радость от побед',
+      lv: 'Jauniešu kauss 2025',
+      en: 'Young Riders Cup 2025',
+      ru: 'Кубок молодых всадников 2025',
+    },
+    date: {
+      lv: '2025',
+      en: '2025',
+      ru: '2025',
+    },
+    fullDescription: {
+      lv: 'Trešās dienas rezultāti: 6. vieta Pārsla Balode ar Neo 50cm. 1. vieta Natālija Žubure ar Kandavu un 3. vieta Marta Lāma ar Sidabras 75cm. 2. vieta Natālijai 90cm. 1. vieta Rēzija Ēce ar Katalīnu 90cm. Kopvērtējumā: 1. Bille Pušinska, 2. Lauma Saide, 3. Marta Lāma, 4. Natālija Žubure.',
+      en: 'Third day results: 6th place Pārsla Balode with Neo 50cm. 1st place Natālija Žubure with Kandava and 3rd place Marta Lāma with Sidabras 75cm. 2nd place Natālija 90cm. 1st place Rēzija Ēce with Katalīna 90cm. Overall: 1st Bille Pušinska, 2nd Lauma Saide, 3rd Marta Lāma, 4th Natālija Žubure.',
+      ru: 'Результаты третьего дня: 6-е место Парсла Балоде с Нео 50см. 1-е место Наталия Жубуре с Кандавой и 3-е место Марта Лама с Сидабрас 75см. 2-е место Наталии 90см. 1-е место Резия Эце с Каталиной 90см. Общий зачет: 1-е Билле Пушинска, 2-е Лаума Сайде, 3-е Марта Лама, 4-е Наталия Жубуре.',
     },
   },
   {
-    src: heroSlideOne,
+    src: galleryImageKuboku,
     caption: {
-      lv: 'Jātnieks gatavojas startam manēžā',
-      en: 'Rider preparing for an arena start',
-      ru: 'Всадник готовится к старту в манеже',
+      lv: 'Jauniešu kauss 2025 - 2. diena',
+      en: 'Young Riders Cup 2025 - Day 2',
+      ru: 'Кубок молодых всадников 2025 - День 2',
+    },
+    date: {
+      lv: '20.09.2025',
+      en: '20th September 2025',
+      ru: '20 сентября 2025',
+    },
+    fullDescription: {
+      lv: '2. dienas rezultāti: 70cm maršrutā 1. vieta Natālija Žubure ar Kandavu, 2. vieta Marta Lāma ar Sidabras. 80cm maršrutā 3. vieta Marta ar Sidabras, 5. vieta Natālija ar Kandavu. Rēzija Ēce ar Katalīnu pirmo reiz 105/110cm maršrutā - apsveicams rezultāts.',
+      en: 'Day 2 results: 70cm route 1st place Natālija Žubure with Kandava, 2nd place Marta Lāma with Sidabras. 80cm route 3rd place Marta with Sidabras, 5th place Natālija with Kandava. Rēzija Ēce with Katalīna first time in 105/110cm route - commendable result.',
+      ru: 'Результаты 2-го дня: маршрут 70см 1-е место Наталия Жубуре с Кандавой, 2-е место Марта Лама с Сидабрас. Маршрут 80см 3-е место Марта с Сидабрас, 5-е место Наталия с Кандавой. Резия Эце с Каталиной впервые в маршруте 105/110см - похвальный результат.',
     },
   },
   {
@@ -83,33 +124,73 @@ const galleryImages = [
   {
     src: galleryImageCup,
     caption: {
-      lv: 'Jauno jātnieku kausa trofeja',
-      en: 'Young Riders Cup trophy',
-      ru: 'Трофей Кубка юных всадников',
+      lv: 'Jauniešu kauss 2025 - 1. diena',
+      en: 'Young Riders Cup 2025 - Day 1',
+      ru: 'Кубок молодых всадников 2025 - День 1',
+    },
+    date: {
+      lv: '19.09.2025',
+      en: '19th September 2025',
+      ru: '19 сентября 2025',
+    },
+    fullDescription: {
+      lv: '1. dienas rezultāti: 2. vieta Pārsla Balode ar Neo krustiņu maršrutā. 1. vieta Marta Lāma ar Sidabras 60/70cm. 2. vieta Natālija Žubure ar Kandava. 1. vieta Natālijai ar Kandavu 80/90cm. 5. vieta Marta Lāma ar Sidabras. 1. vieta Rēzija Ēce ar Katalīnu 80/90cm.',
+      en: 'Day 1 results: 2nd place Pārsla Balode with Neo in cross route. 1st place Marta Lāma with Sidabras 60/70cm. 2nd place Natālija Žubure with Kandava. 1st place Natālija with Kandava 80/90cm. 5th place Marta Lāma with Sidabras. 1st place Rēzija Ēce with Katalīna 80/90cm.',
+      ru: 'Результаты 1-го дня: 2-е место Парсла Балоде с Нео в маршруте с крестами. 1-е место Марта Лама с Сидабрас 60/70см. 2-е место Наталия Жубуре с Кандавой. 1-е место Наталии с Кандавой 80/90см. 5-е место Марта Лама с Сидабрас. 1-е место Резия Эце с Каталиной 80/90см.',
     },
   },
   {
-    src: galleryImageLfc,
+    src: galleryImagePicss,
     caption: {
-      lv: 'Komandas kopbilde pēc uzvaras',
-      en: 'Team photo after victory',
-      ru: 'Командное фото после победы',
+      lv: 'Fotosesija',
+      en: 'Photoshoot',
+      ru: 'Фотосессия',
+    },
+    date: {
+      lv: '2025',
+      en: '2025',
+      ru: '2025',
+    },
+    fullDescription: {
+      lv: 'Profesionāla fotosesija ar zirgiem un jātniekiem. Individuālas un ģimenes fotosesijas, komerciālie projekti un portreti.',
+      en: 'Professional photoshoots with horses and riders. Individual and family sessions, commercial projects, and portraits.',
+      ru: 'Профессиональная фотосессия с лошадьми и всадниками. Индивидуальные и семейные фотосессии, коммерческие проекты и портреты.',
     },
   },
   {
-    src: galleryImageCfc,
+    src: galleryImageFestival,
     caption: {
-      lv: 'Partneru un atbalstītāju godināšana',
-      en: 'Honouring partners and supporters',
-      ru: 'Отмечаем партнёров и друзей школы',
+      lv: 'Bērnu svētki Ventspils bērnu pilsētiņā',
+      en: 'Children\'s Festival in Ventspils Children\'s Town',
+      ru: 'Детский праздник в Детском городке Вентспилса',
+    },
+    date: {
+      lv: '2025',
+      en: '2025',
+      ru: '2025',
+    },
+    fullDescription: {
+      lv: 'Bērnu svētkos, Ventspils bērnu pilsētiņā!',
+      en: 'At the Children\'s Festival in Ventspils Children\'s Town!',
+      ru: 'На детском празднике в Детском городке Вентспилса!',
     },
   },
   {
     src: galleryImageTrt,
     caption: {
-      lv: 'Treniņš pie jūras saullēktā',
-      en: 'Sunrise training by the sea',
-      ru: 'Тренировка у моря на рассвете',
+      lv: 'Izjāde ar zirgiem uz jūru',
+      en: 'Horseback riding to the sea',
+      ru: 'Верховая прогулка к морю',
+    },
+    date: {
+      lv: '2025',
+      en: '2025',
+      ru: '2025',
+    },
+    fullDescription: {
+      lv: 'Iedāvājam izjādes ar zirgiem uz jūru! Mierpilna izjāde cauri mežam līdz jūras krastam. Iekļauts: 1-2h izjāde, pieredzējuši zirgi, profesionāls pavadonis, drošības instrukcija.',
+      en: 'We offer horseback riding to the sea! Peaceful ride through forest to seashore. Included: 1-2h ride, experienced horses, professional guide, safety instructions.',
+      ru: 'Предлагаем верховые прогулки к морю! Спокойная прогулка через лес до морского берега. Включено: прогулка 1-2ч, опытные лошади, профессиональный проводник, инструктаж по безопасности.',
     },
   },
 ]
@@ -133,10 +214,11 @@ const translations = {
     },
     navigation: [
       { href: '#hero', label: 'Sākums' },
-      { href: '#services', label: 'Pakalpojumi' },
       { href: '#about', label: 'Par mums' },
-      { href: '#competitions', label: 'Sacensības' },
+      { href: '#services', label: 'Pakalpojumi' },
       { href: '#prices', label: 'Cenas' },
+      { href: '#gallery', label: 'Galerija' },
+      { href: '#competitions', label: 'Sacensības' },
       { href: '#news', label: 'Jaunumi' },
       { href: '#contacts', label: 'Kontakti' },
     ],
@@ -179,6 +261,12 @@ const translations = {
           title: 'Pasākumi un ekskursijas',
           description:
             'Korpozīciju programmas, ekskursijas pa kompleksu, dāvanu kartes un sezonāli piedzīvojumi visai ģimenei.',
+          cta: 'Uzzināt vairāk',
+        },
+        {
+          title: 'Fotosesija',
+          description:
+            'Profesionāla fotosesija ar zirgiem un jātniekiem. Individuālas un ģimenes fotosesijas, komerciālie projekti un portreti.',
           cta: 'Uzzināt vairāk',
         },
       ],
@@ -428,10 +516,11 @@ const translations = {
     },
     navigation: [
       { href: '#hero', label: 'Home' },
-      { href: '#services', label: 'Services' },
       { href: '#about', label: 'About' },
-      { href: '#competitions', label: 'Competitions' },
+      { href: '#services', label: 'Services' },
       { href: '#prices', label: 'Prices' },
+      { href: '#gallery', label: 'Gallery' },
+      { href: '#competitions', label: 'Competitions' },
       { href: '#news', label: 'News' },
       { href: '#contacts', label: 'Contacts' },
     ],
@@ -474,6 +563,12 @@ const translations = {
           title: 'Events & tours',
           description:
             'Corporate programmes, guided tours, gift cards, and seasonal experiences for the whole family.',
+          cta: 'Learn more',
+        },
+        {
+          title: 'Photoshoot',
+          description:
+            'Professional photoshoots with horses and riders. Individual and family sessions, commercial projects, and portraits.',
           cta: 'Learn more',
         },
       ],
@@ -618,7 +713,7 @@ const translations = {
     },
     gallery: {
       eyebrow: 'Gallery',
-      title: 'Moments from the arena and the stable',
+      title: 'Moments from the stable and Competitions',
       description: 'Immerse yourself in our atmosphere: training sessions, competitions, and daily life with horses.',
     },
     testimonials: {
@@ -670,7 +765,7 @@ const translations = {
       description:
         'Our equestrian campus is nestled in the peaceful Ventspils region of Latvia. Plan your visit easily by car or coordinate group transport with our team.',
       addressLabel: 'Address',
-      address: 'Gluži, Vārve parish, Ventspils municipality, LV-3623',
+      address: 'Gluži, Vārves pagasts, Ventspils novads, LV-3623',
       googleCta: 'Open Google Maps',
       appleCta: 'Open Apple Maps',
     },
@@ -682,7 +777,7 @@ const translations = {
         items: [
           'asnatesjsk@inbox.lv',
           '+371 2 8352881',
-          'Gluži, Vārve parish, Ventspils municipality, LV-3623',
+          'Gluži, Vārves pagasts, Ventspils novads, LV-3623',
         ],
       },
       services: {
@@ -723,10 +818,11 @@ const translations = {
     },
     navigation: [
       { href: '#hero', label: 'Главная' },
-      { href: '#services', label: 'Услуги' },
       { href: '#about', label: 'О нас' },
-      { href: '#competitions', label: 'Соревнования' },
+      { href: '#services', label: 'Услуги' },
       { href: '#prices', label: 'Цены' },
+      { href: '#gallery', label: 'Галерея' },
+      { href: '#competitions', label: 'Соревнования' },
       { href: '#news', label: 'Новости' },
       { href: '#contacts', label: 'Контакты' },
     ],
@@ -769,6 +865,12 @@ const translations = {
           title: 'Мероприятия и экскурсии',
           description:
             'Корпоративные программы, экскурсии по комплексу, подарочные сертификаты и сезонные мероприятия для всей семьи.',
+          cta: 'Подробнее',
+        },
+        {
+          title: 'Фотосессия',
+          description:
+            'Профессиональная фотосессия с лошадьми и всадниками. Индивидуальные и семейные фотосессии, коммерческие проекты и портреты.',
           cta: 'Подробнее',
         },
       ],
@@ -965,7 +1067,7 @@ const translations = {
       description:
         'Наша школа расположена в тихом уголке Вентспилсского края, в волости Варве. Мы будем рады гостям — планируйте визит на автомобиле или договоритесь о трансфере с нашей командой.',
       addressLabel: 'Адрес',
-      address: 'Глужи, волость Варве, Вентспилсский край, LV-3623',
+      address: 'Gluži, Vārves pagasts, Ventspils novads, LV-3623',
       googleCta: 'Открыть в Google Maps',
       appleCta: 'Открыть в Apple Maps',
     },
@@ -977,7 +1079,7 @@ const translations = {
         items: [
           'asnatesjsk@inbox.lv',
           '+371 2 8352881',
-          'Глужи, волость Варве, Вентспилсский край, LV-3623',
+          'Gluži, Vārves pagasts, Ventspils novads, LV-3623',
         ],
       },
       services: {
@@ -1012,7 +1114,7 @@ const languageOrder = ['lv', 'en', 'ru']
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [selectedLanguage, setSelectedLanguage] = useState('ru')
+  const [selectedLanguage, setSelectedLanguage] = useState('lv')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
@@ -1242,18 +1344,55 @@ function App() {
       >
         <div className="announcement">
           <div className="announcement__content container">
-            <span className="announcement__item">
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
-                <path d="M2.5 4.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1V4.5zm2 1V14h9.9l-5.45-5.45a.75.75 0 0 1 1.06-1.06l5.46 5.45V5.5H4.5z" />
-              </svg>
-              <a href="mailto:asnatesjsk@inbox.lv">asnatesjsk@inbox.lv</a>
-            </span>
-            <span className="announcement__item">
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
-                <path d="M5.7 2.7c.2-.4.7-.6 1.1-.4l2.7 1.3c.4.2.6.6.4 1l-1.2 2.7c-.2.4-.6.6-1 .4l-1-.4a11 11 0 0 0 5.2 5.2l-.3-.9c-.2-.4 0-.8.3-1l2.7-1.2c.4-.2.8 0 1 .4l1.3 2.7c.2.4 0 .9-.4 1.1l-2.1 1c-.4.2-.9.2-1.3 0a13.5 13.5 0 0 1-7.4-7.4c-.2-.4-.2-.9 0-1.3l1-2.1z" />
-              </svg>
-              <a href="tel:+37128352881">+371 2 8352881</a>
-            </span>
+            <div className="announcement__social">
+              <a
+                href="https://www.tiktok.com/@asnates_jsk"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="announcement__social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="currentColor"/>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/asnates_jsk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="announcement__social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/asnatesjsk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="announcement__social-link"
+              >
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+            <div className="announcement__contact">
+              <span className="announcement__item">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
+                  <path d="M2.5 4.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1V4.5zm2 1V14h9.9l-5.45-5.45a.75.75 0 0 1 1.06-1.06l5.46 5.45V5.5H4.5z" />
+                </svg>
+                <a href="mailto:asnatesjsk@inbox.lv">asnatesjsk@inbox.lv</a>
+              </span>
+              <span className="announcement__item">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
+                  <path d="M5.7 2.7c.2-.4.7-.6 1.1-.4l2.7 1.3c.4.2.6.6.4 1l-1.2 2.7c-.2.4-.6.6-1 .4l-1-.4a11 11 0 0 0 5.2 5.2l-.3-.9c-.2-.4 0-.8.3-1l2.7-1.2c.4-.2.8 0 1 .4l1.3 2.7c.2.4 0 .9-.4 1.1l-2.1 1c-.4.2-.9.2-1.3 0a13.5 13.5 0 0 1-7.4-7.4c-.2-.4-.2-.9 0-1.3l1-2.1z" />
+                </svg>
+                <a href="tel:+37128352881">+371 2 8352881</a>
+              </span>
+            </div>
           </div>
         </div>
         <div className="nav-bar container">
@@ -1386,32 +1525,6 @@ function App() {
           </div>
         </section>
 
-        <section id="services" className="section section--light">
-          <div className="container">
-            <div className="section__heading">
-              <p className="eyebrow">{t.services.heading.eyebrow}</p>
-              <h2>{t.services.heading.title}</h2>
-              <p>{t.services.heading.description}</p>
-            </div>
-            <div className="service-grid">
-              {t.services.cards.map((card, index) => (
-                <article
-                  className="card"
-                  key={card.title}
-                  data-animate="fade-up"
-                  style={{ transitionDelay: `${index * 90 + 120}ms` }}
-                >
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                  <a className="card__link" href="#booking">
-                    {card.cta}
-                  </a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section id="about" className="section section--split">
           <div className="container section--split__wrapper">
             <div className="section--split__content" data-animate="fade-right">
@@ -1451,30 +1564,25 @@ function App() {
           </div>
         </section>
 
-        <section id="competitions" className="section">
+        <section id="services" className="section section--light">
           <div className="container">
-            <div className="section__heading section__heading--inline">
-              <div>
-                <p className="eyebrow">{t.competitions.heading.eyebrow}</p>
-                <h2>{t.competitions.heading.title}</h2>
-              </div>
-              <a className="btn btn--outline" href="#booking">
-                {t.competitions.heading.cta}
-              </a>
+            <div className="section__heading">
+              <p className="eyebrow">{t.services.heading.eyebrow}</p>
+              <h2>{t.services.heading.title}</h2>
+              <p>{t.services.heading.description}</p>
             </div>
-            <div className="timeline">
-              {t.competitions.timeline.map((item, index) => (
+            <div className="service-grid">
+              {t.services.cards.map((card, index) => (
                 <article
-                  className="timeline__item"
-                  key={item.title}
+                  className="card"
+                  key={card.title}
                   data-animate="fade-up"
-                  style={{ transitionDelay: `${index * 100 + 140}ms` }}
+                  style={{ transitionDelay: `${index * 90 + 120}ms` }}
                 >
-                  <span className="timeline__date">{item.date}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <a className="timeline__link" href="#booking">
-                    {item.cta}
+                  <h3>{card.title}</h3>
+                  <p>{card.description}</p>
+                  <a className="card__link" href="#booking">
+                    {card.cta}
                   </a>
                 </article>
               ))}
@@ -1505,6 +1613,80 @@ function App() {
                   </ul>
                   <a className="btn btn--outline" href="#booking">
                     {card.cta}
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" className="section gallery">
+          <div className="container">
+            <div className="section__heading">
+              <p className="eyebrow">{t.gallery.eyebrow}</p>
+              <h2>{t.gallery.title}</h2>
+              <p>{t.gallery.description}</p>
+            </div>
+            <div className="gallery-grid">
+              {galleryImages.map((image, index) => (
+                <figure
+                  className="gallery-card"
+                  key={image.src}
+                  data-animate="fade-up"
+                  style={{ transitionDelay: `${index * 70 + 100}ms` }}
+                >
+                  <button
+                    type="button"
+                    className="gallery-card__media"
+                    onClick={() => setActiveGalleryIndex(index)}
+                    aria-label={image.caption[selectedLanguage] ?? image.caption.ru}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.caption[selectedLanguage] ?? image.caption.ru}
+                      loading="lazy"
+                    />
+                    <span className="gallery-card__overlay" />
+                  </button>
+                  <figcaption className="gallery-card__caption">
+                    {image.caption[selectedLanguage] ?? image.caption.ru}
+                    {image.date && (
+                      <span className="gallery-card__date">
+                        {' • '}
+                        {image.date[selectedLanguage] ?? image.date.lv}
+                      </span>
+                    )}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="competitions" className="section">
+          <div className="container">
+            <div className="section__heading section__heading--inline">
+              <div>
+                <p className="eyebrow">{t.competitions.heading.eyebrow}</p>
+                <h2>{t.competitions.heading.title}</h2>
+              </div>
+              <a className="btn btn--outline" href="#booking">
+                {t.competitions.heading.cta}
+              </a>
+            </div>
+            <div className="timeline">
+              {t.competitions.timeline.map((item, index) => (
+                <article
+                  className="timeline__item"
+                  key={item.title}
+                  data-animate="fade-up"
+                  style={{ transitionDelay: `${index * 100 + 140}ms` }}
+                >
+                  <span className="timeline__date">{item.date}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <a className="timeline__link" href="#booking">
+                    {item.cta}
                   </a>
                 </article>
               ))}
@@ -1574,43 +1756,6 @@ function App() {
                     </cite>
                   </footer>
                 </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="gallery" className="section gallery">
-          <div className="container">
-            <div className="section__heading">
-              <p className="eyebrow">{t.gallery.eyebrow}</p>
-              <h2>{t.gallery.title}</h2>
-              <p>{t.gallery.description}</p>
-            </div>
-            <div className="gallery-grid">
-              {galleryImages.map((image, index) => (
-                <figure
-                  className="gallery-card"
-                  key={image.src}
-                  data-animate="fade-up"
-                  style={{ transitionDelay: `${index * 70 + 100}ms` }}
-                >
-                  <button
-                    type="button"
-                    className="gallery-card__media"
-                    onClick={() => setActiveGalleryIndex(index)}
-                    aria-label={image.caption[selectedLanguage] ?? image.caption.ru}
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.caption[selectedLanguage] ?? image.caption.ru}
-                      loading="lazy"
-                    />
-                    <span className="gallery-card__overlay" />
-                  </button>
-                  <figcaption className="gallery-card__caption">
-                    {image.caption[selectedLanguage] ?? image.caption.ru}
-                  </figcaption>
-                </figure>
               ))}
             </div>
           </div>
@@ -1849,7 +1994,20 @@ function App() {
               src={galleryImages[activeGalleryIndex].src}
               alt={galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}
             />
-            <figcaption>{galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}</figcaption>
+            <figcaption>
+              <strong>{galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}</strong>
+              {galleryImages[activeGalleryIndex].date && (
+                <span className="lightbox__date">
+                  {' • '}
+                  {galleryImages[activeGalleryIndex].date[selectedLanguage] ?? galleryImages[activeGalleryIndex].date.lv}
+                </span>
+              )}
+              {galleryImages[activeGalleryIndex].fullDescription && (
+                <p className="lightbox__description">
+                  {galleryImages[activeGalleryIndex].fullDescription[selectedLanguage] ?? galleryImages[activeGalleryIndex].fullDescription.lv}
+                </p>
+              )}
+            </figcaption>
           </figure>
           <button
             type="button"
