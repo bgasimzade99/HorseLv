@@ -14,6 +14,7 @@ import galleryImageKids from './assets/kids.jpg'
 import galleryImageCfc from './assets/cfc.jpg'
 import galleryImageTrt from './assets/trt.jpg'
 import galleryImageFestival from './assets/festival.jpg'
+import qshorseImage from './assets/qshorse.png'
 
 const heroSlides = [heroSlideOne, heroSlideTwo, heroSlideThree]
 const galleryImages = [
@@ -224,7 +225,7 @@ const translations = {
     ],
     navCta: 'Pieteikties',
     hero: {
-      eyebrow: 'Asnātes JSK',
+      eyebrow: 'Asnates JSK',
       title: 'Vieta, kur cilvēki satiekas ar zirgiem',
       lead:
         'Mēs veidojam vidi profesionāļiem un iesācējiem: modernas stallis, treniņi ar pieredzējušiem treneriem un Eiropas līmeņa sacensības.',
@@ -459,7 +460,7 @@ const translations = {
     },
     map: {
       eyebrow: 'Kur mūs atrast',
-      title: 'Atrodi Asnātes JSK kartē',
+      title: 'Atrodi Asnates JSK kartē',
       description:
         'Mūsu jātnieku bāze atrodas klusajā Ventspils novada Vārves pagastā. Droši plānojiet vizīti – pie mums ērti nokļūt ar auto vai kopā ar komandu.',
       addressLabel: 'Adrese',
@@ -469,7 +470,7 @@ const translations = {
     },
     footer: {
       intro:
-        'Laipni lūdzam Asnātes JSK — vietā, kur ikviens var atklāt mīlestību pret zirgiem un attīstīt sportiskās prasmes.',
+        'Laipni lūdzam Asnates JSK — vietā, kur ikviens var atklāt mīlestību pret zirgiem un attīstīt sportiskās prasmes.',
       contacts: {
         title: 'Kontakti',
         items: [
@@ -498,7 +499,7 @@ const translations = {
         ],
       },
       bottom: {
-        rights: '© 2025 Asnātes JSK. Visas tiesības aizsargātas.',
+        rights: '© 2025 Asnates JSK. Visas tiesības aizsargātas.',
         privacy: 'Privātuma politika',
         terms: 'Lietošanas noteikumi',
       },
@@ -1809,11 +1810,13 @@ function App() {
               </form>
             </div>
             <div className="section--split__media section--split__media--accent" role="presentation" data-animate="fade-left">
-              <div className="media-card media-card--accent" data-animate="fade-up" style={{ transitionDelay: '200ms' }}>
-                <span className="media-card__eyebrow">{t.booking.highlight.eyebrow}</span>
-                <strong className="media-card__title">{t.booking.highlight.title}</strong>
-                <p className="media-card__text">{t.booking.highlight.text}</p>
-              </div>
+              <img 
+                src={qshorseImage} 
+                alt="Horse" 
+                className="section--split__media-image"
+                data-animate="fade-up"
+                data-animate-delay="200ms"
+              />
             </div>
           </div>
         </section>

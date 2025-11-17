@@ -1361,7 +1361,7 @@
 .section--split__wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 3rem;
+  gap: 4.5rem;
   align-items: center;
 }
 
@@ -1494,6 +1494,100 @@
   display: grid;
   place-items: center;
   gap: 2rem;
+}
+
+.section--split__media--accent {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 28px;
+  margin-left: -3rem;
+}
+
+.section--split__media--accent::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(184, 134, 11, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 60%),
+    linear-gradient(
+      135deg,
+      rgba(184, 134, 11, 0.04) 0%,
+      rgba(212, 175, 55, 0.06) 25%,
+      rgba(184, 134, 11, 0.04) 50%,
+      rgba(212, 175, 55, 0.06) 75%,
+      rgba(184, 134, 11, 0.04) 100%
+    );
+  background-size: 100% 100%, 100% 100%, 100% 100%, 400% 400%;
+  animation: fluidBackground 25s ease-in-out infinite;
+  z-index: 0;
+  border-radius: 28px;
+}
+
+.section--split__media--accent::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(
+      ellipse at 30% 40%,
+      rgba(212, 175, 55, 0.06) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 70% 60%,
+      rgba(184, 134, 11, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 50% 80%,
+      rgba(212, 175, 55, 0.04) 0%,
+      transparent 50%
+    );
+  animation: fluidPulse 15s ease-in-out infinite;
+  z-index: 1;
+  border-radius: 28px;
+  pointer-events: none;
+}
+
+@keyframes fluidBackground {
+  0%, 100% {
+    background-position: 0% 0%, 0% 0%, 0% 0%, 0% 50%;
+  }
+  50% {
+    background-position: 0% 0%, 0% 0%, 0% 0%, 100% 50%;
+  }
+}
+
+@keyframes fluidPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+}
+
+.section--split__media-image {
+  width: 80%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 28px 70px -38px rgba(15, 23, 42, 0.3);
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .media-card {
@@ -2784,10 +2878,26 @@
   .section--split__wrapper,
   .footer__top {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .section--split__media {
     gap: 1.5rem;
+  }
+
+  .section--split__media--accent {
+    padding: 1.5rem;
+    margin-left: 0;
+  }
+
+  .section--split__media--accent::before,
+  .section--split__media--accent::after {
+    animation-duration: 30s, 20s;
+  }
+
+  .section--split__media-image {
+    width: 100%;
+    max-width: 100%;
   }
 
   .map-section__wrapper {
@@ -3099,6 +3209,21 @@
 
 
 @media (max-width: 520px) {
+  .section--split__media--accent {
+    padding: 1rem;
+  }
+
+  .section--split__media--accent::before,
+  .section--split__media--accent::after {
+    animation-duration: 35s, 25s;
+    opacity: 0.6;
+  }
+
+  .section--split__media-image {
+    width: 100%;
+    border-radius: 20px;
+  }
+
   .gallery-card__caption {
     font-size: 0.75rem;
     padding: 0.9rem 1rem 1.2rem;
