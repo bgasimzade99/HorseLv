@@ -14,7 +14,7 @@ import galleryImageKids from './assets/kids.jpg'
 import galleryImageCfc from './assets/cfc.jpg'
 import galleryImageTrt from './assets/trt.jpg'
 import galleryImageFestival from './assets/festival.jpg'
-import qshorseImage from './assets/qshorse.png'
+import atimImage from './assets/atim.png'
 
 const heroSlides = [heroSlideOne, heroSlideTwo, heroSlideThree]
 const galleryImages = [
@@ -1811,7 +1811,7 @@ function App() {
             </div>
             <div className="section--split__media section--split__media--accent" role="presentation" data-animate="fade-left">
               <img 
-                src={qshorseImage} 
+                src={atimImage} 
                 alt="Horse" 
                 className="section--split__media-image"
                 data-animate="fade-up"
