@@ -217,7 +217,6 @@ const translations = {
       { href: '#hero', label: 'Sākums' },
       { href: '#about', label: 'Par mums' },
       { href: '#services', label: 'Pakalpojumi' },
-      { href: '#prices', label: 'Cenas' },
       { href: '#gallery', label: 'Galerija' },
       { href: '#competitions', label: 'Sacensības' },
       { href: '#news', label: 'Jaunumi' },
@@ -253,12 +252,6 @@ const translations = {
           cta: 'Uzzināt vairāk',
         },
         {
-          title: 'Laukumu un manēžu īre',
-          description:
-            'Atklātie un slēgtie laukumi ar profesionālu segumu, apgaismojumu un infrastruktūru sacensību norisei.',
-          cta: 'Uzzināt vairāk',
-        },
-        {
           title: 'Pasākumi un ekskursijas',
           description:
             'Korpozīciju programmas, ekskursijas pa kompleksu, dāvanu kartes un sezonāli piedzīvojumi visai ģimenei.',
@@ -274,21 +267,23 @@ const translations = {
     },
     about: {
       eyebrow: 'Par mums',
-      title: 'Mērķis — kļūt par vadošo jāšanas sporta centru Baltijā',
+      title: 'Asnates Jātnieku Sporta Klubs — profesionāla jāšanas skola',
       body:
-        'Mēs ticam, ka interese par jāšanas sportu sākas ar pirmo satikšanos. Tāpēc apvienojam pieredzējušus trenerus, rūpīgu aprūpi un draudzīgu atmosfēru, lai katrs jātnieks turpinātu attīstīties.',
+        'Asnates JSK ir moderns jāšanas sporta centrs, kas atrodas Ventspils novada Vārves pagastā, Glužos. Mēs piedāvājam pilnvērtīgu jāšanas izglītību bērniem un pieaugušajiem, apvienojot Eiropas līmeņa infrastruktūru, pieredzējušus trenerus un individuālu pieeju katram jātniekam. Mūsu mērķis ir attīstīt gan iesācējus, gan profesionālus sportistus, veidojot drošu un atbalstošu vidi visiem zirgu un jāšanas mīļotājiem.',
       bullets: [
+        'Profesionāla jāšanas skola ar modernu infrastruktūru',
+        'Pieredzējuši un sertificēti treneri',
+        'Individuālas un grupu nodarbības visām vecuma grupām',
         'Nacionālā sporta bāze ar Eiropas standartiem',
-        'Spēcīga treneru un partneru komanda',
-        'Attīstām bērnu un jauniešu programmas',
         'Regulāras sacensības un treniņu nometnes',
+        'Pilnvērtīga zirgu uzturēšana un aprūpe',
       ],
       primaryCta: 'Sazināties',
       secondaryCta: 'Jaunumi',
       mediaCard: {
         eyebrow: 'Kopš 2001. gada',
         title: 'Vairāk nekā 120 absolventu',
-        text: 'Mūsu audzēkņi kļūst par nacionālo un starptautisko čempionātu laureātiem.',
+        text: 'Mūsu audzēkņi kļūst par nacionālo un starptautisko čempionātu laureātiem, pierādot mūsu skolas augsto kvalitāti un profesionālo pieeju.',
       },
     },
     competitions: {
@@ -354,24 +349,24 @@ const translations = {
       },
       items: [
         {
+          date: '25. decembris 2025',
+          title: 'Ziemassvētku labdarības pasākums — jāšanas nodarbības',
+          description:
+            'Pievienojieties mums 25. decembrī īpašajam Ziemassvētku labdarības pasākumam! Organizējam jāšanas nodarbības visai ģimenei, kurās varēsiet izbaudīt brīnišķīgu laiku kopā ar zirgiem un vienlaikus atbalstīt labdarību. Pasākums ir piemērots gan iesācējiem, gan pieredzējušiem jātniekiem.',
+          cta: 'Pieteikties',
+        },
+        {
+          date: '07. decembris 2025',
+          title: 'Asnates JSK 5 gadu jubileja',
+          description:
+            'Svinam īpašu brīdi — Asnates Jātnieku Sporta Kluba 5 gadu jubileju! 7. decembrī aicinām visus draugus, audzēkņus un ģimenes uz svinīgām aktivitātēm, demonstrācijām un īpašām nodarbībām. Kopā atzīmēsim mūsu kopīgo ceļu un sasniegumus!',
+          cta: 'Uzzināt vairāk',
+        },
+        {
           date: '29. aprīlis 2025',
           title: 'Lielā Talka 2025 Jauno jātnieku skolā',
           description:
             '26. aprīlī pulcējām brīvprātīgos un draugus, lai sakoptu teritoriju un pavadītu laiku dabā. Kopā paveicām lielisku darbu!',
-          cta: 'Lasīt vairāk',
-        },
-        {
-          date: '18. jūnijs 2023',
-          title: 'Jauniešu kauss 2023 norisināsies jūnija beigās',
-          description:
-            'Drīzumā startē Jauniešu kausa sezona – sportisti gatavojas jaunām uzvarām un rekordiem.',
-          cta: 'Lasīt vairāk',
-        },
-        {
-          date: '15. jūnijs 2023',
-          title: 'Elegance un komandas gars Iejādes festivālā',
-          description:
-            'Divu dienu garumā vērojām elegantus jātniekus dažādās grūtības pakāpēs – no vieglākajām programmām līdz Grand Prix.',
           cta: 'Lasīt vairāk',
         },
       ],
@@ -484,8 +479,8 @@ const translations = {
         items: [
           { label: 'Zirgu uzturēšana', href: '#services' },
           { label: 'Jāšanas treniņi', href: '#services' },
-          { label: 'Laukumu īre', href: '#services' },
-          { label: 'Dāvanu kartes', href: '#booking' },
+          { label: 'Pasākumi un ekskursijas', href: '#services' },
+          { label: 'Fotosesija', href: '#services' },
         ],
       },
       billing: {
@@ -519,7 +514,6 @@ const translations = {
       { href: '#hero', label: 'Home' },
       { href: '#about', label: 'About' },
       { href: '#services', label: 'Services' },
-      { href: '#prices', label: 'Prices' },
       { href: '#gallery', label: 'Gallery' },
       { href: '#competitions', label: 'Competitions' },
       { href: '#news', label: 'News' },
@@ -555,12 +549,6 @@ const translations = {
           cta: 'Learn more',
         },
         {
-          title: 'Arena & field rental',
-          description:
-            'Indoor and outdoor arenas with professional footing, lighting, and facilities ready for competition-level events.',
-          cta: 'Learn more',
-        },
-        {
           title: 'Events & tours',
           description:
             'Corporate programmes, guided tours, gift cards, and seasonal experiences for the whole family.',
@@ -576,21 +564,23 @@ const translations = {
     },
     about: {
       eyebrow: 'About us',
-      title: 'Aiming to be the leading equestrian centre in the Baltics',
+      title: 'Asnates Equestrian Sports Club — Professional Riding School',
       body:
-        'We believe passion for riding begins with the first encounter. We unite expert coaches, attentive care, and a welcoming atmosphere so every rider can progress with confidence.',
+        'Asnates JSK is a modern equestrian sports center located in Gluži, Vārves parish, Ventspils region. We offer comprehensive equestrian education for children and adults, combining European-level infrastructure, experienced trainers, and an individual approach to each rider. Our goal is to develop both beginners and professional athletes, creating a safe and supportive environment for all horse and riding enthusiasts.',
       bullets: [
+        'Professional riding school with modern infrastructure',
+        'Experienced and certified trainers',
+        'Individual and group lessons for all age groups',
         'National sports base with European standards',
-        'Experienced coaches and trusted partners',
-        'Strong focus on youth and junior programmes',
         'Regular competitions and training camps',
+        'Complete horse boarding and care services',
       ],
       primaryCta: 'Contact us',
       secondaryCta: 'News',
       mediaCard: {
         eyebrow: 'Since 2001',
         title: '120+ graduates',
-        text: 'Our riders become medalists at national and international championships.',
+        text: 'Our riders become medalists at national and international championships, demonstrating our school\'s high quality and professional approach.',
       },
     },
     competitions: {
@@ -656,24 +646,24 @@ const translations = {
       },
       items: [
         {
+          date: '25 December 2025',
+          title: 'Christmas Charity Event — Horse Riding',
+          description:
+            'Join us on December 25th for a special Christmas charity event! We are organizing horse riding lessons for the whole family, where you can enjoy wonderful time with horses while supporting a good cause. The event is suitable for both beginners and experienced riders.',
+          cta: 'Sign up',
+        },
+        {
+          date: '07 December 2025',
+          title: 'Asnates JSK 5 Year Anniversary',
+          description:
+            'We are celebrating a special milestone — Asnates Equestrian Sports Club\'s 5 year anniversary! On December 7th, we invite all friends, students, and families to festive activities, demonstrations, and special lessons. Together we will celebrate our shared journey and achievements!',
+          cta: 'Learn more',
+        },
+        {
           date: '29 April 2025',
           title: 'The Big Cleanup 2025 at the School',
           description:
             'On 26 April volunteers and friends joined us to tidy up the grounds and enjoy nature together. A great effort by everyone!',
-          cta: 'Read more',
-        },
-        {
-          date: '18 June 2023',
-          title: 'Youth Cup 2023 coming this June',
-          description:
-            'The Youth Cup 2023 season kicks off soon – athletes are preparing for new victories and personal bests.',
-          cta: 'Read more',
-        },
-        {
-          date: '15 June 2023',
-          title: 'Elegance & team spirit at the Dressage Festival',
-          description:
-            'A two-day festival featuring riders of all levels – from introductory programmes to Grand Prix performances.',
           cta: 'Read more',
         },
       ],
@@ -786,8 +776,8 @@ const translations = {
         items: [
           { label: 'Horse boarding', href: '#services' },
           { label: 'Riding lessons', href: '#services' },
-          { label: 'Field rental', href: '#services' },
-          { label: 'Gift cards', href: '#booking' },
+          { label: 'Events & tours', href: '#services' },
+          { label: 'Photoshoot', href: '#services' },
         ],
       },
       billing: {
@@ -821,7 +811,6 @@ const translations = {
       { href: '#hero', label: 'Главная' },
       { href: '#about', label: 'О нас' },
       { href: '#services', label: 'Услуги' },
-      { href: '#prices', label: 'Цены' },
       { href: '#gallery', label: 'Галерея' },
       { href: '#competitions', label: 'Соревнования' },
       { href: '#news', label: 'Новости' },
@@ -857,12 +846,6 @@ const translations = {
           cta: 'Подробнее',
         },
         {
-          title: 'Аренда полей и манежей',
-          description:
-            'Открытые и крытые площадки с профессиональным покрытием, освещением и инфраструктурой для соревнований.',
-          cta: 'Подробнее',
-        },
-        {
           title: 'Мероприятия и экскурсии',
           description:
             'Корпоративные программы, экскурсии по комплексу, подарочные сертификаты и сезонные мероприятия для всей семьи.',
@@ -878,21 +861,23 @@ const translations = {
     },
     about: {
       eyebrow: 'О нас',
-      title: 'Цель — быть ведущим центром конного спорта в Балтии',
+      title: 'Asnates Jātnieku Sporta Klubs — профессиональная школа верховой езды',
       body:
-        'Мы верим, что интерес к верховой езде начинается с первого знакомства. Поэтому объединяем профессиональных тренеров, бережный уход и дружелюбную атмосферу, чтобы каждый всадник продолжал развиваться.',
+        'Asnates JSK — современный центр конного спорта, расположенный в Глужи, волость Варве, Вентспилсский край. Мы предлагаем комплексное обучение верховой езде для детей и взрослых, сочетая инфраструктуру европейского уровня, опытных тренеров и индивидуальный подход к каждому всаднику. Наша цель — развивать как начинающих, так и профессиональных спортсменов, создавая безопасную и поддерживающую среду для всех любителей лошадей и верховой езды.',
       bullets: [
+        'Профессиональная школа верховой езды с современной инфраструктурой',
+        'Опытные и сертифицированные тренеры',
+        'Индивидуальные и групповые занятия для всех возрастов',
         'Национальная спортивная база с европейскими стандартами',
-        'Сильная команда тренеров и партнёров',
-        'Развитие детских и молодёжных программ',
         'Регулярные соревнования и тренировочные лагеря',
+        'Полноценное содержание и уход за лошадьми',
       ],
       primaryCta: 'Связаться',
       secondaryCta: 'Новости',
       mediaCard: {
         eyebrow: 'С 2001 года',
         title: 'Более 120 выпускников',
-        text: 'Наши ученики становятся призёрами национальных и международных чемпионатов.',
+        text: 'Наши ученики становятся призёрами национальных и международных чемпионатов, демонстрируя высокое качество и профессиональный подход нашей школы.',
       },
     },
     competitions: {
@@ -958,24 +943,24 @@ const translations = {
       },
       items: [
         {
+          date: '25 декабря 2025',
+          title: 'Рождественское благотворительное мероприятие — верховая езда',
+          description:
+            'Присоединяйтесь к нам 25 декабря на специальное рождественское благотворительное мероприятие! Мы организуем занятия верховой ездой для всей семьи, где вы сможете провести замечательное время с лошадьми и одновременно поддержать благотворительность. Мероприятие подходит как для начинающих, так и для опытных всадников.',
+          cta: 'Записаться',
+        },
+        {
+          date: '07 декабря 2025',
+          title: '5-летие Asnates JSK',
+          description:
+            'Мы отмечаем особый момент — 5-летие конноспортивного клуба Asnates JSK! 7 декабря мы приглашаем всех друзей, учеников и семьи на праздничные мероприятия, демонстрации и специальные занятия. Вместе мы отпразднуем наш общий путь и достижения!',
+          cta: 'Узнать больше',
+        },
+        {
           date: '29 апреля 2025',
           title: 'Lielā Talka 2025 в Школе молодых всадников',
           description:
             '26 апреля мы собрали волонтёров и друзей, чтобы привести в порядок территорию и провести время на природе. Общими усилиями сделали столько полезного!',
-          cta: 'Читать далее',
-        },
-        {
-          date: '18 июня 2023',
-          title: 'Молодёжный кубок 2023 состоится в конце июня',
-          description:
-            'Совсем скоро стартует сезон Jauniešu kauss 2023 — спортсмены готовятся к новым победам и рекордам.',
-          cta: 'Читать далее',
-        },
-        {
-          date: '15 июня 2023',
-          title: 'Элегантность и командный дух на фестивале выездки',
-          description:
-            'Двухдневный фестиваль собрал всадников разных уровней — от самых простых программ до выступлений уровня Гран-при.',
           cta: 'Читать далее',
         },
       ],
@@ -1088,8 +1073,8 @@ const translations = {
         items: [
           { label: 'Содержание лошадей', href: '#services' },
           { label: 'Тренировки верховой езды', href: '#services' },
-          { label: 'Аренда полей', href: '#services' },
-          { label: 'Подарочные карты', href: '#booking' },
+          { label: 'Мероприятия и экскурсии', href: '#services' },
+          { label: 'Фотосессия', href: '#services' },
         ],
       },
       billing: {
@@ -1591,36 +1576,6 @@ function App() {
           </div>
         </section>
 
-        <section id="prices" className="section section--light">
-          <div className="container">
-            <div className="section__heading">
-              <p className="eyebrow">{t.prices.heading.eyebrow}</p>
-              <h2>{t.prices.heading.title}</h2>
-            </div>
-            <div className="pricing-grid">
-              {t.prices.cards.map((card, index) => (
-                <article
-                  className="pricing-card"
-                  key={card.title}
-                  data-animate="fade-up"
-                  style={{ transitionDelay: `${index * 90 + 120}ms` }}
-                >
-                  <h3>{card.title}</h3>
-                  <p className="pricing-card__price">{card.price}</p>
-                  <ul>
-                    {card.perks.map((perk) => (
-                      <li key={perk}>{perk}</li>
-                    ))}
-                  </ul>
-                  <a className="btn btn--outline" href="#booking">
-                    {card.cta}
-                  </a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section id="gallery" className="section gallery">
           <div className="container">
             <div className="section__heading">
@@ -1764,11 +1719,11 @@ function App() {
 
         <section id="booking" className="section section--split section--accent">
           <div className="container section--split__wrapper section--split__wrapper--reverse">
-            <div className="section--split__content" data-animate="fade-up">
+            <div className="section--split__content">
               <p className="eyebrow">{t.booking.eyebrow}</p>
               <h2>{t.booking.title}</h2>
               <p>{t.booking.description}</p>
-              <form className="lead-form" onSubmit={handleFormSubmit} data-animate="fade-up" style={{ transitionDelay: '140ms' }}>
+              <form className="lead-form" onSubmit={handleFormSubmit}>
                 <div className="form-grid">
                   <label>
                     <span>{t.booking.form.nameLabel}</span>

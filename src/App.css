@@ -1395,6 +1395,13 @@
   backdrop-filter: blur(10px);
 }
 
+.map-section__content[data-animate],
+.map-section__frame[data-animate] {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
 .map-section__content > .eyebrow {
   margin-bottom: 0;
 }
@@ -1594,6 +1601,13 @@
 #booking {
   position: relative;
   overflow: hidden;
+}
+
+#booking .section--split__content[data-animate],
+#booking .lead-form[data-animate] {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
 }
 
 #booking::before {
@@ -2063,6 +2077,13 @@
 #booking .section--split__content {
   position: relative;
   z-index: 2;
+  transform: none !important;
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+#booking .section--split__content * {
+  animation: none !important;
 }
 
 #booking .section--split__content h2 {
@@ -2826,6 +2847,8 @@
   background: #0f172a;
   color: #e2e8f0;
   padding: 4rem 0 2.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .footer__top {
@@ -3374,6 +3397,21 @@
     gap: 3rem;
   }
 
+  .site-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+  }
+
+  .footer__brand .logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__brand .logo__badge {
+    width: clamp(90px, 20vw, 120px);
+    height: clamp(90px, 20vw, 120px);
+  }
+
   .section--split__media {
     gap: 1.5rem;
   }
@@ -3560,6 +3598,25 @@
   .footer__grid {
     grid-template-columns: 1fr !important;
     gap: 2rem;
+  }
+
+  .site-footer {
+    padding-top: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer__brand {
+    margin-bottom: 2rem;
+  }
+
+  .footer__brand .logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__brand .logo__badge {
+    width: clamp(85px, 18vw, 110px) !important;
+    height: clamp(85px, 18vw, 110px) !important;
   }
 
   .social-links {
@@ -3793,5 +3850,19 @@
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-footer {
+    scroll-margin-top: 120px;
+    padding-top: 3.5rem;
+  }
+
+  .footer__brand .logo__badge {
+    width: clamp(75px, 20vw, 95px) !important;
+    height: clamp(75px, 20vw, 95px) !important;
+  }
+
+  .footer__brand .logo {
+    margin-bottom: 1.5rem;
   }
 }
