@@ -1365,19 +1365,27 @@ function App() {
                 </svg>
               </a>
             </div>
-            <div className="announcement__contact">
-              <span className="announcement__item">
+            <div className="announcement__contact" style={{ marginLeft: 'auto', marginRight: 0, paddingRight: 0 }}>
+              <a
+                href="mailto:asnatesjsk@inbox.lv"
+                className="announcement__contact-link"
+                aria-label="Email"
+              >
                 <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
                   <path d="M2.5 4.5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-13a1 1 0 0 1-1-1V4.5zm2 1V14h9.9l-5.45-5.45a.75.75 0 0 1 1.06-1.06l5.46 5.45V5.5H4.5z" />
                 </svg>
-                <a href="mailto:asnatesjsk@inbox.lv">asnatesjsk@inbox.lv</a>
-              </span>
-              <span className="announcement__item">
+                <span>asnatesjsk@inbox.lv</span>
+              </a>
+              <a
+                href="tel:+37128352881"
+                className="announcement__contact-link"
+                aria-label="Phone"
+              >
                 <svg aria-hidden="true" focusable="false" viewBox="0 0 20 20">
                   <path d="M5.7 2.7c.2-.4.7-.6 1.1-.4l2.7 1.3c.4.2.6.6.4 1l-1.2 2.7c-.2.4-.6.6-1 .4l-1-.4a11 11 0 0 0 5.2 5.2l-.3-.9c-.2-.4 0-.8.3-1l2.7-1.2c.4-.2.8 0 1 .4l1.3 2.7c.2.4 0 .9-.4 1.1l-2.1 1c-.4.2-.9.2-1.3 0a13.5 13.5 0 0 1-7.4-7.4c-.2-.4-.2-.9 0-1.3l1-2.1z" />
                 </svg>
-                <a href="tel:+37128352881">+371 2 8352881</a>
-              </span>
+                <span>+371 2 8352881</span>
+              </a>
             </div>
           </div>
         </div>
@@ -1885,7 +1893,7 @@ function App() {
               <div>
                 <h4>{t.footer.billing.title}</h4>
                 <ul>
-                  {t.footer.billing.items.map((item) => (
+                  {translations.lv.footer.billing.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
