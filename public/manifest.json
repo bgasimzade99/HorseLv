@@ -1,0 +1,32 @@
+{
+  "name": "Asnates JSK — Jātnieku Sporta Klubs",
+  "short_name": "Asnates JSK",
+  "description": "Asnates JSK — moderns jātnieku komplekss: zirgu uzturēšana, treniņi, sacensības un korporatīvie pasākumi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d18d42",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["sports", "education", "lifestyle"],
+  "lang": "lv",
+  "dir": "ltr"
+}
+

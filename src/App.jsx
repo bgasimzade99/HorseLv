@@ -31,9 +31,9 @@ const galleryImages = [
       ru: '1 ноября 2025',
     },
     fullDescription: {
-      lv: 'Nataļja Žubure ar Kandavu: 5. vieta 80cm poniju maršrutā, 1. vieta 80cm atklātajā maršrutā starp 44 dalībniekiem.',
-      en: 'Nataļja Žubure with Kandava: 5th place in 80cm pony route, 1st place in 80cm open route among 44 participants.',
-      ru: 'Наталия Жубуре с Кандавой: 5-е место в маршруте 80см для пони, 1-е место в открытом маршруте 80см среди 44 участников.',
+      lv: '📌 Šodien 1.novembrī Natālija Žubure ar poniju Kandava devās uz LJF rudens sacensībām konkūrā!\n\n🏅👏 80cm poniju maršrutā mūsu duets ierindojās godalgotajā 5.VIETĀ. 🥳\n\n🥇👏 Savu kārt, 80cm atvērtajā maršrutā starp 44 dalībniekiem, viņas palika nepārspētas iegūstot 1.VIETU!🥳 LEPOJAMIES!👏👏👏\n\nPaldies sacensību organizētājiem!🙏',
+      en: '📌 Today, November 1st, Natālija Žubure with her pony Kandava went to the LJF autumn competition!\n\n🏅👏 In the 80cm pony route, our duo placed in the honorable 5th PLACE. 🥳\n\n🥇👏 In turn, in the 80cm open route among 44 participants, they remained undefeated by getting 1st PLACE!🥳 WE ARE PROUD!👏👏👏\n\nThanks to the competition organizers!🙏',
+      ru: '📌 Сегодня, 1 ноября, Наталия Жубуре со своим пони Кандава отправилась на осенние соревнования LJF!\n\n🏅👏 В маршруте 80см для пони наша пара заняла почетное 5-е МЕСТО. 🥳\n\n🥇👏 В свою очередь, в открытом маршруте 80см среди 44 участников они остались непобежденными, заняв 1-е МЕСТО!🥳 МЫ ГОРДИМСЯ!👏👏👏\n\nСпасибо организаторам соревнований!🙏',
     },
   },
   {
@@ -49,9 +49,9 @@ const galleryImages = [
       ru: '11 октября 2025',
     },
     fullDescription: {
-      lv: 'Rezultāti: 4. vieta Pārsla Balode ar Neo 50/60cm. Bez soda punktiem: Amēlija Roze Pētersone, Anna Bunclere, Natālija Žubure. 3. vieta Rebeka Grīniņa ar Sansu 60/80cm.',
-      en: 'Results: 4th place Pārsla Balode with Neo 50/60cm. Without penalty points: Amēlija Roze Pētersone, Anna Bunclere, Natālija Žubure. 3rd place Rebeka Grīniņa with Sans 60/80cm.',
-      ru: 'Результаты: 4-е место Парсла Балоде с Нео 50/60см. Без штрафных очков: Амелия Розе Петерсоне, Анна Бунцлере, Наталия Жубуре. 3-е место Ребека Грининя с Сансом 60/80см.',
+      lv: 'Vakar 11.oktobrī mūsu kluba jaunie sportisti piedalījās JSK Montepals rīkotajās rudens treniņsacensībās!\n\nIevērojamākie rezultāti:\n\n🏅4.VIETA Pārsla Balode ar Neo 50/60cm maršrutā👏\n\n🎀 Bez soda punktiem kārtiņu un krustiņu maršrutā nostartēja mūsu jaunākie dalībnieki:\n\nSavā debijā,Amēlija Roze Pētersone ar Neo👏\n\nAnna Bunclere ar Katalīnu👏\n\nKā arī Natālija Žubure ar savu jauno cīņas biedri Dāldera Pērli un Čilliju.👏\n\nVisi šie sportisti tika pie jaukām dāvaniņām!🎁\n\nJāatzīmē, ka skaisti nostartēja arī mūsu treneres audzēkne no Muižkalna staļļi Rebeka Grīniņa ar Sansu!\n\n🥉Iegūstot godalgoto 3.VIETU 60/80cm maršrutā.\n\nApsveicam mūsu sportistus un novēlam cītīgi gatavoties nākošajai sezonai!💪👏👏👏\n\nLiels paldies sacensību organizētājiem par doto iespēju jaunajiem jātniekiem un jaunajiem zirgiem ,nepiespiestā gaisotnē, gūt pieredzi un mācīties!🙏Paldies arī par saldumiņiem😋Kuri mūsu klubam tika piešķirti kā par otro lielāko maršrutu skaitu!💪😅',
+      en: 'Yesterday, October 11th, young athletes of our club took part in the autumn training competition organized by JSK Montepals!\n\nThe most notable results:\n\n🏅4th PLACE Parsla Balode with Neo in the 50/60cm route👏\n\n🎀 Our youngest participants started the cards and crosses route without penalty points:\n\nIn her debut, Amelia Rose Pattersone with Neo👏\n\nAnna Bunclere with Catalina 👏\n\nAs well as Natālija Žubure with her new wrestling partner Dalder Pearl and Chilli.👏\n\nAll of these athletes got some nice gifts!🎁\n\nIt should be noted that our coaching student from Muižkalna staļļi Rebeka Grīniņa with Sansa had a beautiful start!\n\n🥉Getting the prize 3rd PLACE in the 60/80cm route.\n\nCongratulations to our athletes and wish them to prepare hard for the coming season!💪👏👏👏\n\nMany thanks to the competition organizers for giving the opportunity to young riders and young horses in an unpressured atmosphere, to gain experience and learn!🙏Thanks also for the sweets😋Which were awarded to our club as the second highest number of routes!💪😅',
+      ru: 'Вчера, 11 октября, молодые спортсмены нашего клуба приняли участие в осенних тренировочных соревнованиях, организованных JSK Montepals!\n\nНаиболее заметные результаты:\n\n🏅4-е МЕСТО Парсла Балоде с Нео в маршруте 50/60см👏\n\n🎀 Без штрафных очков в маршруте карточек и крестиков стартовали наши самые юные участники:\n\nВ своем дебюте, Амелия Роуз Паттерсон с Нео👏\n\nАнна Бунклере с Каталиной 👏\n\nА также Наталия Жубуре со своим новым боевым партнером Далдером Перлом и Чилли.👏\n\nВсе эти спортсмены получили приятные подарки!🎁\n\nСледует отметить, что красиво стартовала и наша ученица тренера из Муйжкална сталли Ребека Грининя с Сансой!\n\n🥉Получив призовое 3-е МЕСТО в маршруте 60/80см.\n\nПоздравляем наших спортсменов и желаем им усердно готовиться к предстоящему сезону!💪👏👏👏\n\nБольшое спасибо организаторам соревнований за предоставленную возможность молодым всадникам и молодым лошадям в непринужденной атмосфере получить опыт и учиться!🙏Спасибо также за сладости😋Которые были присуждены нашему клубу за второе по количеству маршрутов!💪😅',
     },
   },
   {
@@ -67,9 +67,9 @@ const galleryImages = [
       ru: '2025',
     },
     fullDescription: {
-      lv: 'Trešās dienas rezultāti: 6. vieta Pārsla Balode ar Neo 50cm. 1. vieta Natālija Žubure ar Kandavu un 3. vieta Marta Lāma ar Sidabras 75cm. 2. vieta Natālijai 90cm. 1. vieta Rēzija Ēce ar Katalīnu 90cm. Kopvērtējumā: 1. Bille Pušinska, 2. Lauma Saide, 3. Marta Lāma, 4. Natālija Žubure.',
-      en: 'Third day results: 6th place Pārsla Balode with Neo 50cm. 1st place Natālija Žubure with Kandava and 3rd place Marta Lāma with Sidabras 75cm. 2nd place Natālija 90cm. 1st place Rēzija Ēce with Katalīna 90cm. Overall: 1st Bille Pušinska, 2nd Lauma Saide, 3rd Marta Lāma, 4th Natālija Žubure.',
-      ru: 'Результаты третьего дня: 6-е место Парсла Балоде с Нео 50см. 1-е место Наталия Жубуре с Кандавой и 3-е место Марта Лама с Сидабрас 75см. 2-е место Наталии 90см. 1-е место Резия Эце с Каталиной 90см. Общий зачет: 1-е Билле Пушинска, 2-е Лаума Сайде, 3-е Марта Лама, 4-е Наталия Жубуре.',
+      lv: 'Ir noslēdzies Jauniešu kauss 2025 Jauno Jātnieku Skolā.\n\n📌Mūsu trešās dienas rezultāti!\n\n🏅6.VIETA Pārsla Balode ar Neo 50cm ideālā laikā maršrutā.👏\n\n🥇🏆1.VIETA Natālija Žubure ar Kandavu un\n\n🥉3.VIETA  Marta Lāma ar Sidabras  75cm maršrutā divās fāzēs bez ierobežojumiem.\n\n🥈 2.VIETA Natālijai ar Kandavu 90cm ātruma maršrutā starp 2.grupas ponijiem.\n\n🥇🏆 1.VIETA Rēzija Ēce ar Katalīnu 90cm 2 fāzēs bez ierobežojumiem!\n\n📌Kopvērtējumā sīvā cīņā starp 2.grupas ponijiem uzvarēja:\n\n🥇🏆 1.VIETA Bille Pušinska ar Carmina Burana,\n\n🥈🏆 2.VIETA Lauma Saide ar Armute,\n\n🥉🏆 3.VIETĀ  Marta Lāma ar Sidabras.\n\n..bet 4.vietā ierindojās Natālija Žubure ar Kandavu!👏\n\nApsveicam visus sportistus!\n\nLai veiksmīgi starti arī turpmāk!\n\n✨ Liels paldies Young Riders School un pārējiem  sacensību organizatoriem par ieguldīto darbu, enerģiju un rūpēm!🙏\n\nPateicoties jums, varējām baudīt aizraujošu atmosfēru un patiesu sporta garu. 🏆💪😁',
+      en: 'The Young Riders Cup 2025 has concluded at the Young Riders School.\n\n📌Our third day results!\n\n🏅6th PLACE Parsla Balode with Neo in the 50cm route with ideal time.👏\n\n🥇🏆1st PLACE Natālija Žubure with Kandava and\n\n🥉3rd PLACE Marta Lāma with Sidabras in the 75cm route in two phases without restrictions.\n\n🥈 2nd PLACE Natālija with Kandava in the 90cm speed route among 2nd group ponies.\n\n🥇🏆 1st PLACE Rēzija Ēce with Katalīna in the 90cm route in 2 phases without restrictions!\n\n📌In the overall standings, in a fierce battle among 2nd group ponies, the winners were:\n\n🥇🏆 1st PLACE Bille Pušinska with Carmina Burana,\n\n🥈🏆 2nd PLACE Lauma Saide with Armute,\n\n🥉🏆 3rd PLACE Marta Lāma with Sidabras.\n\n..but in 4th place was Natālija Žubure with Kandava!👏\n\nCongratulations to all athletes!\n\nMay successful starts continue in the future!\n\n✨ Many thanks to Young Riders School and the other competition organizers for their invested work, energy, and care!🙏\n\nThanks to you, we were able to enjoy an exciting atmosphere and true sportsmanship. 🏆💪😁',
+      ru: 'Завершился Кубок молодых всадников 2025 в Школе молодых всадников.\n\n📌Результаты нашего третьего дня!\n\n🏅6-е МЕСТО Парсла Балоде с Нео в маршруте 50см с идеальным временем.👏\n\n🥇🏆1-е МЕСТО Наталия Жубуре с Кандавой и\n\n🥉3-е МЕСТО Марта Лама с Сидабрас в маршруте 75см в двух фазах без ограничений.\n\n🥈 2-е МЕСТО Наталии с Кандавой в скоростном маршруте 90см среди пони 2-й группы.\n\n🥇🏆 1-е МЕСТО Резия Эце с Каталиной в маршруте 90см в 2 фазах без ограничений!\n\n📌В общем зачете, в ожесточенной борьбе среди пони 2-й группы победили:\n\n🥇🏆 1-е МЕСТО Билле Пушинска с Кармина Бурана,\n\n🥈🏆 2-е МЕСТО Лаума Сайде с Армуте,\n\n🥉🏆 3-е МЕСТО Марта Лама с Сидабрас.\n\n..но на 4-м месте оказалась Наталия Жубуре с Кандавой!👏\n\nПоздравляем всех спортсменов!\n\nПусть успешные старты продолжаются и в будущем!\n\n✨ Большое спасибо Школе молодых всадников и другим организаторам соревнований за вложенный труд, энергию и заботу!🙏\n\nБлагодаря вам мы смогли насладиться захватывающей атмосферой и истинным спортивным духом. 🏆💪😁',
     },
   },
   {
@@ -85,9 +85,9 @@ const galleryImages = [
       ru: '20 сентября 2025',
     },
     fullDescription: {
-      lv: '2. dienas rezultāti: 70cm maršrutā 1. vieta Natālija Žubure ar Kandavu, 2. vieta Marta Lāma ar Sidabras. 80cm maršrutā 3. vieta Marta ar Sidabras, 5. vieta Natālija ar Kandavu. Rēzija Ēce ar Katalīnu pirmo reiz 105/110cm maršrutā - apsveicams rezultāts.',
-      en: 'Day 2 results: 70cm route 1st place Natālija Žubure with Kandava, 2nd place Marta Lāma with Sidabras. 80cm route 3rd place Marta with Sidabras, 5th place Natālija with Kandava. Rēzija Ēce with Katalīna first time in 105/110cm route - commendable result.',
-      ru: 'Результаты 2-го дня: маршрут 70см 1-е место Наталия Жубуре с Кандавой, 2-е место Марта Лама с Сидабрас. Маршрут 80см 3-е место Марта с Сидабрас, 5-е место Наталия с Кандавой. Резия Эце с Каталиной впервые в маршруте 105/110см - похвальный результат.',
+      lv: 'Vakar, 20.septembrī noritēja 2.diena Jauniešu kausā 2025 Jauno jātnieku skola\n\nMūsu rezultāti!\n\n‼️70cm ātruma maršrutā Natālija Žubure ar Kandavu  un Marta Lāma ar Sidabras ļoti sīvā cīņā cīnījās par uzvaru!Tikai pāris sekundes daļas šķīra mūsu sportiskos pārus!\n\nRezultātā 🏆🥇1.VIETU izcīnīja Natālija ar savu cīņas biedru,bet Marta ar savu kompanjonu palika godpilnajā 2.VIETĀ!💪👏\n\n80cm ātruma maršrutā starp 2.grupas ponijiem 3.VIETU izcīnīja  Marta ar Sidabras,bet godpilnā 🏅👏\n\n5.VIETA  Natālijai ar Kandavu!\n\nJāpiebilst ka Rēzija Ēce ar Katalīnu pirmo reiz  cīnījās maršrutā 105/110 augstiem šķēršļiem.Rezultāts bija Apsveicam! Tikai viena gāzta kārtiņa atturēja meitenes no godalgas!\n\nApsveicam savus sportistus!👏👏👏\n\nNovēlam veiksmīgus startus arī šodien un ar Dievpalīgu tikai uz priekšu!💪',
+      en: 'Yesterday, September 20th, the 2nd day of the Young Riders Cup 2025 took place at the Young Riders School.\n\nOur results!\n\n‼️In the 70cm speed route, Natālija Žubure with Kandava and Marta Lāma with Sidabras fought very fiercely for victory! Only a few seconds separated our sports pairs!\n\nAs a result 🏆🥇1st PLACE was won by Natālija with her fighting partner, but Marta with her companion remained in the honorable 2nd PLACE!💪👏\n\nIn the 80cm speed route among 2nd group ponies, 3rd PLACE was won by Marta with Sidabras, but in the honorable 🏅👏\n\n5th PLACE for Natālija with Kandava!\n\nIt should be noted that Rēzija Ēce with Katalīna competed for the first time in a route with 105/110cm high obstacles. The result was Congratulations! Only one knocked down pole kept the girls from a prize!\n\nCongratulations to our athletes!👏👏👏\n\nWe wish successful starts today as well and with God\'s help, only forward!💪',
+      ru: 'Вчера, 20 сентября, прошёл 2-й день Кубка молодых всадников 2025 в Школе молодых всадников.\n\nНаши результаты!\n\n‼️В скоростном маршруте 70см Наталия Жубуре с Кандавой и Марта Лама с Сидабрас очень ожесточенно боролись за победу! Всего несколько секунд разделяли наши спортивные пары!\n\nВ результате 🏆🥇1-е МЕСТО завоевала Наталия со своим боевым партнером, а Марта со своим компаньоном осталась на почетном 2-м МЕСТЕ!💪👏\n\nВ скоростном маршруте 80см среди пони 2-й группы 3-е МЕСТО завоевала Марта с Сидабрас, а на почетном 🏅👏\n\n5-м МЕСТЕ Наталия с Кандавой!\n\nСледует отметить, что Резия Эце с Каталиной впервые соревновалась в маршруте с препятствиями высотой 105/110см. Результат был Поздравляем! Только один сбитый шест удержал девушек от награды!\n\nПоздравляем наших спортсменов!👏👏👏\n\nЖелаем успешных стартов сегодня и с Божьей помощью, только вперед!💪',
     },
   },
   {
@@ -135,9 +135,9 @@ const galleryImages = [
       ru: '19 сентября 2025',
     },
     fullDescription: {
-      lv: '1. dienas rezultāti: 2. vieta Pārsla Balode ar Neo krustiņu maršrutā. 1. vieta Marta Lāma ar Sidabras 60/70cm. 2. vieta Natālija Žubure ar Kandava. 1. vieta Natālijai ar Kandavu 80/90cm. 5. vieta Marta Lāma ar Sidabras. 1. vieta Rēzija Ēce ar Katalīnu 80/90cm.',
-      en: 'Day 1 results: 2nd place Pārsla Balode with Neo in cross route. 1st place Marta Lāma with Sidabras 60/70cm. 2nd place Natālija Žubure with Kandava. 1st place Natālija with Kandava 80/90cm. 5th place Marta Lāma with Sidabras. 1st place Rēzija Ēce with Katalīna 80/90cm.',
-      ru: 'Результаты 1-го дня: 2-е место Парсла Балоде с Нео в маршруте с крестами. 1-е место Марта Лама с Сидабрас 60/70см. 2-е место Наталия Жубуре с Кандавой. 1-е место Наталии с Кандавой 80/90см. 5-е место Марта Лама с Сидабрас. 1-е место Резия Эце с Каталиной 80/90см.',
+      lv: 'Šodien 19.septembrī ņēmām dalību  Jauniešu kausā 2025. Young Riders School.\n\nMūsu ievērojamākie rezultāti.\n\n🥈2.VIETA Pārsla Balode  ar poniju Neo  krustiņu maršrutā uz ideālo laiku.\n\n🏆🥇 1.VIETA Marta Lāma ar poniju Sidabras 60/70cm atvērtajā ātruma maršrutā.\n\n🥈2.VIETA Natālija Žubure ar poniju Kandava.\n\n🏆🥇 1.VIETA  Natālijai Žuburei ar Kandavu  80/90 cm augstajā ātruma  maršrutā starp 2.grupas ponijiem.\n\n🏅5.VIETA Marta Lāma ar Sidabras.\n\n🏆🥇1.VIETA Rēzija Ēce ar zirgu Katalīna 80/90 cm atvērtajā 2 fāžu maršrutā.\n\nApsveicam mūsu sportistus !👏👏👏 Lai Dievs dod un tik pat veiksmīgi starti arī turpmāk!🙏',
+      en: 'Today, September 19th, we took part in the Young Riders Cup 2025. Young Riders School.\n\nOur most notable results.\n\n🥈2nd PLACE Parsla Balode with pony Neo in the crosses route with ideal time.\n\n🏆🥇 1st PLACE Marta Lāma with pony Sidabras in the 60/70cm open speed route.\n\n🥈2nd PLACE Natālija Žubure with pony Kandava.\n\n🏆🥇 1st PLACE for Natālija Žubure with Kandava in the 80/90 cm high speed route among 2nd group ponies.\n\n🏅5th PLACE Marta Lāma with Sidabras.\n\n🏆🥇1st PLACE Rēzija Ēce with horse Katalīna in the 80/90 cm open 2-phase route.\n\nCongratulations to our athletes!👏👏👏 May God grant and may starts be just as successful in the future!🙏',
+      ru: 'Сегодня, 19 сентября, мы приняли участие в Кубке молодых всадников 2025. Школа молодых всадников.\n\nНаши наиболее заметные результаты.\n\n🥈2-е МЕСТО Парсла Балоде с пони Нео в маршруте крестиков с идеальным временем.\n\n🏆🥇 1-е МЕСТО Марта Лама с пони Сидабрас в открытом скоростном маршруте 60/70см.\n\n🥈2-е МЕСТО Наталия Жубуре с пони Кандава.\n\n🏆🥇 1-е МЕСТО для Наталии Жубуре с Кандавой в высоком скоростном маршруте 80/90 см среди пони 2-й группы.\n\n🏅5-е МЕСТО Марта Лама с Сидабрас.\n\n🏆🥇1-е МЕСТО Резия Эце с лошадью Каталина в открытом 2-фазном маршруте 80/90 см.\n\nПоздравляем наших спортсменов!👏👏👏 Пусть Бог даст и пусть старты будут столь же успешными в будущем!🙏',
     },
   },
   {
@@ -189,9 +189,9 @@ const galleryImages = [
       ru: '2025',
     },
     fullDescription: {
-      lv: 'Iedāvājam izjādes ar zirgiem uz jūru! Mierpilna izjāde cauri mežam līdz jūras krastam. Iekļauts: 1-2h izjāde, pieredzējuši zirgi, profesionāls pavadonis, drošības instrukcija.',
-      en: 'We offer horseback riding to the sea! Peaceful ride through forest to seashore. Included: 1-2h ride, experienced horses, professional guide, safety instructions.',
-      ru: 'Предлагаем верховые прогулки к морю! Спокойная прогулка через лес до морского берега. Включено: прогулка 1-2ч, опытные лошади, профессиональный проводник, инструктаж по безопасности.',
+      lv: '‼️PIEDĀVĀJAM IZJĀDES AR ZIRGIEM UZ JŪRU!‼️\n\n🐴 Vai sapņo par mierpilnu izjādi cauri mežam  līdz pat jūras krastam? Mēs piedāvājam aizraujošu  piedzīvojumu gan iesācējiem,gan pieredzējošiem jātniekiem! Izbaudi dabas skaistumu zirga mugurā!🏇😍\n\nIEKĻAUTS:\n\n*Izjāde 1-2h (mežs+jūras krasts)\n\n*Draudzīgi un pieredzējuši zirgi\n\n*Profesionāls pavadonis un drošības instrukcija\n\n*Pēc vēlēšanās iespēja pavadīt laiku kopā ar zirgiem/ponijiem arī pirms/pēc izjādes.',
+      en: '‼️WE OFFER HORSEBACK RIDES TO THE SEA!‼️\n\n🐴 Do you dream of a peaceful ride through the forest to the seashore? We offer an exciting adventure for both beginners and experienced riders! Enjoy the beauty of nature on horseback!🏇😍\n\nINCLUDED:\n\n*Riding 1-2h (forest+seashore)\n\n*Friendly and experienced horses\n\n*Professional guide and safety instruction\n\n*Optional opportunity to spend time with horses/ponies also before/after riding.',
+      ru: '‼️ПРЕДЛАГАЕМ ВЕРХОВЫЕ ПРОГУЛКИ К МОРЮ!‼️\n\n🐴 Мечтаете о спокойной прогулке через лес к морскому берегу? Мы предлагаем захватывающее приключение как для начинающих, так и для опытных всадников! Наслаждайтесь красотой природы верхом на лошади!🏇😍\n\nВКЛЮЧЕНО:\n\n*Прогулка 1-2ч (лес+морской берег)\n\n*Дружелюбные и опытные лошади\n\n*Профессиональный проводник и инструктаж по безопасности\n\n*По желанию возможность провести время с лошадьми/пони также до/после прогулки.',
     },
   },
 ]
@@ -1121,6 +1121,21 @@ function App() {
     return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
+  // Register Service Worker for PWA
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('Service Worker registered:', registration)
+          })
+          .catch((error) => {
+            console.log('Service Worker registration failed:', error)
+          })
+      })
+    }
+  }, [])
+
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('no-scroll')
@@ -1147,6 +1162,76 @@ function App() {
 
   useEffect(() => {
     document.documentElement.lang = selectedLanguage
+    
+    // Dynamic SEO meta tags
+    const seoData = {
+      lv: {
+        title: 'Asnates JSK — Jātnieku Sporta Klubs',
+        description: 'Asnates JSK — moderns jātnieku komplekss: zirgu uzturēšana, treniņi, sacensības un korporatīvie pasākumi.',
+        keywords: 'jātniecība, jāšana, treniņi, zirgi, Asnates JSK, Latvija, sacensības'
+      },
+      en: {
+        title: 'Asnates JSK — Equestrian Sports Club',
+        description: 'Asnates JSK — modern equestrian complex: horse boarding, training, competitions and corporate events.',
+        keywords: 'equestrian, horseback riding, training, horses, Asnates JSK, Latvia, competitions'
+      },
+      ru: {
+        title: 'Asnates JSK — Школа молодых всадников',
+        description: 'Asnates JSK — современный конный комплекс: содержание лошадей, тренировки, соревнования и корпоративные мероприятия.',
+        keywords: 'конный спорт, верховая езда, тренировки, лошади, Asnates JSK, Латвия, соревнования'
+      }
+    }
+    
+    const current = seoData[selectedLanguage] || seoData.ru
+    
+    // Update title
+    document.title = current.title
+    
+    // Update meta description
+    let metaDesc = document.querySelector('meta[name="description"]')
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta')
+      metaDesc.setAttribute('name', 'description')
+      document.head.appendChild(metaDesc)
+    }
+    metaDesc.setAttribute('content', current.description)
+    
+    // Update meta keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]')
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta')
+      metaKeywords.setAttribute('name', 'keywords')
+      document.head.appendChild(metaKeywords)
+    }
+    metaKeywords.setAttribute('content', current.keywords)
+    
+    // Update Open Graph tags
+    const updateOGTag = (property, content) => {
+      let tag = document.querySelector(`meta[property="${property}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', property)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+    
+    updateOGTag('og:title', current.title)
+    updateOGTag('og:description', current.description)
+    
+    // Update Twitter tags
+    const updateTwitterTag = (name, content) => {
+      let tag = document.querySelector(`meta[property="twitter:${name}"]`)
+      if (!tag) {
+        tag = document.createElement('meta')
+        tag.setAttribute('property', `twitter:${name}`)
+        document.head.appendChild(tag)
+      }
+      tag.setAttribute('content', content)
+    }
+    
+    updateTwitterTag('title', current.title)
+    updateTwitterTag('description', current.description)
   }, [selectedLanguage])
 
   useEffect(() => {
@@ -1284,7 +1369,7 @@ function App() {
     try {
       // EmailJS integration - you'll need to set up EmailJS and replace with your service ID
       // For now, we'll use a fallback to mailto
-      const mailtoLink = `mailto:asnatesjsk@inbox.lv?subject=Pieteikums: ${data.service}&body=Vārds: ${data.name}%0ATālrunis: ${data.phone}%0APakalpojums: ${data.service}%0AKomentārs: ${data.message || 'Nav komentāra'}`
+      const mailtoLink = `mailto:asnatesjsk@inbox.lv?subject=Pieteikums: ${encodeURIComponent(data.service)}&body=Vārds: ${encodeURIComponent(data.name)}%0ATālrunis: ${encodeURIComponent(data.phone)}%0APakalpojums: ${encodeURIComponent(data.service)}%0AKomentārs: ${encodeURIComponent(data.message || 'Nav komentāra')}`
       
       // Try to use EmailJS if available (you'll need to add EmailJS script)
       if (window.emailjs) {
@@ -1297,6 +1382,15 @@ function App() {
         })
         setFormStatus({ type: 'success', message: t.booking.form.successMessage || 'Paldies! Jūsu pieteikums ir nosūtīts.' })
         e.target.reset()
+        // Focus management after success
+        const formElement = e.target
+        setTimeout(() => {
+          const statusElement = formElement.querySelector('.form-status')
+          if (statusElement) {
+            statusElement.focus()
+            statusElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+          }
+        }, 100)
       } else {
         // Fallback: open mailto
         window.location.href = mailtoLink
@@ -1305,6 +1399,15 @@ function App() {
     } catch (error) {
       console.error('Form submission error:', error)
       setFormStatus({ type: 'error', message: t.booking.form.errorMessage || 'Radās kļūda. Lūdzu, mēģiniet vēlāk vai sazinieties tieši ar mums.' })
+      // Focus on error message
+      setTimeout(() => {
+        const formElement = e.target
+        const statusElement = formElement.querySelector('.form-status')
+        if (statusElement) {
+          statusElement.focus()
+          statusElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        }
+      }, 100)
     } finally {
       setIsSubmitting(false)
     }
@@ -1392,7 +1495,7 @@ function App() {
         <div className="nav-bar container">
               <a className="logo" href="#hero" aria-label="Škola mladých jezdců" onClick={closeMenu}>
                 <span className="logo__badge">
-                  <img className="logo__emblem" src={logoEmblem} alt="Asnates JSK Emblem" />
+                  <img className="logo__emblem" src={logoEmblem} alt="Asnates JSK Emblem" loading="eager" decoding="sync" />
                 </span>
             <div className="logo__text">
               <span className="logo__title">{t.logo.title}</span>
@@ -1492,7 +1595,7 @@ function App() {
         </div>
       </header>
 
-      <main>
+      <main id="main-content">
         <section id="hero" className="hero">
           <div className="hero__media" role="presentation">
             {heroSlides.map((imageSrc, index) => (
@@ -1566,20 +1669,79 @@ function App() {
               <p>{t.services.heading.description}</p>
             </div>
             <div className="service-grid">
-              {t.services.cards.map((card, index) => (
-                <article
-                  className="card"
-                  key={card.title}
-                  data-animate="fade-up"
-                  style={{ transitionDelay: `${index * 90 + 120}ms` }}
-                >
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                  <a className="card__link" href="#booking">
-                    {card.cta}
-                  </a>
-                </article>
-              ))}
+              {t.services.cards.map((card, index) => {
+                const icons = [
+                  <svg key="horse" className="card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="horseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="currentColor" stopOpacity="1"/>
+                        <stop offset="100%" stopColor="currentColor" stopOpacity="0.8"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M32 8C24 8 18 14 18 22c0 4 2 7 5 9v18h4v-15c3-2 5-5 5-9 0-8-6-14-14-14z" fill="url(#horseGradient)" opacity="0.15"/>
+                    <path d="M32 12c4.4 0 8 3.6 8 8 0 3-2 5.6-5 7v12h-6v-13c-3-1.4-5-4-5-7 0-4.4 3.6-8 8-8z" fill="url(#horseGradient)"/>
+                    <circle cx="30" cy="20" r="2.5" fill="url(#horseGradient)"/>
+                    <path d="M28 16c1 0 2 0.5 2.5 1.5" stroke="url(#horseGradient)" strokeWidth="1.5" strokeLinecap="round"/>
+                    <path d="M36 16c-1 0-2 0.5-2.5 1.5" stroke="url(#horseGradient)" strokeWidth="1.5" strokeLinecap="round"/>
+                  </svg>,
+                  <svg key="lesson" className="card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="lessonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="currentColor" stopOpacity="1"/>
+                        <stop offset="100%" stopColor="currentColor" stopOpacity="0.8"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M32 8L8 18l24 10 24-10L32 8z" fill="url(#lessonGradient)" opacity="0.15"/>
+                    <path d="M8 44l24 10 24-10M8 32l24 10 24-10" stroke="url(#lessonGradient)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    <circle cx="32" cy="18" r="2" fill="url(#lessonGradient)"/>
+                    <circle cx="32" cy="32" r="2" fill="url(#lessonGradient)"/>
+                    <circle cx="32" cy="44" r="2" fill="url(#lessonGradient)"/>
+                  </svg>,
+                  <svg key="event" className="card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="eventGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="currentColor" stopOpacity="1"/>
+                        <stop offset="100%" stopColor="currentColor" stopOpacity="0.8"/>
+                      </linearGradient>
+                    </defs>
+                    <rect x="10" y="12" width="44" height="44" rx="4" fill="url(#eventGradient)" opacity="0.15"/>
+                    <rect x="10" y="12" width="44" height="44" rx="4" stroke="url(#eventGradient)" strokeWidth="3" fill="none"/>
+                    <path d="M42 8v8M22 8v8M10 24h44" stroke="url(#eventGradient)" strokeWidth="3" strokeLinecap="round"/>
+                    <circle cx="32" cy="38" r="5" fill="url(#eventGradient)"/>
+                    <path d="M32 33v5M32 43v5" stroke="url(#eventGradient)" strokeWidth="2" strokeLinecap="round"/>
+                  </svg>,
+                  <svg key="photo" className="card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="photoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="currentColor" stopOpacity="1"/>
+                        <stop offset="100%" stopColor="currentColor" stopOpacity="0.8"/>
+                      </linearGradient>
+                    </defs>
+                    <rect x="10" y="14" width="44" height="36" rx="4" fill="url(#photoGradient)" opacity="0.15"/>
+                    <rect x="10" y="14" width="44" height="36" rx="4" stroke="url(#photoGradient)" strokeWidth="3" fill="none"/>
+                    <circle cx="24" cy="28" r="5" fill="url(#photoGradient)"/>
+                    <path d="M54 40L38 28 14 48" stroke="url(#photoGradient)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                    <circle cx="50" cy="18" r="3" fill="url(#photoGradient)"/>
+                  </svg>
+                ]
+                return (
+                  <article
+                    className="card"
+                    key={card.title}
+                    data-animate="fade-up"
+                    style={{ transitionDelay: `${index * 90 + 120}ms` }}
+                  >
+                    <div className="card__icon-wrapper">
+                      {icons[index] || icons[0]}
+                    </div>
+                    <h3>{card.title}</h3>
+                    <p>{card.description}</p>
+                    <a className="card__link" href="#booking">
+                      {card.cta}
+                    </a>
+                  </article>
+                )
+              })}
             </div>
           </div>
         </section>
@@ -1609,8 +1771,11 @@ function App() {
                       src={image.src}
                       alt={image.caption[selectedLanguage] ?? image.caption.ru}
                       loading="lazy"
+                      decoding="async"
+                      fetchpriority={index < 3 ? "high" : "low"}
                     />
                     <span className="gallery-card__overlay" />
+                    <span className="gallery-card__view">View</span>
                   </button>
                   <figcaption className="gallery-card__caption">
                     {image.caption[selectedLanguage] ?? image.caption.ru}
@@ -1646,6 +1811,12 @@ function App() {
                   data-animate="fade-up"
                   style={{ transitionDelay: `${index * 100 + 140}ms` }}
                 >
+                  <div className="timeline__icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" opacity="0.15"/>
+                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                    </svg>
+                  </div>
                   <span className="timeline__date">{item.date}</span>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
@@ -1760,7 +1931,13 @@ function App() {
                   </label>
                 </div>
                 {formStatus.message && (
-                  <div className={`form-status form-status--${formStatus.type}`} role="alert">
+                  <div 
+                    className={`form-status form-status--${formStatus.type}`} 
+                    role="alert"
+                    tabIndex={-1}
+                    aria-live="polite"
+                    aria-atomic="true"
+                  >
                     {formStatus.message}
                   </div>
                 )}
@@ -1779,6 +1956,8 @@ function App() {
                 className="section--split__media-image"
                 data-animate="fade-up"
                 data-animate-delay="200ms"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -1827,7 +2006,7 @@ function App() {
             <div className="footer__brand">
               <a className="logo" href="#hero" aria-label="Škola mladých jezdců" onClick={closeMenu}>
                 <span className="logo__badge">
-                  <img className="logo__emblem" src={logoEmblem} alt="Asnates JSK Emblem" />
+                  <img className="logo__emblem" src={logoEmblem} alt="Asnates JSK Emblem" loading="eager" decoding="sync" />
                 </span>
                 <div className="logo__text">
                   <span className="logo__title">{t.logo.title}</span>
@@ -1930,7 +2109,7 @@ function App() {
       )}
 
       {activeGalleryIndex !== null && (
-        <div className="lightbox" role="dialog" aria-modal="true">
+        <div className="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
           <button
             type="button"
             className="lightbox__close"
@@ -1942,6 +2121,7 @@ function App() {
               })
             }}
             aria-label="Close gallery view"
+            autoFocus
           >
             ×
           </button>
@@ -1956,11 +2136,15 @@ function App() {
             ‹
           </button>
           <figure className="lightbox__content">
+            <div className="lightbox__image-wrapper">
             <img
               src={galleryImages[activeGalleryIndex].src}
               alt={galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}
+              loading="eager"
+              decoding="async"
             />
-            <figcaption>
+            </div>
+            <figcaption className="lightbox__caption-wrapper">
               <strong>{galleryImages[activeGalleryIndex].caption[selectedLanguage] ?? galleryImages[activeGalleryIndex].caption.ru}</strong>
               {galleryImages[activeGalleryIndex].date && (
                 <span className="lightbox__date">
@@ -1969,9 +2153,9 @@ function App() {
                 </span>
               )}
               {galleryImages[activeGalleryIndex].fullDescription && (
-                <p className="lightbox__description">
+                <div className="lightbox__description">
                   {galleryImages[activeGalleryIndex].fullDescription[selectedLanguage] ?? galleryImages[activeGalleryIndex].fullDescription.lv}
-                </p>
+                </div>
               )}
             </figcaption>
           </figure>
