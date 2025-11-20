@@ -242,7 +242,7 @@ const translations = {
         {
           title: 'Zirgu uzturēšana',
           description:
-            'No 345€ mēnesī: pilnvērtīga barošana, ikdienas pastaigas, solārijs, pakaiši un individuāla aprūpe modernās stallēs.',
+            'Pilnvērtīga barošana, ikdienas pastaigas, solārijs, pakaiši un individuāla aprūpe modernās stallēs.',
           cta: 'Uzzināt vairāk',
         },
         {
@@ -539,7 +539,7 @@ const translations = {
         {
           title: 'Horse boarding',
           description:
-            'From €345 per month: complete feeding plan, daily turnout, solarium, bedding, and tailored care in modern stables.',
+            'Complete feeding plan, daily turnout, solarium, bedding, and tailored care in modern stables.',
           cta: 'Learn more',
         },
         {
@@ -836,7 +836,7 @@ const translations = {
         {
           title: 'Содержание лошадей',
           description:
-            'От 345€ в месяц: полноценное кормление, ежедневный выгул, солярий, подстилка и индивидуальный уход в современных конюшнях.',
+            'Полноценное кормление, ежедневный выгул, солярий, подстилка и индивидуальный уход в современных конюшнях.',
           cta: 'Подробнее',
         },
         {
