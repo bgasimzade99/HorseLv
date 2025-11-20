@@ -1128,6 +1128,29 @@ function App() {
         navigator.serviceWorker.register('/sw.js')
           .then((registration) => {
             console.log('Service Worker registered:', registration)
+            
+            // Check for updates every hour
+            setInterval(() => {
+              registration.update()
+            }, 60 * 60 * 1000)
+            
+            // Check for updates on page focus
+            window.addEventListener('focus', () => {
+              registration.update()
+            })
+            
+            // Handle service worker updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing
+              if (newWorker) {
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    // New service worker available, reload to activate
+                    window.location.reload()
+                  }
+                })
+              }
+            })
           })
           .catch((error) => {
             console.log('Service Worker registration failed:', error)

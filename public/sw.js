@@ -1,5 +1,5 @@
 // Service Worker for PWA support
-const CACHE_NAME = 'asnatesjsk-v1'
+const CACHE_NAME = 'asnatesjsk-v2'
 const urlsToCache = [
   '/',
   '/index.html',
@@ -33,17 +33,57 @@ self.addEventListener('activate', (event) => {
   return self.clients.claim()
 })
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - Network Only (no cache) for HTML/JS, Cache First for assets
 self.addEventListener('fetch', (event) => {
+  const { request } = event
+  const url = new URL(request.url)
+  
+  // For HTML and JS files, always fetch from network with no cache
+  if (request.destination === 'document' || 
+      request.destination === 'script' ||
+      url.pathname.endsWith('.html') ||
+      url.pathname.endsWith('.js') ||
+      url.pathname.endsWith('.jsx') ||
+      (url.pathname === '/' && request.method === 'GET')) {
+    event.respondWith(
+      fetch(request, { 
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      })
+        .then((response) => {
+          // Always return fresh response from network, never cache
+          return response
+        })
+        .catch(() => {
+          // Only use cache if network completely fails (offline mode)
+          return caches.match(request).then((cachedResponse) => {
+            return cachedResponse || caches.match('/index.html')
+          })
+        })
+    )
+    return
+  }
+  
+  // For other assets (images, CSS, etc.), use Cache First
   event.respondWith(
-    caches.match(event.request)
+    caches.match(request)
       .then((response) => {
-        // Return cached version or fetch from network
-        return response || fetch(event.request)
+        return response || fetch(request).then((fetchResponse) => {
+          if (fetchResponse && fetchResponse.status === 200) {
+            const responseToCache = fetchResponse.clone()
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(request, responseToCache)
+            })
+          }
+          return fetchResponse
+        })
       })
       .catch(() => {
-        // If both fail, return offline page if available
-        if (event.request.destination === 'document') {
+        if (request.destination === 'document') {
           return caches.match('/index.html')
         }
       })
