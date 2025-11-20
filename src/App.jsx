@@ -281,9 +281,9 @@ const translations = {
       primaryCta: 'Sazināties',
       secondaryCta: 'Jaunumi',
       mediaCard: {
-        eyebrow: 'Kopš 2001. gada',
-        title: 'Vairāk nekā 120 absolventu',
-        text: 'Mūsu audzēkņi kļūst par nacionālo un starptautisko čempionātu laureātiem, pierādot mūsu skolas augsto kvalitāti un profesionālo pieeju.',
+        eyebrow: 'Kopš 2021. gada',
+        title: 'Praktiskas nodarbības ar pieredzējušiem instruktoriem',
+        text: 'Visas nodarbības balstās uz reālu praksi ar mūsu pieredzējušiem instruktoriem. Mēs piedāvājam drošu, draudzīgu un profesionālu vidi katram jātniekam — no iesācējiem līdz pieredzējušiem.',
       },
     },
     competitions: {
@@ -578,9 +578,9 @@ const translations = {
       primaryCta: 'Contact us',
       secondaryCta: 'News',
       mediaCard: {
-        eyebrow: 'Since 2001',
-        title: '120+ graduates',
-        text: 'Our riders become medalists at national and international championships, demonstrating our school\'s high quality and professional approach.',
+        eyebrow: 'Since 2021',
+        title: 'Real-life practice with experienced instructors',
+        text: 'All lessons are based on real-life practice with our experienced instructors. We offer a safe, friendly, and professional environment for every rider — from beginners to advanced.',
       },
     },
     competitions: {
@@ -875,9 +875,9 @@ const translations = {
       primaryCta: 'Связаться',
       secondaryCta: 'Новости',
       mediaCard: {
-        eyebrow: 'С 2001 года',
-        title: 'Более 120 выпускников',
-        text: 'Наши ученики становятся призёрами национальных и международных чемпионатов, демонстрируя высокое качество и профессиональный подход нашей школы.',
+        eyebrow: 'С 2021 года',
+        title: 'Практические занятия с опытными инструкторами',
+        text: 'Все занятия основаны на реальной практике с нашими опытными инструкторами. Мы предлагаем безопасную, дружелюбную и профессиональную среду для каждого всадника — от начинающих до продвинутых.',
       },
     },
     competitions: {
