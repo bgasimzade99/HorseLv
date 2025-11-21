@@ -4275,7 +4275,7 @@
 
 .scroll-top {
   position: fixed !important;
-  bottom: 2rem;
+  bottom: 6rem;
   right: 2rem;
   width: 56px;
   height: 56px;
@@ -4299,7 +4299,7 @@
 
 @media (max-width: 960px) {
   .scroll-top {
-    bottom: 1.5rem;
+    bottom: 5.5rem;
     right: 1rem;
     width: 52px;
     height: 52px;
@@ -4319,6 +4319,56 @@
 }
 
 .scroll-top:focus-visible {
+  outline: 3px solid rgba(209, 141, 66, 0.4);
+  outline-offset: 4px;
+}
+
+.scroll-bottom {
+  position: fixed !important;
+  bottom: 6rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d18d42, #f2c463);
+  color: #1f2933;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 20px 48px -18px rgba(209, 141, 66, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+@media (max-width: 960px) {
+  .scroll-bottom {
+    bottom: 5.5rem;
+    right: 1rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.4rem;
+    z-index: 997;
+  }
+}
+
+.scroll-bottom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 56px -18px rgba(209, 141, 66, 0.95);
+  opacity: 1;
+}
+
+.scroll-bottom:active {
+  transform: translateY(-2px);
+}
+
+.scroll-bottom:focus-visible {
   outline: 3px solid rgba(209, 141, 66, 0.4);
   outline-offset: 4px;
 }

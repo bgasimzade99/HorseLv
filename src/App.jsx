@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
+import ChatBot from './ChatBot'
 import heroSlideOne from './assets/29928c4a071cb4f74476e91a3e43fc85.jpg'
 import heroSlideTwo from './assets/6dc6758e044489ee9d73b2f8deda4c35.jpg'
 import heroSlideThree from './assets/c94173562472c9c29813b9cba7c8d8e2.jpg'
@@ -1104,6 +1105,7 @@ function App() {
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const [showScrollBottom, setShowScrollBottom] = useState(false)
   const [formStatus, setFormStatus] = useState({ type: null, message: null })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -1345,12 +1347,33 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       if (!headerRef.current) return
-      if (window.scrollY > 12) {
+      const scrollY = window.scrollY
+      const windowHeight = window.innerHeight
+      const documentHeight = document.documentElement.scrollHeight
+      const isAtBottom = scrollY + windowHeight >= documentHeight - 100 // 100px tolerance for better detection
+      
+      // Header scroll class
+      if (scrollY > 12) {
         headerRef.current.classList.add('is-scrolled')
-        setShowScrollTop(true)
       } else {
         headerRef.current.classList.remove('is-scrolled')
-        setShowScrollTop(false)
+      }
+      
+      // Show scroll-bottom when NOT at bottom, show scroll-top when AT bottom
+      if (isAtBottom) {
+        // At footer - show scroll-top, hide scroll-bottom
+        setShowScrollTop(true)
+        setShowScrollBottom(false)
+      } else {
+        // Not at footer - show scroll-bottom, hide scroll-top (unless at very top)
+        if (scrollY > 12) {
+          setShowScrollBottom(true)
+          setShowScrollTop(false)
+        } else {
+          // At very top - hide both
+          setShowScrollBottom(false)
+          setShowScrollTop(false)
+        }
       }
     }
     handleScroll()
@@ -1438,6 +1461,10 @@ function App() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' })
   }
 
   const closeMenu = () => {
@@ -2131,6 +2158,17 @@ function App() {
         </button>
       )}
 
+      {showScrollBottom && (
+        <button
+          className="scroll-bottom"
+          type="button"
+          onClick={scrollToBottom}
+          aria-label="Scroll to bottom"
+        >
+          ↓
+        </button>
+      )}
+
       {activeGalleryIndex !== null && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
           <button
@@ -2192,6 +2230,8 @@ function App() {
           </button>
         </div>
       )}
+
+      <ChatBot selectedLanguage={selectedLanguage} />
     </div>
   )
 }
