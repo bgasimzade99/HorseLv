@@ -16,6 +16,7 @@ import galleryImageCfc from './assets/cfc.jpg'
 import galleryImageTrt from './assets/trt.jpg'
 import galleryImageFestival from './assets/festival.jpg'
 import atimImage from './assets/atim.png'
+import news1Image from './assets/news1.jpg'
 
 const heroSlides = [heroSlideOne, heroSlideTwo, heroSlideThree]
 const galleryImages = [
@@ -219,25 +220,20 @@ const translations = {
       { href: '#about', label: 'Par mums' },
       { href: '#services', label: 'Pakalpojumi' },
       { href: '#gallery', label: 'Galerija' },
-      { href: '#competitions', label: 'Sacensības' },
       { href: '#news', label: 'Jaunumi' },
       { href: '#contacts', label: 'Kontakti' },
     ],
     navCta: 'Pieteikties',
     hero: {
       eyebrow: 'Asnates JSK',
-      title: 'Vieta, kur cilvēki satiekas ar zirgiem',
-      lead:
-        'Mēs veidojam vidi profesionāļiem un iesācējiem: modernas stallis, treniņi ar pieredzējušiem treneriem un Eiropas līmeņa sacensības.',
+      title: 'Šeit sākas ceļš uz draudzību ar zirgiem',
       primaryCta: 'Pieteikties',
       secondaryCta: 'Uzzināt vairāk',
     },
     services: {
       heading: {
         eyebrow: 'Pakalpojumi',
-        title: 'Viss cilvēka un zirga harmonijai',
-        description:
-          'Eiropas drošības un aprūpes standarti, sertificēti treneri un infrastruktūra nodarbībām visa gada garumā.',
+        title: 'Tur kur dzimst uzticība starp cilvēku un zirgu',
       },
       cards: [
         {
@@ -281,41 +277,6 @@ const translations = {
       ],
       primaryCta: 'Sazināties',
       secondaryCta: 'Jaunumi',
-      mediaCard: {
-        eyebrow: 'Kopš 2021. gada',
-        title: 'Praktiskas nodarbības ar pieredzējušiem instruktoriem',
-        text: 'Visas nodarbības balstās uz reālu praksi ar mūsu pieredzējušiem instruktoriem. Mēs piedāvājam drošu, draudzīgu un profesionālu vidi katram jātniekam — no iesācējiem līdz pieredzējušiem.',
-      },
-    },
-    competitions: {
-      heading: {
-        eyebrow: 'Sacensības',
-        title: 'Gaidāmie starti un pasākumi',
-        cta: 'Pieteikties',
-      },
-      timeline: [
-        {
-          date: '15.–16. novembris 2025',
-          title: 'Ziemas kauss konkūrā — Fināls',
-          description:
-            'Manēža 35×60 m, atsevišķs iesildīšanās laukums 25×60 m. Pieteikšanās līdz 13.11., starts plkst. 09:00. Organizatoru komanda nodrošina augstāko sacensību kvalitāti.',
-          cta: 'Uzzināt vairāk',
-        },
-        {
-          date: '2025. gada decembris',
-          title: 'Ziemas treniņnometne',
-          description:
-            'Intensīva nedēļa iejādes un konkūra disciplīnās – teorija, prakse un individuāli attīstības plāni.',
-          cta: 'Uzzināt vairāk',
-        },
-        {
-          date: '2026. gada janvāris',
-          title: 'Jauno jātnieku kauss',
-          description:
-            'Startu sērija bērniem un jauniešiem, kas veido sacensību pieredzi un pārliecību arēnā.',
-          cta: 'Uzzināt vairāk',
-        },
-      ],
     },
     prices: {
       heading: {
@@ -347,6 +308,7 @@ const translations = {
       heading: {
         eyebrow: 'Jaunumi',
         title: 'Notikumi un sasniegumi skolā',
+        description: 'Mūsu kluba dzīve ir piepildīta ar elpu aizraujošiem startiem, sirsnīgām tikšanās reizēm un kopīgu prieku par panākumiem.',
       },
       items: [
         {
@@ -354,6 +316,7 @@ const translations = {
           title: 'Ziemassvētku labdarības pasākums — jāšanas nodarbības',
           description:
             'Pievienojieties mums 25. decembrī īpašajam Ziemassvētku labdarības pasākumam! Organizējam jāšanas nodarbības visai ģimenei, kurās varēsiet izbaudīt brīnišķīgu laiku kopā ar zirgiem un vienlaikus atbalstīt labdarību. Pasākums ir piemērots gan iesācējiem, gan pieredzējušiem jātniekiem.',
+          image: news1Image,
           cta: 'Pieteikties',
         },
         {
@@ -380,6 +343,8 @@ const translations = {
       form: {
         nameLabel: 'Vārds',
         namePlaceholder: 'Marija Ivanova',
+        emailLabel: 'E-pasts',
+        emailPlaceholder: 'marija@example.com',
         phoneLabel: 'Tālrunis',
         phonePlaceholder: '+371 2 8352881',
         serviceLabel: 'Vēlamais pakalpojums',
@@ -387,7 +352,6 @@ const translations = {
         services: [
           { value: 'boarding', label: 'Zirgu uzturēšana' },
           { value: 'training', label: 'Treniņi' },
-          { value: 'competitions', label: 'Sacensības' },
           { value: 'events', label: 'Pasākumi' },
         ],
         messageLabel: 'Komentārs',
@@ -417,40 +381,70 @@ const translations = {
       description: 'Mūsu audzēkņu un viņu ģimeņu pieredze ar mums.',
       items: [
         {
-          name: 'Anna Bērziņa',
-          role: 'Mamma',
+          name: 'Paula – Laits',
+          role: 'Zirgu saimniece',
           rating: 5,
-          text: 'Mana meita sāka jāt pirms diviem gadiem, un es redzēju, kā viņa kļuva drošāka un disciplinētāka. Treneri ir profesionāli un uzmanīgi.',
+          text: 'Man patīk apstākļi, tie tur ir piemēroti tieši manam zirgam. Visvairāk man patīk atmosfēra un vide. Mana zirga ikdienas aprūpe ir ideāla, jo manam zirgam nekas netrūkst, ir pieskatīts, aprūpēts un apčubināts. Manuprāt atšķiras ar to, ka zirgiem vienmēr ir pievērsta 100% uzmanība un vienmēr tiks paziņots, ja kaut kas nebūs tā. Es noteikti ieteiktu Asnates JSK arī citiem, jo 100% par Jūsu zirgu parūpēsies, apčubinās un nekad nekas netrūks.',
         },
         {
-          name: 'Jānis Kalniņš',
-          role: 'Jātnieks',
+          name: 'Linda – Masarati, Čillijs',
+          role: 'Zirgu saimniece',
           rating: 5,
-          text: 'Nesagādāju savu zirgu citur. Infrastruktūra ir lieliska, aprūpe ir augstā līmenī. Ļoti apmierināts ar pakalpojumu kvalitāti.',
+          text: 'Jo plašas ganības, treniņu laukums, laba aprūpe. Vieta, cilvēki. Aprūpe ir laba – tīrība, labs siens, papildbarības, svaigs ūdens, regulāri tiek piesaistīti veterinārārsti. Zirgi noteikti jūtas labi, jo daudz zirgu, un zirgs ir bara dzīvnieks, kā arī plašums kur izskrieties. Nav pieredzes ar citiem zirgu staļļiem, bet domāju ka aprūpe ir augstā līmenī un pieņemamas turēšanas cenas. Jā, ieteiktu. Jo laba aprūpe, Asnatei ir liela pieredze un zināšanas par zirgiem.',
         },
         {
-          name: 'Marija Ozola',
-          role: 'Bērna vecāki',
+          name: 'Anastasija – Advokāts',
+          role: 'Zirgu saimniece',
           rating: 5,
-          text: 'Mūsu dēls ir tik priecīgs, ka var trenēties šeit. Atmosfēra ir draudzīga un droša, un mēs redzam lieliskus rezultātus.',
+          text: 'Asnati jau zinu kopš Tērvetes laikiem.. viņa ir ļoti zinošs zirdzinieks ar labu dvēseli, pēdējo atdos lai tikai zirgiem būtu labi, pārdzīvo par katru zirgu. Ar Asnati var visu sarunāt.. viņas siltā attieksme pret zirgiem, cilvēkiem un darbu, priekš manis ir pirmajā vietā. Pie Asnates IR tā individuālā zirgu aprūpe, viņa par katru zirgu rūpējas kā par savu. Pirmais jau tas ir tas, ka Asnatei ir milzīga pieredze ar zirgiem, it īpaši ar jaunzirgiem. Otrais tas ir tas, ka te ir katram zirgam individuāla pieeja.. un trešais ir tas, ka Asnatei pie visa ko viņa dara ir profesionāla attieksme.',
         },
         {
-          name: 'Pēteris Siliņš',
-          role: 'Uzņēmējs',
+          name: 'Baiba - Sparta',
+          role: 'Zirgu saimniece',
           rating: 5,
-          text: 'Organizējām korporatīvu pasākumu šeit. Komanda bija profesionāla, programma interesanta. Visi bija apmierināti!',
+          text: 'Mēs zirgu nopirkām no Asnates. Ļoti patīk, ka zirgi 24/7 var dzīvot ārā savā vidē ar pieeju nojumēm. Zirgi ir paēduši, izlutināti, samīļoti. Visvairāk mums patīk vide, cilvēki un atmosfēra. Atmosfēra tāda, ka var justies kā mājās. Cilvēki- bez uzpūtībām, bez iedomīgumu – mīļi cilvēki. Pie Asnates ir ļooti laba zirgu aprūpe. Daudz staļļos es neesmu bijusi, bet tajos kuros esmu varu salīdzināt, ka pie Asnates zirgi ir aprūpēti, pabaroti… pie Asnates zirgs ir vērtīgāks par cilvēku.',
         },
         {
-          name: 'Elīna Zariņa',
-          role: 'Jātniece',
+          name: 'Rēzija',
+          role: 'Jātniece, 16 gadi',
           rating: 5,
-          text: 'Es trenējos šeit jau vairākus gadus. Manēža ir modernā, zirgi ir labi aprūpēti, un treneri palīdz sasniegt mērķus.',
+          text: 'Es nodarbojos jau astoņus gadus. Kad man bija 8 gadi, Ventspilī bija pasākums ,,Vakara pastaiga" un Asnate ar zirgiem vizināja bērnus. Mēs piegājām, pajautājām, vai ir iespēja pie viņas jāt ar zirgu, un tā sākās manas gaitas pie Asnates.',
         },
         {
-          name: 'Andris Vītols',
-          role: 'Vectēvs',
+          name: 'Samanta',
+          role: 'Jātniece, 23 gadi',
           rating: 5,
-          text: 'Mana mazmeita apmeklē nometnes un ir ļoti priecīga. Personāls ir uzmanīgs pret bērniem un nodrošina drošību.',
+          text: 'Uz treniņiem eju jau labu laiku pie Asnates JSK. Man ļoti patīk tā atmosfēra, kas tur valda. Visi ir draudzīgi un izpalīdzīgi. Esmu ievērojusi, ka daudzos staļļos tā nav, manā uztverē tas ir ļoti svarīgi. Manuprāt Asnate ir ļoti zinoša un izglītota trenere. Liels plus manā skatījumā ir, ka trenere nešķiro zirgus, tajā nozīmē, vai savs personīgais, vai kāda privātais, visus aprūpē un samīļo vienādi. Treniņos man ļoti patīk, ka trenere pievērš uzmanību visiem, un pārredzēs katru jātnieku.',
+        },
+        {
+          name: 'Sāra',
+          role: 'Jātniece, 14 gadi',
+          rating: 5,
+          text: 'ES jau pie Asnates jāju piecus gadus, drīz būs sestais. Mani draudzene Elīza, kura arī brauc pie Asnates, paņēma līdzi uz treniņu Popē, un man ļoti iepatikās. Tā es uzsāku trenēties pie Asnates un tā vēl turpinu. Tagad jau man ir pašai savs personīgais zirgs – Sparta.',
+        },
+        {
+          name: 'Anna',
+          role: 'Jātniece, 8 gadi',
+          rating: 5,
+          text: 'Es pie Asnates trenējos divus gadus. Man te ir daudz jauni draugi un mana mīlulīte Adele. Es esmu iemīlējusi zirgus pateicoties Asnatei, kuru iepazinām, jo gāja ar zirgiem uz jūru gar mūsu māju, tad tētis mani šeit atveda.',
+        },
+        {
+          name: 'Pārsla',
+          role: 'Jātniece, 14 gadi',
+          rating: 5,
+          text: 'Es jāju vienu gadu. Es pie Asnates eju, tāpēc, ka kamēr es šeit nāku esmu iepazinusi tik daudz jaunus cilvēkus un ieguvusi tik daudz jaunus draugus. Viss Asnates JSK klubs ir mana, kā otrā ģimene. Asnate pati ir ļoti fantastiska trenere, mēs viss klubiņš viņu tik ļoti mīlam. Un bez Asnates mēs nebūtu sasnieguši to, ko mēs esam tagad sasnieguši zirgu jāšanā.',
+        },
+        {
+          name: 'Zane',
+          role: 'Elizabetes mamma',
+          rating: 5,
+          text: 'Asnates JSK Elizabetes dzīvē ienāca tieši tajā laikā, kad to vajadzēja dvēselītei. Šie treniņi un kopā būšana ar zirgiem viņai ir gan mierinājums, gan sirds lieta. Milzīgs Paldies Asnatei par šo milzīgo darbu, un sirds ieguldījumu. Kad mans bērns ir pie Asnates, es zinu, ka ar viņu viss ir labi, un tiek arī iemācītas lietas, kas dzīves laikā ļoti noderēs.',
+        },
+        {
+          name: 'Jolanta',
+          role: 'Vecāki',
+          rating: 5,
+          text: 'Mana sirdslieta vienmēr ir bijuši zirgi, lai gan ne vienmēr izdodas sevi palutināt ar izjādēm. Tieši tāpēc katra reize pie Asnates ir īpaša. Pie Asnates vienmēr esam mīļi gaidīti – viņa patiesi rūpējas par saviem jātniekiem un to jūt ik solī. Asnate rada drošības sajūtu, viņa vienmēr apjautājas, vai viss ir kārtībā, vai visi tiek līdzi un jūtas ērti. Izjādes pie viņas sniedz tikai pozitīvas emocijas – gan mieru, gan prieku, gan patiesu saikni ar zirgiem.',
         },
       ],
     },
@@ -516,25 +510,20 @@ const translations = {
       { href: '#about', label: 'About' },
       { href: '#services', label: 'Services' },
       { href: '#gallery', label: 'Gallery' },
-      { href: '#competitions', label: 'Competitions' },
       { href: '#news', label: 'News' },
       { href: '#contacts', label: 'Contacts' },
     ],
     navCta: 'Sign up',
     hero: {
       eyebrow: 'Asnates JSK',
-      title: 'Where people meet horses',
-      lead:
-        'We create a space for professionals and beginners alike: modern stables, coaching by experienced trainers, and competitions of European standard.',
+      title: 'Here begins the journey to friendship with horses',
       primaryCta: 'Book now',
       secondaryCta: 'Discover more',
     },
     services: {
       heading: {
         eyebrow: 'Services',
-        title: 'Everything for rider and horse harmony',
-        description:
-          'European safety and care standards, accredited trainers, and year-round infrastructure for equestrian activities.',
+        title: 'Where trust is born between human and horse',
       },
       cards: [
         {
@@ -578,41 +567,6 @@ const translations = {
       ],
       primaryCta: 'Contact us',
       secondaryCta: 'News',
-      mediaCard: {
-        eyebrow: 'Since 2021',
-        title: 'Real-life practice with experienced instructors',
-        text: 'All lessons are based on real-life practice with our experienced instructors. We offer a safe, friendly, and professional environment for every rider — from beginners to advanced.',
-      },
-    },
-    competitions: {
-      heading: {
-        eyebrow: 'Competitions',
-        title: 'Upcoming events and highlights',
-        cta: 'Apply now',
-      },
-      timeline: [
-        {
-          date: '15–16 November 2025',
-          title: 'Winter Cup Show Jumping — Final',
-          description:
-            '35×60 m indoor arena with a dedicated 25×60 m warm-up. Entries until 13.11, start 09:00. The organising team ensures top-level competition experience.',
-          cta: 'Learn more',
-        },
-        {
-          date: 'December 2025',
-          title: 'Winter training camp',
-          description:
-            'A week of intensive dressage and show-jumping practice, theory sessions, and individual development plans.',
-          cta: 'Learn more',
-        },
-        {
-          date: 'January 2026',
-          title: 'Young Riders Cup',
-          description:
-            'Competition series for children and teens designed to build confidence and experience in the arena.',
-          cta: 'Learn more',
-        },
-      ],
     },
     prices: {
       heading: {
@@ -644,6 +598,7 @@ const translations = {
       heading: {
         eyebrow: 'News',
         title: 'Stories and achievements from the school',
+        description: 'Our club life is filled with breathtaking starts, heartfelt meetings and shared joy for achievements.',
       },
       items: [
         {
@@ -651,6 +606,7 @@ const translations = {
           title: 'Christmas Charity Event — Horse Riding',
           description:
             'Join us on December 25th for a special Christmas charity event! We are organizing horse riding lessons for the whole family, where you can enjoy wonderful time with horses while supporting a good cause. The event is suitable for both beginners and experienced riders.',
+          image: news1Image,
           cta: 'Sign up',
         },
         {
@@ -677,6 +633,8 @@ const translations = {
       form: {
         nameLabel: 'Name',
         namePlaceholder: 'Maria Ivanova',
+        emailLabel: 'Email',
+        emailPlaceholder: 'maria@example.com',
         phoneLabel: 'Phone',
         phonePlaceholder: '+371 2 8352881',
         serviceLabel: 'Service of interest',
@@ -684,7 +642,6 @@ const translations = {
         services: [
           { value: 'boarding', label: 'Horse boarding' },
           { value: 'training', label: 'Training' },
-          { value: 'competitions', label: 'Competitions' },
           { value: 'events', label: 'Events' },
         ],
         messageLabel: 'Message',
@@ -714,40 +671,70 @@ const translations = {
       description: 'The experience of our students and their families with us.',
       items: [
         {
-          name: 'Anna Berzina',
+          name: 'Paula – Laits',
+          role: 'Horse owner',
+          rating: 5,
+          text: 'I like the conditions, they are suitable for my horse. What I like most is the atmosphere and environment. My horse\'s daily care is ideal, nothing is missing, he is looked after, cared for and groomed. What makes it different is that horses always get 100% attention and you will always be notified if something is not right. I would definitely recommend Asnates JSK to others, because they will take 100% care of your horse, groom it and nothing will ever be missing.',
+        },
+        {
+          name: 'Linda – Masarati, Čillijs',
+          role: 'Horse owner',
+          rating: 5,
+          text: 'Wide pastures, training area, good care. The place, the people. Care is good – cleanliness, good hay, supplements, fresh water, veterinarians are regularly called. Horses definitely feel good because there are many horses, and a horse is a herd animal, as well as space to run around. I think the care is at a high level and the boarding prices are reasonable. Yes, I would recommend. Because of good care, Asnate has great experience and knowledge about horses.',
+        },
+        {
+          name: 'Anastasija – Advokāts',
+          role: 'Horse owner',
+          rating: 5,
+          text: 'I have known Asnate since Tērvete times.. she is a very knowledgeable horse person with a good soul, gives her last so that horses are well, worries about every horse. You can discuss everything with Asnate.. her warm attitude towards horses, people and work is in first place for me. At Asnates there IS that individual horse care, she takes care of every horse as if it were her own. First, Asnate has tremendous experience with horses, especially young horses. Second, there is an individual approach to each horse.. and third, Asnate has a professional attitude towards everything she does.',
+        },
+        {
+          name: 'Baiba - Sparta',
+          role: 'Horse owner',
+          rating: 5,
+          text: 'We bought the horse from Asnates. I really like that horses can live outside 24/7 in their environment with access to shelters. Horses are well-fed, pampered, loved. What we like most is the environment, people and atmosphere. An atmosphere where you can feel at home. People - without pretensions, without arrogance – kind people. At Asnates there is very good horse care. I haven\'t been to many stables, but in those I have been to I can compare that at Asnates horses are cared for, fed… at Asnates the horse is more valuable than a person.',
+        },
+        {
+          name: 'Rēzija',
+          role: 'Rider, 16 years',
+          rating: 5,
+          text: 'I have been riding for eight years. When I was 8 years old, there was an event "Evening Walk" in Ventspils and Asnate was giving children rides with horses. We came up, asked if it was possible to ride with her, and that\'s how my journey with Asnate began.',
+        },
+        {
+          name: 'Samanta',
+          role: 'Rider, 23 years',
+          rating: 5,
+          text: 'I have been going to training for a long time at Asnates JSK. I really like the atmosphere there. Everyone is friendly and helpful. I have noticed that this is not the case in many stables, which is very important to me. I think Asnate is a very knowledgeable and educated trainer. A big plus in my view is that the trainer doesn\'t discriminate between horses, whether it\'s her own personal one or someone\'s private one, she cares for and pampers them all equally. In training I really like that the trainer pays attention to everyone and will see through every rider.',
+        },
+        {
+          name: 'Sāra',
+          role: 'Rider, 14 years',
+          rating: 5,
+          text: 'I have been riding at Asnates for five years, soon it will be the sixth. My friend Elīza, who also rides at Asnates, took me along to training with Popē, and I really liked it. That\'s how I started training at Asnates and I\'m still continuing. Now I already have my own personal horse – Sparta.',
+        },
+        {
+          name: 'Anna',
+          role: 'Rider, 8 years',
+          rating: 5,
+          text: 'I have been training at Asnates for two years. I have many new friends here and my sweetheart Adele. I fell in love with horses thanks to Asnate, whom we met because she was walking with horses to the sea past our house, then dad brought me here.',
+        },
+        {
+          name: 'Pārsla',
+          role: 'Rider, 14 years',
+          rating: 5,
+          text: 'I have been riding for one year. I go to Asnates because while I\'ve been coming here I\'ve met so many new people and made so many new friends. The whole Asnates JSK club is like my second family. Asnate herself is a fantastic trainer, we all in the club love her so much. And without Asnate we would not have achieved what we have now achieved in horse riding.',
+        },
+        {
+          name: 'Zane',
+          role: 'Elizabete\'s mother',
+          rating: 5,
+          text: 'Asnates JSK entered Elizabete\'s life exactly when her soul needed it. These trainings and being together with horses are both comfort and a heart matter for her. Huge thanks to Asnate for this tremendous work and heart investment. When my child is at Asnates, I know that everything is fine with her, and she also learns things that will be very useful in life.',
+        },
+        {
+          name: 'Jolanta',
           role: 'Parent',
           rating: 5,
-          text: 'My daughter started riding two years ago, and I saw her become more confident and disciplined. The trainers are professional and attentive.',
-        },
-        {
-          name: 'Janis Kalnins',
-          role: 'Rider',
-          rating: 5,
-          text: 'I would not board my horse anywhere else. The infrastructure is excellent, care is top-level. Very satisfied with the service quality.',
-        },
-        {
-          name: 'Maria Ozola',
-          role: 'Parent',
-          rating: 5,
-          text: 'Our son is so happy to train here. The atmosphere is friendly and safe, and we see great results.',
-        },
-        {
-          name: 'Peteris Silins',
-          role: 'Business owner',
-          rating: 5,
-          text: 'We organized a corporate event here. The team was professional, the program interesting. Everyone was satisfied!',
-        },
-        {
-          name: 'Elina Zarina',
-          role: 'Rider',
-          rating: 5,
-          text: 'I have been training here for several years. The arena is modern, horses are well cared for, and trainers help achieve goals.',
-        },
-        {
-          name: 'Andris Vitols',
-          role: 'Grandparent',
-          rating: 5,
-          text: 'My granddaughter attends camps and is very happy. The staff is attentive to children and ensures safety.',
+          text: 'Horses have always been my passion, although I don\'t always manage to treat myself to rides. That\'s why every time at Asnates is special. At Asnates we are always warmly welcomed – she truly cares about her riders and you feel it at every step. Asnate creates a sense of security, she always asks if everything is okay, if everyone is keeping up and feeling comfortable. Rides with her give only positive emotions – both peace and joy, and a true connection with horses.',
         },
       ],
     },
@@ -813,25 +800,20 @@ const translations = {
       { href: '#about', label: 'О нас' },
       { href: '#services', label: 'Услуги' },
       { href: '#gallery', label: 'Галерея' },
-      { href: '#competitions', label: 'Соревнования' },
       { href: '#news', label: 'Новости' },
       { href: '#contacts', label: 'Контакты' },
     ],
     navCta: 'Записаться',
     hero: {
       eyebrow: 'Asnates JSK',
-      title: 'Место, где люди встречаются с лошадьми',
-      lead:
-        'Мы создаём пространство для профессионалов и новичков: современные конюшни, тренировки с опытными тренерами и соревнования европейского уровня.',
+      title: 'Здесь начинается путь к дружбе с лошадьми',
       primaryCta: 'Записаться',
       secondaryCta: 'Узнать больше',
     },
     services: {
       heading: {
         eyebrow: 'Услуги',
-        title: 'Всё для гармонии человека и лошади',
-        description:
-          'Европейские стандарты безопасности и ухода, сертифицированные тренеры и инфраструктура для круглогодичных занятий верховой ездой.',
+        title: 'Где рождается доверие между человеком и лошадью',
       },
       cards: [
         {
@@ -875,41 +857,6 @@ const translations = {
       ],
       primaryCta: 'Связаться',
       secondaryCta: 'Новости',
-      mediaCard: {
-        eyebrow: 'С 2021 года',
-        title: 'Практические занятия с опытными инструкторами',
-        text: 'Все занятия основаны на реальной практике с нашими опытными инструкторами. Мы предлагаем безопасную, дружелюбную и профессиональную среду для каждого всадника — от начинающих до продвинутых.',
-      },
-    },
-    competitions: {
-      heading: {
-        eyebrow: 'Соревнования',
-        title: 'Грядущие старты и мероприятия',
-        cta: 'Подать заявку',
-      },
-      timeline: [
-        {
-          date: '15–16 ноября 2025',
-          title: 'Ziemas kauss konkūrā — Финал',
-          description:
-            'Манеж 35×60 м, отдельное поле 25×60 м для разминки. Приём заявок до 13.11, старт в 09:00. Команда организаторов гарантирует высокий уровень соревнований.',
-          cta: 'Узнать больше',
-        },
-        {
-          date: 'Декабрь 2025',
-          title: 'Зимний тренировочный лагерь',
-          description:
-            'Неделя интенсивной подготовки по дисциплинам выездки и конкур, теория, практика и индивидуальные планы развития.',
-          cta: 'Узнать больше',
-        },
-        {
-          date: 'Январь 2026',
-          title: 'Кубок юных всадников',
-          description:
-            'Серия стартов для детей и подростков, направленная на развитие соревновательного опыта и уверенности на арене.',
-          cta: 'Узнать больше',
-        },
-      ],
     },
     prices: {
       heading: {
@@ -941,6 +888,7 @@ const translations = {
       heading: {
         eyebrow: 'Новости',
         title: 'События и достижения школы',
+        description: 'Жизнь нашего клуба наполнена захватывающими стартами, душевными встречами и общей радостью за достижения.',
       },
       items: [
         {
@@ -948,6 +896,7 @@ const translations = {
           title: 'Рождественское благотворительное мероприятие — верховая езда',
           description:
             'Присоединяйтесь к нам 25 декабря на специальное рождественское благотворительное мероприятие! Мы организуем занятия верховой ездой для всей семьи, где вы сможете провести замечательное время с лошадьми и одновременно поддержать благотворительность. Мероприятие подходит как для начинающих, так и для опытных всадников.',
+          image: news1Image,
           cta: 'Записаться',
         },
         {
@@ -974,6 +923,8 @@ const translations = {
       form: {
         nameLabel: 'Имя',
         namePlaceholder: 'Мария Иванова',
+        emailLabel: 'Электронная почта',
+        emailPlaceholder: 'maria@example.com',
         phoneLabel: 'Телефон',
         phonePlaceholder: '+371 2 8352881',
         serviceLabel: 'Цель визита',
@@ -981,7 +932,6 @@ const translations = {
         services: [
           { value: 'boarding', label: 'Содержание лошадей' },
           { value: 'training', label: 'Тренировки' },
-          { value: 'competitions', label: 'Соревнования' },
           { value: 'events', label: 'Мероприятия' },
         ],
         messageLabel: 'Комментарий',
@@ -1011,40 +961,70 @@ const translations = {
       description: 'Опыт наших учеников и их семей с нами.',
       items: [
         {
-          name: 'Анна Берзиня',
+          name: 'Паула – Лайтс',
+          role: 'Владелица лошади',
+          rating: 5,
+          text: 'Мне нравятся условия, они подходят именно для моей лошади. Больше всего мне нравится атмосфера и окружение. Ежедневный уход за моей лошадью идеален, ничего не упущено, она под присмотром, ухожена и вычищена. Отличие в том, что лошадям всегда уделяется 100% внимания, и вас всегда уведомят, если что-то не так. Я определенно рекомендую Asnates JSK другим, потому что они будут на 100% заботиться о вашей лошади, ухаживать за ней, и ничего не будет упущено.',
+        },
+        {
+          name: 'Линда – Масарати, Чиллис',
+          role: 'Владелица лошади',
+          rating: 5,
+          text: 'Просторные пастбища, тренировочная площадка, хороший уход. Место, люди. Уход хороший – чистота, хорошее сено, добавки, свежая вода, регулярно привлекаются ветеринары. Лошади определенно чувствуют себя хорошо, потому что много лошадей, а лошадь – стадное животное, а также есть пространство для бега. Я думаю, что уход на высоком уровне и цены на содержание приемлемы. Да, рекомендую. Потому что хороший уход, у Аснате большой опыт и знания о лошадях.',
+        },
+        {
+          name: 'Анастасия – Адвокат',
+          role: 'Владелица лошади',
+          rating: 5,
+          text: 'Я знаю Аснате еще со времен Тервете.. она очень знающий конник с доброй душой, отдаст последнее, чтобы лошадям было хорошо, переживает за каждую лошадь. С Аснате можно обсудить все.. её теплое отношение к лошадям, людям и работе для меня на первом месте. У Аснате ЕСТЬ индивидуальный уход за лошадьми, она заботится о каждой лошади, как о своей. Во-первых, у Аснате огромный опыт работы с лошадьми, особенно с молодыми. Во-вторых, индивидуальный подход к каждой лошади.. и в-третьих, у Аснате профессиональное отношение ко всему, что она делает.',
+        },
+        {
+          name: 'Байба - Спарта',
+          role: 'Владелица лошади',
+          rating: 5,
+          text: 'Мы купили лошадь у Аснате. Мне очень нравится, что лошади могут жить на улице 24/7 в своей среде с доступом к укрытиям. Лошади сыты, избалованы, любимы. Больше всего нам нравится окружение, люди и атмосфера. Атмосфера, где можно чувствовать себя как дома. Люди - без претензий, без высокомерия – добрые люди. У Аснате очень хороший уход за лошадьми. Я не была во многих конюшнях, но в тех, где была, могу сравнить, что у Аснате лошади ухожены, накормлены… у Аснате лошадь ценнее человека.',
+        },
+        {
+          name: 'Рейзия',
+          role: 'Всадница, 16 лет',
+          rating: 5,
+          text: 'Я занимаюсь уже восемь лет. Когда мне было 8 лет, в Вентспилсе было мероприятие "Вечерняя прогулка", и Аснате катала детей на лошадях. Мы подошли, спросили, можно ли у неё покататься, и так начался мой путь с Аснате.',
+        },
+        {
+          name: 'Саманта',
+          role: 'Всадница, 23 года',
+          rating: 5,
+          text: 'Я уже давно хожу на тренировки в Asnates JSK. Мне очень нравится атмосфера там. Все дружелюбны и отзывчивы. Я заметила, что во многих конюшнях это не так, что очень важно для меня. Я думаю, что Аснате очень знающий и образованный тренер. Большой плюс в моих глазах - то, что тренер не различает лошадей, будь то её личная или чья-то частная, она заботится о всех одинаково и балует их одинаково. На тренировках мне очень нравится, что тренер уделяет внимание всем и видит каждого всадника.',
+        },
+        {
+          name: 'Сара',
+          role: 'Всадница, 14 лет',
+          rating: 5,
+          text: 'Я уже пять лет езжу в Аснате, скоро будет шестой. Моя подруга Элиза, которая тоже ездит в Аснате, взяла меня с собой на тренировку с Попе, и мне очень понравилось. Так я начала тренироваться в Аснате и продолжаю до сих пор. Теперь у меня уже есть своя личная лошадь – Спарта.',
+        },
+        {
+          name: 'Анна',
+          role: 'Всадница, 8 лет',
+          rating: 5,
+          text: 'Я тренируюсь в Аснате два года. У меня здесь много новых друзей и моя любимица Адель. Я влюбилась в лошадей благодаря Аснате, которую мы встретили, потому что она шла с лошадьми к морю мимо нашего дома, тогда папа привел меня сюда.',
+        },
+        {
+          name: 'Парсла',
+          role: 'Всадница, 14 лет',
+          rating: 5,
+          text: 'Я занимаюсь один год. Я хожу в Аснате, потому что пока я здесь, я познакомилась с таким количеством новых людей и завела столько новых друзей. Весь клуб Asnates JSK - это моя вторая семья. Сама Аснате - фантастический тренер, мы все в клубе так сильно её любим. И без Аснате мы бы не достигли того, чего достигли сейчас в верховой езде.',
+        },
+        {
+          name: 'Зане',
+          role: 'Мама Элизабете',
+          rating: 5,
+          text: 'Asnates JSK вошла в жизнь Элизабете именно тогда, когда её душе это было нужно. Эти тренировки и общение с лошадьми для неё и утешение, и дело сердца. Огромное спасибо Аснате за эту огромную работу и вложение души. Когда мой ребенок в Аснате, я знаю, что с ней всё в порядке, и она также учится вещам, которые очень пригодятся в жизни.',
+        },
+        {
+          name: 'Йоланта',
           role: 'Родитель',
           rating: 5,
-          text: 'Моя дочь начала заниматься два года назад, и я вижу, как она стала увереннее и дисциплинированнее. Тренеры профессиональны и внимательны.',
-        },
-        {
-          name: 'Янис Калниньш',
-          role: 'Всадник',
-          rating: 5,
-          text: 'Я не стал бы размещать свою лошадь нигде в другом месте. Инфраструктура отличная, уход на высоком уровне. Очень доволен качеством обслуживания.',
-        },
-        {
-          name: 'Мария Озола',
-          role: 'Родитель',
-          rating: 5,
-          text: 'Наш сын так рад тренироваться здесь. Атмосфера дружелюбная и безопасная, мы видим отличные результаты.',
-        },
-        {
-          name: 'Петерис Силиньш',
-          role: 'Предприниматель',
-          rating: 5,
-          text: 'Мы организовали корпоративное мероприятие здесь. Команда была профессиональной, программа интересной. Все остались довольны!',
-        },
-        {
-          name: 'Элина Зариня',
-          role: 'Всадница',
-          rating: 5,
-          text: 'Я тренируюсь здесь уже несколько лет. Манеж современный, лошади хорошо ухожены, тренеры помогают достигать целей.',
-        },
-        {
-          name: 'Андрис Витолс',
-          role: 'Дедушка',
-          rating: 5,
-          text: 'Моя внучка посещает лагеря и очень довольна. Персонал внимателен к детям и обеспечивает безопасность.',
+          text: 'Лошади всегда были моей страстью, хотя мне не всегда удается побаловать себя поездками. Именно поэтому каждый раз в Аснате особенный. В Аснате нас всегда тепло встречают – она действительно заботится о своих всадниках, и вы чувствуете это на каждом шагу. Аснате создает чувство безопасности, она всегда спрашивает, всё ли в порядке, все ли успевают и чувствуют себя комфортно. Поездки с ней дают только положительные эмоции – и покой, и радость, и настоящую связь с лошадьми.',
         },
       ],
     },
@@ -1406,26 +1386,27 @@ function App() {
     const formData = new FormData(e.target)
     const data = {
       name: formData.get('name'),
+      email: formData.get('email'),
       phone: formData.get('phone'),
       service: formData.get('service'),
       message: formData.get('message'),
       language: selectedLanguage,
     }
 
+    // Debug: Check if email is captured
+    console.log('Form data:', data)
+
     try {
-      // EmailJS integration - you'll need to set up EmailJS and replace with your service ID
-      // For now, we'll use a fallback to mailto
-      const mailtoLink = `mailto:asnatesjsk@inbox.lv?subject=Pieteikums: ${encodeURIComponent(data.service)}&body=Vārds: ${encodeURIComponent(data.name)}%0ATālrunis: ${encodeURIComponent(data.phone)}%0APakalpojums: ${encodeURIComponent(data.service)}%0AKomentārs: ${encodeURIComponent(data.message || 'Nav komentāra')}`
-      
-      // Try to use EmailJS if available (you'll need to add EmailJS script)
+      // EmailJS integration
       if (window.emailjs) {
-        await window.emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-          from_name: data.name,
-          phone: data.phone,
-          service: data.service,
-          message: data.message,
-          language: selectedLanguage,
-        })
+        const templateParams = {
+          from_name: data.name || 'Nav norādīts',
+          from_email: data.email || 'Nav norādīts',
+          phone: data.phone || 'Nav norādīts',
+          message: data.message || 'Nav komentāra',
+        }
+        console.log('Sending email with params:', templateParams)
+        await window.emailjs.send('service_sgqzxcd', 'template_bwjlrhr', templateParams)
         setFormStatus({ type: 'success', message: t.booking.form.successMessage || 'Paldies! Jūsu pieteikums ir nosūtīts.' })
         e.target.reset()
         // Focus management after success
@@ -1438,7 +1419,8 @@ function App() {
           }
         }, 100)
       } else {
-        // Fallback: open mailto
+        // Fallback: open mailto if EmailJS is not loaded
+        const mailtoLink = `mailto:asnatesjsk@inbox.lv?subject=Pieteikums: ${encodeURIComponent(data.service)}&body=Vārds: ${encodeURIComponent(data.name)}%0ATālrunis: ${encodeURIComponent(data.phone)}%0APakalpojums: ${encodeURIComponent(data.service)}%0AKomentārs: ${encodeURIComponent(data.message || 'Nav komentāra')}`
         window.location.href = mailtoLink
         setFormStatus({ type: 'info', message: t.booking.form.fallbackMessage || 'Atveriet savu e-pasta klientu, lai nosūtītu ziņojumu.' })
       }
@@ -1660,7 +1642,6 @@ function App() {
           <div className="hero__content container" data-animate="fade-up">
             <p className="eyebrow">{t.hero.eyebrow}</p>
             <h1>{t.hero.title}</h1>
-            <p className="hero__lead">{t.hero.lead}</p>
             <div className="hero__actions">
               <a className="btn btn--primary" href="#booking">
                 {t.hero.primaryCta}
@@ -1702,11 +1683,6 @@ function App() {
                   />
                 ))}
               </div>
-              <div className="media-card" data-animate="fade-up" style={{ transitionDelay: '220ms' }}>
-                <span className="media-card__eyebrow">{t.about.mediaCard.eyebrow}</span>
-                <strong className="media-card__title">{t.about.mediaCard.title}</strong>
-                <p className="media-card__text">{t.about.mediaCard.text}</p>
-              </div>
             </div>
           </div>
         </section>
@@ -1716,7 +1692,6 @@ function App() {
             <div className="section__heading">
               <p className="eyebrow">{t.services.heading.eyebrow}</p>
               <h2>{t.services.heading.title}</h2>
-              <p>{t.services.heading.description}</p>
             </div>
             <div className="service-grid">
               {t.services.cards.map((card, index) => {
@@ -1842,48 +1817,12 @@ function App() {
           </div>
         </section>
 
-        <section id="competitions" className="section">
-          <div className="container">
-            <div className="section__heading section__heading--inline">
-              <div>
-                <p className="eyebrow">{t.competitions.heading.eyebrow}</p>
-                <h2>{t.competitions.heading.title}</h2>
-              </div>
-              <a className="btn btn--outline" href="#booking">
-                {t.competitions.heading.cta}
-              </a>
-            </div>
-            <div className="timeline">
-              {t.competitions.timeline.map((item, index) => (
-                <article
-                  className="timeline__item"
-                  key={item.title}
-                  data-animate="fade-up"
-                  style={{ transitionDelay: `${index * 100 + 140}ms` }}
-                >
-                  <div className="timeline__icon">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor" opacity="0.15"/>
-                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                    </svg>
-                  </div>
-                  <span className="timeline__date">{item.date}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <a className="timeline__link" href="#booking">
-                    {item.cta}
-                  </a>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section id="news" className="section">
           <div className="container">
             <div className="section__heading">
               <p className="eyebrow">{t.news.heading.eyebrow}</p>
               <h2>{t.news.heading.title}</h2>
+              {t.news.heading.description && <p>{t.news.heading.description}</p>}
             </div>
             <div className="news-grid">
               {t.news.items.map((item, index) => (
@@ -1893,6 +1832,11 @@ function App() {
                   data-animate="fade-up"
                   style={{ transitionDelay: `${index * 100 + 120}ms` }}
                 >
+                  {item.image && (
+                    <div className="news-card__image">
+                      <img src={item.image} alt={item.title} loading="lazy" decoding="async" />
+                    </div>
+                  )}
                   <span className="news-card__date">{item.date}</span>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
@@ -1959,6 +1903,10 @@ function App() {
                     <input required type="text" name="name" placeholder={t.booking.form.namePlaceholder} disabled={isSubmitting} />
                   </label>
                   <label>
+                    <span>{t.booking.form.emailLabel}</span>
+                    <input required type="email" name="email" placeholder={t.booking.form.emailPlaceholder} disabled={isSubmitting} />
+                  </label>
+                  <label>
                     <span>{t.booking.form.phoneLabel}</span>
                     <input required type="tel" name="phone" placeholder={t.booking.form.phonePlaceholder} disabled={isSubmitting} />
                   </label>
@@ -2002,7 +1950,6 @@ function App() {
             <div className="section--split__media section--split__media--accent" role="presentation" data-animate="fade-left">
               <img 
                 src={atimImage} 
-                alt="Horse" 
                 className="section--split__media-image"
                 data-animate="fade-up"
                 data-animate-delay="200ms"
