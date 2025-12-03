@@ -1393,20 +1393,69 @@ function App() {
       language: selectedLanguage,
     }
 
-    // Debug: Check if email is captured
-    console.log('Form data:', data)
-
     try {
-      // EmailJS integration
+      // EmailJS - Direct from frontend (backend doesn't support EmailJS API)
       if (window.emailjs) {
-        const templateParams = {
+        // Admin notification email
+        const adminTemplateParams = {
           from_name: data.name || 'Nav norādīts',
           from_email: data.email || 'Nav norādīts',
           phone: data.phone || 'Nav norādīts',
           message: data.message || 'Nav komentāra',
+          service: data.service || 'Nav norādīts',
+          language: data.language || 'lv',
+          timestamp: new Date().toLocaleString('lv-LV')
+        };
+
+        // Auto-reply email
+        const replyTemplateParams = {
+          name: data.name || 'Klient',
+          email: data.email,
+          from_email: data.email,
+          service: data.service || 'Nav norādīts',
+          language: data.language || 'lv',
+          timestamp: new Date().toLocaleString('lv-LV')
+        };
+
+        // Send both emails (one at a time to see which one fails)
+        // Try with old service first, then new one
+        const serviceId = 'service_0la0k52'; // New SMTP service
+        
+        try {
+          const adminResult = await window.emailjs.send(serviceId, 'template_bwjlrhr', adminTemplateParams);
+          console.log('✅ Admin email sent:', adminResult);
+        } catch (adminError) {
+          console.error('❌ Admin email error:', adminError);
+          console.error('Error details:', {
+            service: serviceId,
+            template: 'template_bwjlrhr',
+            params: adminTemplateParams,
+            error: adminError.text || adminError.message
+          });
+          // Try with old service as fallback
+          try {
+            await window.emailjs.send('service_sgqzxcd', 'template_bwjlrhr', adminTemplateParams);
+            console.log('✅ Admin email sent with fallback service');
+          } catch {
+            throw new Error(`Admin email failed: ${adminError.text || adminError.message}`);
+          }
         }
-        console.log('Sending email with params:', templateParams)
-        await window.emailjs.send('service_sgqzxcd', 'template_bwjlrhr', templateParams)
+
+        try {
+          const replyResult = await window.emailjs.send(serviceId, 'template_nkrc6xo', replyTemplateParams);
+          console.log('✅ Auto-reply email sent:', replyResult);
+        } catch (replyError) {
+          console.error('❌ Auto-reply email error:', replyError);
+          // Try with old service as fallback
+          try {
+            await window.emailjs.send('service_sgqzxcd', 'template_nkrc6xo', replyTemplateParams);
+            console.log('✅ Auto-reply sent with fallback service');
+          } catch {
+            console.error('⚠️ Auto-reply failed, but continuing...');
+            // Don't throw for auto-reply
+          }
+        }
+
         setFormStatus({ type: 'success', message: t.booking.form.successMessage || 'Paldies! Jūsu pieteikums ir nosūtīts.' })
         e.target.reset()
         // Focus management after success
@@ -1419,10 +1468,7 @@ function App() {
           }
         }, 100)
       } else {
-        // Fallback: open mailto if EmailJS is not loaded
-        const mailtoLink = `mailto:asnatesjsk@inbox.lv?subject=Pieteikums: ${encodeURIComponent(data.service)}&body=Vārds: ${encodeURIComponent(data.name)}%0ATālrunis: ${encodeURIComponent(data.phone)}%0APakalpojums: ${encodeURIComponent(data.service)}%0AKomentārs: ${encodeURIComponent(data.message || 'Nav komentāra')}`
-        window.location.href = mailtoLink
-        setFormStatus({ type: 'info', message: t.booking.form.fallbackMessage || 'Atveriet savu e-pasta klientu, lai nosūtītu ziņojumu.' })
+        throw new Error('EmailJS is not loaded')
       }
     } catch (error) {
       console.error('Form submission error:', error)
@@ -1797,7 +1843,7 @@ function App() {
                       alt={image.caption[selectedLanguage] ?? image.caption.ru}
                       loading="lazy"
                       decoding="async"
-                      fetchpriority={index < 3 ? "high" : "low"}
+                      fetchPriority={index < 3 ? "high" : "low"}
                     />
                     <span className="gallery-card__overlay" />
                     <span className="gallery-card__view">View</span>

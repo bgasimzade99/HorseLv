@@ -1,0 +1,12 @@
+{
+  "name": "asnates-jsk-backend",
+  "version": "1.0.0",
+  "description": "Backend is no longer needed - EmailJS is used directly from frontend",
+  "type": "module",
+  "keywords": [
+    "emailjs",
+    "contact-form"
+  ],
+  "author": "",
+  "license": "ISC"
+}
