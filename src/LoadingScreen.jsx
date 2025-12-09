@@ -81,7 +81,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
       {/* Subtitle text */}
       <div className={`loading-subtitle-container ${phase === 'welcome' ? 'visible' : ''}`}>
         <div className="loading-subtitle-text">
-          WHERE PEOPLE MEET HORSES
+          Šeit sākas ceļš uz draudzība ar zirgiem
         </div>
       </div>
 
