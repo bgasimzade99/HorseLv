@@ -1606,6 +1606,73 @@
   color: #c57b29;
 }
 
+.card__link--button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #d18d42, #f2c463);
+  color: #1f2933;
+  border: none;
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  box-shadow:
+    0 12px 26px -14px rgba(209, 141, 66, 0.7),
+    0 0 0 0 rgba(209, 141, 66, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__link--button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.35), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.card__link--button:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow:
+    0 16px 30px -14px rgba(209, 141, 66, 0.85),
+    0 0 0 6px rgba(209, 141, 66, 0.16);
+}
+
+.card__link--button:hover::after {
+  opacity: 1;
+}
+
+.card__link--button:active {
+  transform: translateY(0);
+  box-shadow:
+    0 10px 20px -12px rgba(209, 141, 66, 0.8),
+    0 0 0 3px rgba(209, 141, 66, 0.18);
+}
+
+.card__link--button::before {
+  content: '›';
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: inherit;
+  transform: translateX(-6px);
+  transition: transform 0.2s ease;
+}
+
+.card__link--button:hover::before {
+  transform: translateX(-2px);
+}
+
+.card--active {
+  box-shadow:
+    0 40px 70px -26px rgba(209, 141, 66, 0.55),
+    0 18px 32px -22px rgba(15, 23, 42, 0.25);
+  border-color: rgba(209, 141, 66, 0.45);
+}
+
 .section--accent .card p,
 .section--accent .news-card p {
   color: rgba(241, 245, 249, 0.82);
@@ -2649,6 +2716,124 @@
   margin: 0;
   font-size: 1.35rem;
   color: #1f2933;
+}
+
+.service-details-section {
+  padding-top: 2rem;
+}
+
+.service-details__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-details__card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(247, 249, 252, 0.95));
+  border: 1px solid rgba(209, 141, 66, 0.18);
+  border-radius: 22px;
+  padding: 1.6rem;
+  box-shadow:
+    0 28px 64px -34px rgba(15, 23, 42, 0.25),
+    0 14px 30px -24px rgba(15, 23, 42, 0.18);
+}
+
+.service-details__card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.service-details__subtitle {
+  color: rgba(31, 41, 51, 0.7);
+  margin: 0.2rem 0 0;
+  line-height: 1.5;
+}
+
+.service-details__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.service-details__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px dashed rgba(209, 141, 66, 0.25);
+  padding-bottom: 0.8rem;
+}
+
+.service-details__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.service-details__item-title {
+  font-weight: 700;
+  color: #1f2933;
+}
+
+.service-details__note {
+  margin: 0.35rem 0 0;
+  color: rgba(31, 41, 51, 0.7);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.service-details__price-block {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  white-space: nowrap;
+}
+
+.service-details__price {
+  font-weight: 800;
+  color: #c57b29;
+  font-size: 1.1rem;
+}
+
+.service-details__duration {
+  font-size: 0.9rem;
+  color: rgba(31, 41, 51, 0.6);
+}
+
+.service-details__placeholder {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.service-details__notes {
+  margin-top: 1.6rem;
+  background: rgba(209, 141, 66, 0.06);
+  border: 1px solid rgba(209, 141, 66, 0.2);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  color: #1f2933;
+  box-shadow: 0 10px 30px -18px rgba(209, 141, 66, 0.35);
+}
+
+.service-details__notes h4 {
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #b7792d;
+}
+
+.service-details__notes ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.4rem;
+  color: rgba(31, 41, 51, 0.8);
 }
 
 .pricing-card {

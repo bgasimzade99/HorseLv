@@ -1076,6 +1076,174 @@ const translations = {
     },
   },
 }
+
+const SERVICE_ORDER = ['boarding', 'training', 'events', 'photoshoot']
+
+const SERVICE_DETAILS_COPY = {
+  lv: {
+    eyebrow: 'Detalizēts cenrādis',
+    emptyTitle: 'Izvēlieties pakalpojumu',
+    emptyBody: 'Spiediet “Uzzināt vairāk” pie vēlamā pakalpojuma, lai redzētu konkrētās cenas, ilgumus un atrunas.',
+    notesTitle: 'Svarīgi',
+  },
+  en: {
+    eyebrow: 'Detailed pricing',
+    emptyTitle: 'Pick a service',
+    emptyBody: 'Click “Learn more” on any service card to view prices, durations, and key notes for that offer.',
+    notesTitle: 'Notes',
+  },
+  ru: {
+    eyebrow: 'Детальный прайс',
+    emptyTitle: 'Выберите услугу',
+    emptyBody: 'Нажмите «Узнать больше» на нужной карточке, чтобы увидеть цены, длительности и важные примечания.',
+    notesTitle: 'Важно',
+  },
+}
+
+const SERVICE_DETAILS = {
+  boarding: {
+    title: { lv: 'Zirgu uzturēšana', en: 'Horse boarding', ru: 'Содержание лошадей' },
+    tagline: {
+      lv: 'Pilnvērtīga barošana, ikdienas pastaigas, solārijs, pakaiši un individuāla aprūpe modernās stallēs.',
+      en: 'Full board with daily turnout, solarium access and attentive, modern stable care.',
+      ru: 'Полный пансион: кормление, ежедневные выгулы, солярий и внимательный уход в современном конюшенном боксe.',
+    },
+    pricing: [
+      {
+        title: { lv: 'Pansija un aprūpe', en: 'Boarding & care', ru: 'Пансион и уход' },
+        subtitle: {
+          lv: 'Iekļauts: barošana, boksa uzkopšana, pastaigas aplokā un manēžas pieejamība.',
+          en: 'Includes feeding, stall care, paddock turnout and arena access.',
+          ru: 'Включает кормление, уборку денника, выгула и доступ к манежу.',
+        },
+        rows: [
+          {
+            label: { lv: 'Pilna pansija stallī', en: 'Full board in stable', ru: 'Полный пансион в деннике' },
+            price: 'Pēc vienošanās',
+            note: {
+              lv: 'Individuāla aprūpe un ikdienas monitorings; elastīga grafika pielāgošana zirgam.',
+              en: 'Individual care and daily monitoring; schedule tailored to the horse.',
+              ru: 'Индивидуальный уход и ежедневный мониторинг; гибкий график под лошадь.',
+            },
+          },
+          {
+            label: { lv: 'Izbraukuma noma pasākumiem', en: 'Off-site horse/pony rental', ru: 'Аренда лошади/пони на выездные события' },
+            price: 'Pēc vienošanās',
+            note: {
+              lv: 'Jubilejas, kāzas, korporatīvi un citi pasākumi.',
+              en: 'Birthdays, weddings, corporate events and more.',
+              ru: 'Дни рождения, свадьбы, корпоративы и др.',
+            },
+          },
+        ],
+      },
+    ],
+    notes: [
+      {
+        lv: 'Pieejami sertificēta trenera pakalpojumi un jaunzirgu apmācība.',
+        en: 'Certified trainer support and young horse schooling available.',
+        ru: 'Доступна работа с сертифицированным тренером и обучение молодых лошадей.',
+      },
+      {
+        lv: 'Dāvanu kartes Jūsu izvēlētajā summā.',
+        en: 'Gift cards available in custom amounts.',
+        ru: 'Подарочные карты на выбранную сумму.',
+      },
+    ],
+  },
+  training: {
+    title: { lv: 'Jāšanas treniņi', en: 'Riding training', ru: 'Тренировки верховой езды' },
+    tagline: {
+      lv: 'Sertificēta trenera vai instruktora nodarbības – individuāli un grupās.',
+      en: 'Certified trainer or instructor sessions — individual or group.',
+      ru: 'Занятия с сертифицированным тренером или инструктором — индивидуально и в группе.',
+    },
+    pricing: [
+      {
+        title: { lv: 'Treniņš ar instruktoru', en: 'Coach-led session', ru: 'Тренировка с тренером' },
+        rows: [
+          { label: { lv: 'Grupas treniņš', en: 'Group training', ru: 'Групповая тренировка' }, price: '25,00 €', duration: '1h', note: { lv: 'Zirga/ponija mugurā sertificēta trenera uzraudzībā.', en: 'On horse/pony under certified coach supervision.', ru: 'Верхом под контролем сертифицированного тренера.' } },
+          { label: { lv: 'Grupas treniņš', en: 'Group training', ru: 'Групповая тренировка' }, price: '15,00 €', duration: '30min', note: { lv: 'Saīsināta nodarbība iesācējiem un bērniem.', en: 'Short format, great for starters and kids.', ru: 'Укороченный формат для новичков и детей.' } },
+          { label: { lv: 'Individuāls treniņš', en: '1:1 training', ru: 'Индивидуальная тренировка' }, price: '45,00 €', duration: '1h', note: { lv: 'Personalizēts plāns un tehniska korekcija.', en: 'Personalised plan and technical corrections.', ru: 'Персональный план и техническая корректировка.' } },
+          { label: { lv: 'Individuāls treniņš', en: '1:1 training', ru: 'Индивидуальная тренировка' }, price: '25,00 €', duration: '30min', note: { lv: 'Koncentrēts drills vai pirmā iepazīšanās.', en: 'Focused drills or first-time intro.', ru: 'Сфокусированные упражнения или первое знакомство.' } },
+        ],
+      },
+    ],
+    notes: [
+      { lv: 'Jātnieka svara ierobežojums — 100 kg.', en: 'Rider weight limit — 100 kg.', ru: 'Ограничение веса всадника — 100 кг.' },
+    ],
+  },
+  events: {
+    title: { lv: 'Pasākumi un ekskursijas', en: 'Events & excursions', ru: 'Мероприятия и экскурсии' },
+    tagline: {
+      lv: 'Ekskursijas, izjādes līdz jūrai, vizināšanās un grupu aktivitātes.',
+      en: 'Excursions, rides to the sea, carriage experiences and group moments.',
+      ru: 'Экскурсии, выезды к морю, катания в упряжке и групповые активности.',
+    },
+    pricing: [
+      {
+        title: { lv: 'Ekskursija & iepazīšanās', en: 'Intro tour', ru: 'Экскурсия и знакомство' },
+        rows: [
+          { label: { lv: 'Iepazīšanās ar zirgiem/ponijiem', en: 'Meet the horses/ponies', ru: 'Знакомство с лошадьми/пони' }, price: '5,00 €', duration: 'līdz 1h' },
+          { label: { lv: 'Iepazīšanās + kopšana', en: 'Intro + grooming', ru: 'Знакомство + уход' }, price: '10,00 €', duration: 'līdz 1h', note: { lv: 'Tīrīšana, ķemmēšana, samīļošana.', en: 'Brushing, combing, bonding time.', ru: 'Чистка, расчесывание, общение с лошадью.' } },
+        ],
+      },
+      {
+        title: { lv: 'Izjādes un pastaigas', en: 'Rides & walks', ru: 'Прогулки и выезды' },
+        rows: [
+          { label: { lv: 'Pastaiga līdz jūrai pie rokas', en: 'Lead walk to the sea', ru: 'Пешая прогулка к морю с лошадью в руках' }, price: '20,00 €', duration: 'līdz 1h', note: { lv: '1 zirgs, instruktors pavadībā.', en: '1 horse, escorted by instructor.', ru: '1 лошадь, сопровождение инструктора.' } },
+          { label: { lv: 'Grupas izjāde (2–7 pers.)', en: 'Group ride (2–7 ppl)', ru: 'Групповая выездка (2–7 чел.)' }, price: '30,00 €', duration: 'līdz 1h', note: { lv: 'Mežs / jūra, 1 zirgs uz personu.', en: 'Forest/sea route, 1 horse per rider.', ru: 'Маршрут лес/море, 1 лошадь на всадника.' } },
+          { label: { lv: 'Grupas izjāde – īsais aplis', en: 'Group ride – short loop', ru: 'Групповая выездка — короткий круг' }, price: '20,00 €', duration: 'līdz 30min' },
+          { label: { lv: 'Individuāla izjāde', en: 'Private ride', ru: 'Индивидуальная выездка' }, price: '45,00 €', duration: 'līdz 1h', note: { lv: 'Mežs / jūra, 1 zirgs.', en: 'Forest/sea, 1 horse.', ru: 'Лес / море, 1 лошадь.' } },
+          { label: { lv: 'Individuāla izjāde – īsais aplis', en: 'Private ride – short loop', ru: 'Индивидуальная выездка — короткий круг' }, price: '25,00 €', duration: 'līdz 30min' },
+        ],
+      },
+      {
+        title: { lv: 'Vizināšanās', en: 'Rides on lead/carriage', ru: 'Катания' },
+        rows: [
+          { label: { lv: 'Zirga/ponija mugurā pa laukumu', en: 'Arena pony/horse ride', ru: 'Катание на лошади/пони на манеже' }, price: '5,00 €', duration: 'sākot no' },
+          { label: { lv: 'Pajūgā līdz 4 personām', en: 'Carriage ride (up to 4 ppl)', ru: 'Катание в упряжке (до 4 чел.)' }, price: '60,00 €', duration: 'līdz 1h' },
+          { label: { lv: 'Pajūgā – īsais brauciens', en: 'Carriage short ride', ru: 'Упряжка — короткая поездка' }, price: '40,00 €', duration: 'līdz 30min' },
+        ],
+      },
+    ],
+    notes: [
+      { lv: 'Jātnieka svara ierobežojums — 100 kg.', en: 'Rider weight limit — 100 kg.', ru: 'Ограничение веса всадника — 100 кг.' },
+    ],
+  },
+  photoshoot: {
+    title: { lv: 'Fotosesija', en: 'Photoshoot', ru: 'Фотосессия' },
+    tagline: {
+      lv: 'Profesionāla fotosesija ar zirgiem, kā arī īpašie fotopiedzīvojumi līdz jūrai.',
+      en: 'Professional photo sessions with horses plus signature photo adventures to the sea.',
+      ru: 'Профессиональная фотосессия с лошадьми и фирменные фотоприключения у моря.',
+    },
+    pricing: [
+      {
+        title: { lv: 'Zirgu fotopiedzīvojumi', en: 'Horse photo adventures', ru: 'Фотоприключения с лошадьми' },
+        rows: [
+          { label: { lv: 'Nr.1 — jūra + fotosesija (1 zirgs)', en: 'No.1 — sea ride + photos (1 horse)', ru: '№1 — выезд к морю + фотосессия (1 лошадь)' }, price: '50,00 €', duration: 'līdz 1.5h', note: { lv: 'Izjāde līdz jūrai, fotosesija un atpakaļceļš.', en: 'Ride to the sea, photoshoot and return.', ru: 'Выезд к морю, фотосессия и обратный путь.' } },
+          { label: { lv: 'Nr.2 — jūras krasts + mugurā (1 zirgs)', en: 'No.2 — beach set + mounted (1 horse)', ru: '№2 — у моря + верхом (1 лошадь)' }, price: '40,00 €', duration: '~40min', note: { lv: 'Zirdziņš sagaida pie jūras, fotogrāfijas un izjāde mugurā.', en: 'Horse awaits at the beach; photos plus mounted segment.', ru: 'Лошадь встречает у моря; фото и верховая часть.' } },
+          { label: { lv: 'Papildu zirgs (Nr.1 / Nr.2)', en: 'Extra horse (No.1 / No.2)', ru: 'Доп. лошадь (№1 / №2)' }, price: '+30,00 €', duration: '', note: { lv: '4–7 zirgi — +30 € par katru.', en: 'For 4–7 horses add €30 each.', ru: 'Для 4–7 лошадей +30 € за каждую.' } },
+          { label: { lv: '2 zirgi', en: '2 horses', ru: '2 лошади' }, price: '85,00 € / 75,00 €', duration: 'Nr.1 / Nr.2' },
+          { label: { lv: '3 zirgi', en: '3 horses', ru: '3 лошади' }, price: '115,00 € / 105,00 €', duration: 'Nr.1 / Nr.2' },
+        ],
+      },
+      {
+        title: { lv: 'Foto sesijas tipi', en: 'Photo session types', ru: 'Типы фотосессий' },
+        rows: [
+          { label: { lv: 'Amatieris', en: 'Amateur photographer', ru: 'Любитель' }, price: '50,00 € / 30,00 €', duration: 'Nr.1 / Nr.2' },
+          { label: { lv: 'Monta Zile', en: 'Monta Zile (pro)', ru: 'Monta Zile (про)' }, price: '130,00 € / 80,00 €', duration: 'Nr.1 / Nr.2' },
+        ],
+      },
+    ],
+    notes: [
+      { lv: 'Jātnieka svara ierobežojums — 100 kg.', en: 'Rider weight limit — 100 kg.', ru: 'Ограничение веса всадника — 100 кг.' },
+      { lv: 'Rezervācijas un precizēta pieejamība pa tālruni +371 28352881.', en: 'Booking and availability via +371 28352881.', ru: 'Бронирование и уточнение доступности: +371 28352881.' },
+    ],
+  },
+}
+
 const languageOrder = ['lv', 'en', 'ru']
 
 function App() {
@@ -1084,6 +1252,7 @@ function App() {
   const [selectedLanguage, setSelectedLanguage] = useState('lv')
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
   const [activeGalleryIndex, setActiveGalleryIndex] = useState(null)
+  const [activeService, setActiveService] = useState(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
   const [showScrollBottom, setShowScrollBottom] = useState(false)
   const [formStatus, setFormStatus] = useState({ type: null, message: null })
@@ -1092,6 +1261,7 @@ function App() {
   const scrollPositionRef = useRef(0)
   const languageDropdownRef = useRef(null)
   const headerRef = useRef(null)
+  const serviceDetailRef = useRef(null)
   const t = translations[selectedLanguage] ?? translations.ru
 
   useEffect(() => {
@@ -1377,6 +1547,15 @@ function App() {
     document.addEventListener('click', handleAnchorClick)
     return () => document.removeEventListener('click', handleAnchorClick)
   }, [])
+
+  const getText = (value) => (typeof value === 'string' ? value : value?.[selectedLanguage] ?? value?.lv ?? '')
+
+  const handleServiceSelect = (slug) => {
+    setActiveService(slug)
+    window.requestAnimationFrame(() => {
+      serviceDetailRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+  }
 
   const handleFormSubmit = async (e) => {
     e.preventDefault()
@@ -1741,6 +1920,8 @@ function App() {
             </div>
             <div className="service-grid">
               {t.services.cards.map((card, index) => {
+                const slug = SERVICE_ORDER[index] || `service-${index}`
+                const isActive = slug === activeService
                 const icons = [
                   <svg key="horse" className="card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -1797,7 +1978,7 @@ function App() {
                 ]
                 return (
                   <article
-                    className="card"
+                    className={`card ${isActive ? 'card--active' : ''}`}
                     key={card.title}
                     data-animate="fade-up"
                     style={{ transitionDelay: `${index * 90 + 120}ms` }}
@@ -1807,13 +1988,82 @@ function App() {
                     </div>
                     <h3>{card.title}</h3>
                     <p>{card.description}</p>
-                    <a className="card__link" href="#booking">
+                    <button
+                      type="button"
+                      className="card__link card__link--button"
+                      onClick={() => handleServiceSelect(slug)}
+                      aria-pressed={isActive}
+                    >
                       {card.cta}
-                    </a>
+                    </button>
                   </article>
                 )
               })}
             </div>
+          </div>
+        </section>
+
+        <section id="service-details" className="section service-details-section" ref={serviceDetailRef}>
+          <div className="container">
+            <div className="section__heading section__heading--inline">
+              <div>
+                <p className="eyebrow">{(SERVICE_DETAILS_COPY[selectedLanguage] ?? SERVICE_DETAILS_COPY.lv).eyebrow}</p>
+                <h2>
+                  {activeService && SERVICE_DETAILS[activeService]
+                    ? getText(SERVICE_DETAILS[activeService].title)
+                    : (SERVICE_DETAILS_COPY[selectedLanguage] ?? SERVICE_DETAILS_COPY.lv).emptyTitle}
+                </h2>
+                <p>
+                  {activeService && SERVICE_DETAILS[activeService]
+                    ? getText(SERVICE_DETAILS[activeService].tagline)
+                    : (SERVICE_DETAILS_COPY[selectedLanguage] ?? SERVICE_DETAILS_COPY.lv).emptyBody}
+                </p>
+              </div>
+            </div>
+
+            {activeService && SERVICE_DETAILS[activeService] ? (
+              <div className="service-details__grid">
+                {SERVICE_DETAILS[activeService].pricing.map((section) => (
+                  <article className="service-details__card" key={getText(section.title)}>
+                    <div className="service-details__card-head">
+                      <div>
+                        <h3>{getText(section.title)}</h3>
+                        {section.subtitle && <p className="service-details__subtitle">{getText(section.subtitle)}</p>}
+                      </div>
+                    </div>
+                    <ul className="service-details__list">
+                      {section.rows.map((row) => (
+                        <li className="service-details__item" key={`${getText(row.label)}-${row.price}`}>
+                          <div className="service-details__item-meta">
+                            <span className="service-details__item-title">{getText(row.label)}</span>
+                            {row.note && <p className="service-details__note">{getText(row.note)}</p>}
+                          </div>
+                          <div className="service-details__price-block">
+                            <span className="service-details__price">{row.price}</span>
+                            {row.duration && <span className="service-details__duration">{row.duration}</span>}
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <div className="service-details__placeholder card" data-animate="fade-up">
+                <p>{(SERVICE_DETAILS_COPY[selectedLanguage] ?? SERVICE_DETAILS_COPY.lv).emptyBody}</p>
+              </div>
+            )}
+
+            {activeService && SERVICE_DETAILS[activeService]?.notes?.length ? (
+              <div className="service-details__notes">
+                <h4>{(SERVICE_DETAILS_COPY[selectedLanguage] ?? SERVICE_DETAILS_COPY.lv).notesTitle}</h4>
+                <ul>
+                  {SERVICE_DETAILS[activeService].notes.map((note) => (
+                    <li key={getText(note)}>{getText(note)}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
         </section>
 

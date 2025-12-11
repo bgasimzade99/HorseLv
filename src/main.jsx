@@ -28,9 +28,9 @@ const RootApp = () => {
 
   return (
     <>
-      <ErrorBoundary>
-        <App />
-      </ErrorBoundary>
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
     </>
   )
 }
