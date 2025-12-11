@@ -31,7 +31,7 @@ const faqData = {
       {
         id: 2,
         question: 'Kādi ir nodarbību cenas?',
-        answer: 'Lūdzu, sazinieties ar mums tieši, lai uzzinātu detalizētu cenu informāciju. Mēs ar prieku sniegsim jums visu nepieciešamo informāciju par nodarbību cenām un pieejamajiem pakalpojumiem. Mēs piedāvājam arī īpašus piedāvājumus jaunajiem dalībniekiem.',
+        answer: 'Ātrā kopsavilkuma cenas (pilnais cenrādis pakalpojumu sadaļā):\n\n• Treniņi: grupas 25 € / 1h, 15 € / 30min; individuāli 45 € / 1h, 25 € / 30min.\n• Izjādes/ekskursijas: iepazīšanās 5–10 €; pastaiga līdz jūrai 20 €; grupas izjāde 30 € / 1h (20 € / 30min); individuāla 45 € / 1h (25 € / 30min); pajūgs 60 € / 1h (40 € / 30min).\n• Fotosesijas: Nr.1 50 €; Nr.2 40 €; 2 zirgi 85/75 €; 3 zirgi 115/105 €; Monta Zile 130/80 €; amatieris 50/30 €.\n• Jātnieka svara limits 100 kg. Detalizēti jautājumi un rezervācijas: +371 28352881.',
         keywords: ['cena', 'cenas', 'cenu', 'maksa', 'maksājums', 'cik maksā', 'cik maksā', 'cenu saraksts']
       },
       {
@@ -133,7 +133,7 @@ const faqData = {
       {
         id: 2,
         question: 'What are the lesson prices?',
-        answer: 'Please contact us directly to get detailed pricing information. We will be happy to provide you with all the necessary information about lesson prices and available services. We also offer special offers for new participants.',
+        answer: 'Quick price snapshot (full table in Services):\n\n• Training: group €25 / 1h, €15 / 30min; private €45 / 1h, €25 / 30min.\n• Rides / tours: intro €5–10; lead walk to the sea €20; group ride €30 / 1h (€20 / 30min); private ride €45 / 1h (€25 / 30min); carriage €60 / 1h (€40 / 30min).\n• Photoshoots: No.1 €50; No.2 €40; 2 horses €85/75; 3 horses €115/105; Monta Zile €130/80; amateur €50/30.\n• Rider weight limit 100 kg. For details and bookings: +371 28352881.',
         keywords: ['price', 'prices', 'cost', 'payment', 'fee', 'how much', 'pricing']
       },
       {
@@ -235,7 +235,7 @@ const faqData = {
       {
         id: 2,
         question: 'Какие цены на занятия?',
-        answer: 'Пожалуйста, свяжитесь с нами напрямую, чтобы получить подробную информацию о ценах. Мы с радостью предоставим вам всю необходимую информацию о ценах на занятия и доступных услугах. Мы также предлагаем специальные предложения для новых участников.',
+        answer: 'Кратко по ценам (полный прайс в разделе услуг):\n\n• Тренировки: группа 25 € / 1ч, 15 € / 30мин; индивидуально 45 € / 1ч, 25 € / 30мин.\n• Прогулки / экскурсии: знакомство 5–10 €; до моря в поводу 20 €; групповая выездка 30 € / 1ч (20 € / 30мин); индивидуальная 45 € / 1ч (25 € / 30мин); экипаж 60 € / 1ч (40 € / 30мин).\n• Фотосессии: №1 50 €; №2 40 €; 2 лошади 85/75 €; 3 лошади 115/105 €; Monta Zile 130/80 €; любитель 50/30 €.\n• Лимит веса всадника 100 кг. Детали и запись: +371 28352881.',
         keywords: ['цена', 'цены', 'стоимость', 'оплата', 'сколько стоит', 'прайс']
       },
       {
@@ -310,6 +310,75 @@ const faqData = {
   }
 }
 
+const serviceIntents = {
+  lv: {
+    photoshoot: {
+      keywords: ['foto', 'fotoses', 'fotopiedz', 'photo'],
+      answer:
+        'Fotosesijas: Nr.1 (jūra+foto) 50 €; Nr.2 (pie jūras, mugurā) 40 €; 2 zirgi 85/75 €; 3 zirgi 115/105 €; papildu zirgs +30 € (4–7 zirgi); Monta Zile 130/80 €; amatieris 50/30 €. Rezervācijas: +371 28352881. Svara limits 100 kg.',
+    },
+    training: {
+      keywords: ['treni', 'trenēj', 'lessons', 'nodarb'],
+      answer:
+        'Treniņi: grupas 25 € / 1h, 15 € / 30min; individuāli 45 € / 1h, 25 € / 30min. Sertificēts treneris, droša iepazīšanās ar zirgiem. Rezervācijas: +371 28352881.',
+    },
+    events: {
+      keywords: ['pasāk', 'ekskurs', 'izjāde', 'ride', 'tour'],
+      answer:
+        'Pasākumi / ekskursijas: iepazīšanās 5–10 €; pastaiga līdz jūrai 20 €; grupas izjāde 30 € / 1h (20 € / 30min); individuāla 45 € / 1h (25 € / 30min); pajūgs 60 € / 1h (40 € / 30min); pajūgā līdz 4 pers 60 € / 1h (40 € / 30min). Svara limits 100 kg. Rezervācijas: +371 28352881.',
+    },
+    boarding: {
+      keywords: ['pansija', 'uztur', 'stall', 'boarding'],
+      answer:
+        'Zirgu uzturēšana: pilna pansija (barošana, boksa uzkopšana, pastaigas, manēža) – cena pēc vienošanās. Pieejama arī izbraukuma noma pasākumiem. Sertificēta aprūpe; dāvanu kartes. Sazinieties: +371 28352881.',
+    },
+  },
+  en: {
+    photoshoot: {
+      keywords: ['photo', 'photoshoot', 'shoot', 'foto'],
+      answer:
+        'Photoshoots: No.1 (sea ride + photos) €50; No.2 (beach + mounted) €40; 2 horses €85/75; 3 horses €115/105; extra horse +€30 (4–7 horses); Monta Zile €130/80; amateur €50/30. Booking: +371 28352881. Rider limit 100 kg.',
+    },
+    training: {
+      keywords: ['train', 'lesson', 'class', 'coaching'],
+      answer:
+        'Training: group €25 / 1h, €15 / 30min; private €45 / 1h, €25 / 30min. Certified coach, safe intros. Booking: +371 28352881.',
+    },
+    events: {
+      keywords: ['event', 'tour', 'excursion', 'ride', 'sea'],
+      answer:
+        'Events / rides: intro €5–10; lead walk to the sea €20; group ride €30 / 1h (€20 / 30min); private ride €45 / 1h (€25 / 30min); carriage €60 / 1h (€40 / 30min); carriage up to 4 ppl €60 / 1h (€40 / 30min). Weight limit 100 kg. Booking: +371 28352881.',
+    },
+    boarding: {
+      keywords: ['boarding', 'stable', 'board', 'pension'],
+      answer:
+        'Horse boarding: full board (feeding, stall care, turnout, arena access) — price on request. Off-site horse/pony rental available. Certified care; gift cards. Contact: +371 28352881.',
+    },
+  },
+  ru: {
+    photoshoot: {
+      keywords: ['фото', 'фотос', 'photoshoot'],
+      answer:
+        'Фотосессии: №1 (к морю + фото) 50 €; №2 (у моря + верхом) 40 €; 2 лошади 85/75 €; 3 лошади 115/105 €; доп. лошадь +30 € (4–7); Monta Zile 130/80 €; любитель 50/30 €. Бронь: +371 28352881. Лимит веса всадника 100 кг.',
+    },
+    training: {
+      keywords: ['трен', 'занят', 'урок', 'lesson'],
+      answer:
+        'Тренировки: групповые 25 € / 1ч, 15 € / 30мин; индивидуальные 45 € / 1ч, 25 € / 30мин. Сертифицированный тренер, безопасное знакомство. Запись: +371 28352881.',
+    },
+    events: {
+      keywords: ['экскурс', 'прогул', 'выезд', 'ride', 'event'],
+      answer:
+        'Мероприятия / прогулки: знакомство 5–10 €; до моря в поводу 20 €; групповая выездка 30 € / 1ч (20 € / 30мин); индивидуальная 45 € / 1ч (25 € / 30мин); экипаж 60 € / 1ч (40 € / 30мин); упряжка до 4 чел 60 € / 1ч (40 € / 30мин). Лимит веса 100 кг. Бронь: +371 28352881.',
+    },
+    boarding: {
+      keywords: ['панс', 'конюш', 'boarding', 'содерж'],
+      answer:
+        'Содержание: полный пансион (кормление, уборка денника, выгул, манеж) — цена по договоренности. Выездная аренда лошадей/пони. Сертифицированный уход; подарочные карты. Связь: +371 28352881.',
+    },
+  },
+}
+
 function ChatBot({ selectedLanguage = 'lv' }) {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState([])
@@ -349,6 +418,16 @@ function ChatBot({ selectedLanguage = 'lv' }) {
 
   const findAnswer = (userMessage) => {
     const lowerMessage = userMessage.toLowerCase().trim()
+    const serviceLang = serviceIntents[selectedLanguage] || serviceIntents.lv
+
+    // Service-intent matcher
+    for (const serviceKey of Object.keys(serviceLang)) {
+      const intent = serviceLang[serviceKey]
+      const matched = intent.keywords.some((kw) => lowerMessage.includes(kw))
+      if (matched) {
+        return intent.answer
+      }
+    }
     
     // Check for greetings first
     if (currentLang.greetings) {
